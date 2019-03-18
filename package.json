@@ -1,0 +1,19 @@
+{
+  "name": "matching-card-bootcamp2019a-week08",
+  "version": "1.0.0",
+  "description": "- Fork and clone this repo\r - Create a new branch called answer\r - Checkout answer branch\r - Push to your fork\r - Issue a pull request\r - Your pull request description should contain the following:\r   - (1 to 5 no 3) I completed the challenge\r   - (1 to 5 no 3) I feel good about my code\r   - Anything specific on which you want feedback!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HubbertTaye/matching-card-bootcamp2019a-week08.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HubbertTaye/matching-card-bootcamp2019a-week08/issues"
+  },
+  "homepage": "https://github.com/HubbertTaye/matching-card-bootcamp2019a-week08#readme"
+}
