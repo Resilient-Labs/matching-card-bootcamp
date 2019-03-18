@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Ed, Edd, n' Eddy Matching Cards Game</title>
+  </head>
+  <body>
+    <section>
+      <h1>Ed, Edd, n' Eddy Matching Cards Game</h1>
+    </section>
+    <div>
+      <section class="board">
+        <section class="card">
+          <img class="ed1" src="img/ed13.jpeg" alt="">
+        </section>
+        <section class="card">
+          <img class="ed2" src="img/ed13.jpeg" alt="">
+        </section>
+        <section class="card">
+          <img class="ed3" src="img/ed13.jpeg" alt="">
+        </section>
+        <section class="card">
+          <img class="ed4" src="img/ed13.jpeg" alt="">
+        </section>
+        <section class="card">
+          <img class="ed1" src="img/ed13.jpeg" alt="">
+        </section>
+        <section class="card">
+          <img class="ed2" src="img/ed13.jpeg" alt="">
+        </section>
+        <section class="card">
+          <img class="ed3" src="img/ed13.jpeg" alt="">
+        </section>
+        <section class="card">
+          <img class="ed5" src="img/ed13.jpeg" alt="">
+        </section>
+        <section class="card">
+          <img class="ed4" src="img/ed13.jpeg" alt="">
+        </section>
+        <section class="card">
+          <img class="ed5" src="img/ed13.jpeg" alt="">
+        </section>
+      </section>
+    </div>
+    <script type="text/javascript">
+    //select all images and assign them to cards array
+      let cards = document.querySelectorAll('img')
+      //for each image, add an event listener on click and run the flip function
+      cards.forEach(card => card.addEventListener('click', flip))
+      //make a variable for counting the amount of clicks
+      let click = 0;
+      //make a variable for the amount of matching attempts the user makes
+      let tries = 0;
+      //function to flip cards
+      function flip(){
+        //if the image contains the class 'ed1' replace the source image. classList returns a list of classes on the clicked image (within card variable) and contains method checks if that image contains specified class.
+        if(this.classList.contains('ed1')){
+          //change image source
+          this.src = 'img/ed1.jpeg'
+          //increase click by done
+          click++
+          //add flipped class onto the card. (flipped class has no css properties, it is used later in code)
+          this.classList.add('flipped')
+        }else if(this.classList.contains('ed2')){
+          this.src = 'img/ed2.jpeg'
+          click++
+          this.classList.add('flipped')
+        }else if(this.classList.contains('ed5')){
+          this.src = 'img/ed3.jpeg'
+          click++
+          this.classList.add('flipped')
+        }else if(this.classList.contains('ed4')){
+          this.src = 'img/ed5.jpeg'
+          click++
+          this.classList.add('flipped')
+        }else if(this.classList.contains('ed3')){
+          this.src = 'img/ed6.jpeg'
+          click++
+          this.classList.add('flipped')
+        }
+        //once user clicks twice, obtain only the cards with the flipped class and pass them through compare function
+        if(click === 2){
+          //assign flipped cards to variables to compare
+          let fCard1 = document.querySelectorAll('.flipped')[0]
+          let fCard2 = document.querySelectorAll('.flipped')[1]
+          //pass the cards into a comparing function.
+          setTimeout(checkCards, 800, fCard1, fCard2);
+          // checkCards(fCard1, fCard2)
+          //increase tries after 2 clicks
+          tries++;
+          //set click to 0 to play this if conditional again
+          click = 0;
+        }
+      }
+      //create a variable to count the amount of matches made
+      let matchCount = 0;
+      //compare function takes in two values -> the two cards
+      function checkCards(card1, card2){
+        //remove flipped class to utilize for the next flipped cards
+        card1.classList.remove('flipped')
+        card2.classList.remove('flipped')
+        //if card one is not the same as card two, flip them back
+        if(card1.className != card2.className){
+          //change cards to back image
+          card1.src = 'img/ed13.jpeg'
+          card2.src = 'img/ed13.jpeg'
+        }
+         else{
+          //else keep matched up
+          //add one to match count
+          matchCount++;
+        }
+        //if the match count is half the amount of cards on the board, then alert win message
+        if(matchCount === 5){
+          //add a popup instead of an alert that will shuffle and reset after popup goes away
+         alert(`You won! Tried matches: ${tries}`);
+        }
+      }
+    </script>
+  </body>
+</html>
