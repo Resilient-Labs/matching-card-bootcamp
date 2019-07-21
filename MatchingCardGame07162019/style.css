@@ -1,0 +1,63 @@
+body{
+  background-image: url('https://cdn.vox-cdn.com/thumbor/0FAh3bAQYg7VNHwsb3lUmy0YRbg=/0x0:979x940/1200x800/filters:focal(407x326:563x482)/cdn.vox-cdn.com/uploads/chorus_image/image/61520777/stranger_things_season_2_poster_by_kyle_lambert.0.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  color: red;
+  text-shadow: #120d00 2px 0 16px;
+  text-align: center;
+}
+
+#cards {
+  margin: 0 auto;
+  max-width: 925px;
+}
+
+.will {
+  background-image: url('will.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lucas {
+  background-image: url('lucas.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.dustin {
+  background-image: url('dustin.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mike {
+  background-image: url('mike.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.eleven {
+  background-image: url('eleven.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  width: 19%;
+  height: 200px;
+  display: inline-grid;
+  background-size: 0;
+  border: 1px solid black;
+}
+.clicked {
+  background-size: cover;
+}
+
+.match {
+  background-size: cover;
+}
