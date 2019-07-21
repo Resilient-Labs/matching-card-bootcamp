@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+#title{
+  font-size: 140px;
+  width: 50%;
+  padding: 20px;
+}
+
+section, img{
+  background-color: lightblue;
+  width: 25%;
+  height: 200px;
+  border: 1px solid black;
+  float: left;
+}
+
+.card{
+  background-color: blue;
+  color: black;
+}
+
+.selected {
+  background-color: gray;
+  color: black;
+}
+.matched{
+  border: 10px solid black;
+}
