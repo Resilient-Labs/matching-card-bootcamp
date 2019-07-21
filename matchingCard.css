@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.gameBoard{
+  border: 1px solid black;
+  background-color: blue;
+  width: 30%;
+  margin: auto;
+}
+/* boxes style */
+.cards{
+  border: 7px solid white;
+  height: 150px;
+  background-color: red;
+  width: 50%;
+  float: left;
+  border-radius: 20px;
+}
+
+
+.smiley.selected, .smiley.match{
+  background: url(images/test.jpg);
+  background-size: 100% 100%;
+}
+
+.dog.selected, .dog.match{
+  background-image:url(images/test2.jpeg);
+  background-size: 100% 100%;
+}
+
+.poop.selected, .poop.match{
+  background: url(images/test3.jpeg)
+}
+
+.bug.selected, .bug.match{
+  background: url(images/test4.png);
+  background-size: 50% 100%;
+}
+
+.cat.selected, .cat.match{
+  background: url(images/test5.jpg)
+}
