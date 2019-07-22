@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Mountains of Christmas', cursive;
+  text-align: center;
+
+
+}
+body{
+    background-color: rgb(254,229,174, .25)
+}
+header{
+  background-color:rgb(170,218,255);
+  border: 2px solid black;
+  border-bottom: 8px solid black;
+  border-radius: 25px;
+  border-left: 8px solid black;
+  color: white;
+  font-size: 85px;
+  font-weight: 600;
+  height:130px;
+  margin-bottom: 40px;
+  padding-top: 5px;
+}
+.gameBoard{
+  background-color: blue;
+  border: 1px solid purple;
+  border-radius: 25px;
+  margin: auto;
+  overflow: auto;
+  padding: 0px 0px 40px 0px;
+  width: 95%;
+
+}
+/* boxes style */
+.cards {
+  background-color: pink;
+  border: 1px solid black;
+  float: left;
+  height: 140px;
+  margin: 40px 0 0 70px;
+  width: 12%;
+}
+
+
+.smiley.selected, .smiley.match{
+  background: white url(images/cartoon-rabbit-magic-3.png);
+  background-size: 100% 100%;
+}
+
+.dog.selected, .dog.match{
+  background-image:url(images/rabbit.jpg);
+  background-size: 100% 100%;
+}
+
+.poop.selected, .poop.match{
+  background: white url(images/creep.png);
+  background-size:cover;
+}
+
+.bug.selected, .bug.match{
+  background: white url(images/bunny.png)
+}
+
+.cat.selected, .cat.match{
+  background: url(images/test3.jpeg)
+}
+
+/*For matched Elements */
+.smiley.match{
+  border:5px solid green;
+}
+.dog.match{
+  border:5px solid green;
+}
+.poop.match{
+  border:5px solid green;
+}
+.bug.match{
+  border:5px solid green;
+}
+.cat.match{
+  border:5px solid green;
+}
