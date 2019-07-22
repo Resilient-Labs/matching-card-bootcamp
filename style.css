@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+#title{
+  width: 50%;
+}
+
+section{
+  width: 25%;
+  height: 400px;
+  border: 1px solid black;
+  float: left;
+}
+
+h1{
+  font-size: 5rem;
+  text-align: center;
+}
+
+.card{
+  background-color: teal;
+  color: teal;
+  font-size: 50px;
+  /* background-image: url(images/back.jpeg); */
+}
+
+.selected {
+  background-image: none;
+  font-size: 50px;
+  color: white;
+}
+
+.matched{
+  border: 10px solid black;
+  color: white;
+  font-size: 50px;
+}
