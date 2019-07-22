@@ -71,3 +71,30 @@ function checkCards(card1, card2){
    alert('YAAAAASSS YOU WIN!!');
   }
 }
+
+let ClassArray=['debut', 'debut', 'post', 'post', 'medulla', 'medulla', 'biophilia', 'biophilia', 'vespertine', 'vespertine']
+
+let randomclasses= function(arr){
+ let newpos,
+     temp;
+     for (let i=arr.length-1;i>0;i--){
+       newPos=Math.floor(Math.random()*(i+1));
+       console.log(newPos)
+       temp =arr[i];
+       arr[i]=arr[newPos];
+       arr[newPos]=temp;
+     }
+     return arr;
+ }
+let newArray=randomclasses(ClassArray)
+
+document.getElementsByClassName('debut')[0].className=ClassArray[0]
+document.getElementsByClassName('debut')[0].className=ClassArray[1]
+document.getElementsByClassName('post')[0].className=ClassArray[2]
+document.getElementsByClassName('post')[0].className=ClassArray[3]
+document.getElementsByClassName('medulla')[0].className=ClassArray[4]
+document.getElementsByClassName('medulla')[0].className=ClassArray[5]
+document.getElementsByClassName('biophilia')[0].className=ClassArray[6]
+document.getElementsByClassName('biophilia')[0].className=ClassArray[7]
+document.getElementsByClassName('vespertine')[0].className=ClassArray[8]
+document.getElementsByClassName('vespertine')[0].className=ClassArray[9]
