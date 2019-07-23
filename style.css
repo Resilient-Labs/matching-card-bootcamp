@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background-image: url("https://media.giphy.com/media/l0K4lUxBzIOeJd1EA/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: monospace;
+  color: cornflowerblue;
+}
+
+img{
+  height: 170px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  height: 560px;
+
+}
+.gridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 5px solid white;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+  height: 170px;
+  /* width: 100%; */
+}
+
+.youCantClick{
+  height: 250px;
+}
+
+source{
+
+  border-radius: 50px;
+}
+
+
+.selected {
+  border: 5px solid pink;
+  font-size: 13px;
+}
+
+.hide{
+display: none;
+}
+
+#reset{
+  font-size: 3rem;
+  background-color: black;
+  color: azure;
+  border-radius: 13%;
+}
