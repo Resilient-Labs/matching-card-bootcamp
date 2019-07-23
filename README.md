@@ -4,7 +4,7 @@
 
 The goal of the project is to make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
 
-<img src=".png?raw=true" alt="screenshot of Fun with Fido webpage" height="200px">
+<img src="/matchingcardscreenshot.png?raw=true" alt="screenshot of matching card game" height="200px">
 
 ## How It's Made:
 
