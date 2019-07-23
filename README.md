@@ -7,4 +7,4 @@ Last week our group struggled a bit with this project. We worked w/ a mentor nam
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** HTML, CSS, JavaScript
