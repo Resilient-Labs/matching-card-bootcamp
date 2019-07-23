@@ -1,10 +1,9 @@
 // Array of Cards
-let pokemonz = ['charizard.jpg','charizard.jpg','dragonite.jpg','dragonite.jpg','mewtwo.jpg','mewtwo.jpg','pikachu.jpg','pikachu.jpg','snorlax.jpg','snorlax.jpg']
+let pokemonz = ['images/charizard.jpg','images/charizard.jpg','images/dragonite.jpg','images/dragonite.jpg','images/mewtwo.jpg','images/mewtwo.jpg','images/pikachu.jpg','images/pikachu.jpg','images/snorlax.jpg','images/snorlax.jpg']
 // knuthShuffle(imgArray)
 // console.log(imgArray)
-
+console.log(pokemonz)
 //Array of Cards
-let cards = ["charizard","charizard","dragonite","dragonite","mewtwo","mewtwo","pikachu","pikachu","snorlax","snorlax"]
 
 // URLsking.jpg
 //Fisher–Yates Shuffle OR knuth shuffle (same)
@@ -13,35 +12,20 @@ knuthShuffle(pokemonz)
 // IIFE(immediately invoked function expression)
 console.log(pokemonz)
 
-let deck = document.querySelectorAll('.card')
-console.log(deck)
-deck.forEach((element, i) => {
-  element.onclick = function(){
-  //"guard - shortcircuits"
-  if (element.classList.contains("selected")) return
-  //guardEnds
-  element.innerHTML = pokemonz[i]
-  count += 1
-  console.log(count)
-  element.classList.add("selected")
-  check()
-
-}
-})
-
 // count
 let count = 0
 
 // ONCE COUNT IS EVEN
-function check(){
+function checkCountFirst(){
   if (count%2 === 0){
   checkMatch()
   }
 }
 
+
 function checkMatch(){
   let selected = document.querySelectorAll(".selected")
-  if (selected[0].textContent === selected[1].textContent){
+  if (selected[0].src === selected[1].src){
     selected.forEach((element) => {
       element.classList.add("matched")
       element.onclick = null
@@ -49,11 +33,10 @@ function checkMatch(){
     removeClassSelected(selected)
   } else {
     setTimeout(() =>{
-      removeClassSelected(selected)
       selected.forEach((element) => {
-        element.innerHTML = innerHTML(back.jpeg)
-        console.log(innerHTML(back.jpeg))
+        element.src = "images/back.jpeg"
       })
+      removeClassSelected(selected)
     }, 1000)
   }
 }
@@ -64,20 +47,19 @@ function removeClassSelected(elements){
   })
 }
 
-// deck.onclick = "hello"
 
-// function(){
-//
-//
-//   for (let i = 0; i < deck.length; ++i){
-//     deck[i].classList.add("selected")
-//   }
-//
-// }
+let deck = document.querySelectorAll('.card')
+console.log(deck)
+deck.forEach((element, i) => {
+  element.onclick = function(){
+    //"guard - shortcircuits"
+    if (element.classList.contains("selected")) return
+    //guardEnds
+    element.src = pokemonz[i]
+    count += 1
+    console.log(count)
+    element.classList.add("selected")
+    checkCountFirst()
 
-
-// var list;
-// list = document.querySelectorAll("li.even, li.odd");
-// for (var i = 0; i < list.length; ++i) {
-//     list[i].classList.add('cf');
-// }
+  }
+})

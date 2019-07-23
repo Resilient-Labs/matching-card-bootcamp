@@ -1,20 +1,26 @@
 *{
   box-sizing: border-box;
 }
-#title{
-  width: 50%;
+
+html{
+  font-family: 'Arvo', serif;
+  background-image: url('images/background.jpg')
 }
 
-section{
-  width: 25%;
-  height: 400px;
+img {
+  width: 20%;
+  height: 800px;
   border: 1px solid black;
   float: left;
 }
 
 h1{
-  font-size: 5rem;
+  font-size: 13rem;
   text-align: center;
+  width: 100%;
+  color: gold;
+  margin: 2px 0 600px 0;
+  text-shadow: 100%;
 }
 
 .card{
@@ -31,7 +37,8 @@ h1{
 }
 
 .matched{
-  border: 10px solid black;
+  border: 30px solid green;
   color: white;
   font-size: 50px;
+  border-radius: 10%;
 }
