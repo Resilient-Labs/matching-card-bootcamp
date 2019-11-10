@@ -1,0 +1,75 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Caveat', cursive;
+  font-size: 10px;
+  background-color: #F4F4F8;
+}
+h1 {
+  color: teal;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.container {
+  margin: 0 auto 0 auto;
+  height: 500px;
+  width: 60%;
+}
+
+.card {
+  height: 50%;
+  width: 18%;
+  overflow: 0;
+  float: left;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 5%;
+  margin: 0 0 1% 1%;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  background: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  z-index: -1;
+}
+
+.flip {
+  animation-name: flip;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flip {
+  100% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+}
+button {
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+  display: block;
+  margin: auto auto;
+  background: none;
+  color: teal;
+  cursor: pointer;
+  border-color: teal;
+  border-width: medium;
+  border-radius: 10%;
+  margin-top: 2%;
+
+}
