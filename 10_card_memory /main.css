@@ -1,0 +1,29 @@
+table{
+  /* border: 2px solid black; */
+  /* border-collapse: collapse; */
+  /* margin: 2% 0% 1% 32.5%; */
+  margin-left: 33%;
+}
+section{
+  text-align: center;
+}
+th{
+  border: 2px solid black;
+  height: 130px;
+  width: 130px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+
+}
+table, th:hover{
+  transform: translateY(-5px);
+}
+body{
+  background-color: #75a7d14d;
+}
+#boxTen{
+  position: relative;
+    left: 34%;
+}
