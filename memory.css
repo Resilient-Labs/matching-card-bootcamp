@@ -1,0 +1,45 @@
+body {
+  background-image: url('https://media.giphy.com/media/xTiTnpcaFPfJAzaP8A/giphy.gif');
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+  }
+
+  h1 {
+    text-align: center;
+    font-style: italic;
+    color: #373fff;
+    text-shadow: 2px 2px #ff0000;
+    font-size: 57px;
+  }
+
+  .box{
+      /* border: 1px solid pink; */
+      width: 200px;
+      height: 200px;
+      font-size: 40px;
+      font-weight: bold;
+      border: 4px solid #373fff;
+      float: left;
+      background-size: 100% 100%;
+  }
+
+  .rowOne{
+      float: left;
+      margin-left: 14%;
+  }
+
+  .rowTwo{
+      float: left;
+      margin-left: 14%;
+  }
+
+  span{
+      font-size: 12px;
+  }
+
+  img{
+      width: 60%;
+      height: 100px;
+  }
