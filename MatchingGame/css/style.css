@@ -1,0 +1,21 @@
+/* * {
+  box-sizing: border-box;
+} */
+table{
+  margin: 1% 1% 1% 32.5%;
+  /* border: 1px solid black; */
+}
+
+th{
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+}
