@@ -1,0 +1,44 @@
+h1 , h2 {
+  margin-top: 3%;
+  text-align: center;
+}
+.gameBoard {
+  margin: 0 auto 0 auto;
+  height: 500px;
+  width: 60%;
+}
+
+button {
+  display: block;
+  margin: auto auto;
+  font-size: 22px;
+  background: mediumturquoise;
+  cursor: pointer;
+  border-radius: 8%;
+}
+
+.card {
+  height: 50%;
+  width: 18%;
+  float: left;
+  cursor: pointer;
+  border-radius: 5%;
+  margin: 0 0 1% 1%;
+  position: relative;
+}
+
+.back {
+  background:  mediumturquoise;
+  height: 80%;
+  width: 100%;
+  border-radius: 5%;
+  position: absolute;
+}
+
+.front {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  border-radius: 5%;
+  z-index: -1;
+}
