@@ -1,0 +1,38 @@
+/* .lw { font-size: 60px; } */
+tr{
+  width: 100%;
+}
+th{
+  border: 2px solid black;
+  height: 100px;
+  width: 25%;
+}
+table{
+  width: 100%;
+}
+
+img{
+  /* border: 1px solid black; */
+  height: auto;
+  width: 100%;
+}
+
+.basketball {
+   background-image: url('');
+
+}
+
+.soccerBall {
+}
+
+.baseball {
+}
+
+.football {
+}
+.tennisball{
+
+}
+.golfball{
+
+}
