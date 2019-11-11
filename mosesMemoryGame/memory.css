@@ -1,0 +1,42 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    color: black;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: #373fff;
+  }
+  
+  .box{
+      /* border: 1px solid pink; */
+      width: 150px;
+      height: 100px;
+      font-size: 40px;
+      font-weight: bold;
+      border: 2px solid black;
+      float: left;
+      background-size: 100% 100%;
+  }
+  .rowOne{
+      float: left;
+  }
+  .rowTwo{
+      float: left;
+  }
+  span{
+      font-size: 12px;
+  }
+  .change{
+    color:red;
+  }
+  .start{
+      color: white;
+  }
+  img{
+      width: 60%;
+      height: 100px;
+  }
