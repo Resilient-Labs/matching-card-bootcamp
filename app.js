@@ -1,53 +1,73 @@
-const cards = document.querySelectorAll('.card')
-const reset = document.querySelector('button')
-let counter = 0;
+let cards = document.querySelectorAll('.card')
+let front = document.querySelectorAll('.front')
+let colors = {
+  darkred: 0,
+  darkblue: 0,
+  lightgreen: 0,
+  purple: 0,
+  orange: 0
+}
+let clicks = 0;
 let firstClick;
 let secondClick;
-let matched = []
+let reset = document.querySelector('button')
+let match = []
+
+
+function randomize() {
+  const colorsCopy = Object.assign({}, colors)
+  for (let i = 0; i < cards.length; i++) {
+    let randomColor = Object.keys(colorsCopy)[Math.floor(Math.random() * Object.keys(colorsCopy).length)]
+    front[i].style.background = randomColor
+    colorsCopy[randomColor]++
+    if (colorsCopy[randomColor] == 2) {
+      delete colorsCopy[randomColor]
+    }
+  }
+}
+randomize()
 
 
 for (let i = 0; i < cards.length; i++) {
-  cards[i].addEventListener('click', function() {
-    if (!(matched.includes(i))) {
-      counter++
-      if (counter === 1) {
-        firstClick = i
-        cards[firstClick].style.background = 'silver'
-        cards[firstClick].classList.add('flip')
-      } else if (counter === 2) {
-        secondClick = i
-        if (firstClick === secondClick + 5 || firstClick === secondClick - 5) {
-          cards[secondClick].classList.add('flip')
-          cards[firstClick].style.background = 'gold'
-          cards[secondClick].style.background = 'gold'
-          matched.push(firstClick, secondClick)
-        } else {
-          cards[firstClick].classList.remove('flip')
+  cards[i].addEventListener('click', () => {
+    if (!(match.includes(front[i].style.background)) && front[i] !== firstClick) {
+      clicks++
+      if (clicks === 1) {
+        firstClick = front[i]
+        cards[i].classList.add('flip')
+        front[i].style.zIndex = 1
+        clicks++
+        setTimeout(function() {
           cards[i].classList.remove('flip')
-          cards[firstClick].style.background = 'black'
+        }, 500)
+      } else if (clicks === 3) {
+        secondClick = front[i]
+        cards[i].classList.add('flip')
+        front[i].style.zIndex = 1
+        if (firstClick.style.background != secondClick.style.background) {
+          setTimeout(function() {
+            firstClick.style.zIndex = -1
+            cards[i].classList.remove('flip')
+            secondClick.style.zIndex = -1
+            firstClick = ''
+          }, 500);
+        } else {
+          match.push(firstClick.style.background)
         }
-        counter = 0;
+        clicks = 0;
       }
     }
   })
 }
 
-reset.addEventListener('click', function(){
+reset.addEventListener('click', () => {
+  match = [];
+  clicks = 0;
+  firstClick;
+  secondClick;
   for (let i = 0; i < cards.length; i++) {
-    cards[i].style.background = 'black'
-    matched = [];
-    let firstClick;
-    let secondClick
-    counter = 0;
     cards[i].classList.remove('flip')
-    cards[i].classList.remove('flip')
+    front[i].style.zIndex = -1
   }
+  randomize()
 })
-
-
-
-// 10 cards, 2x5
-// click: flip (2 clicks)
-// match: stay flipped
-// not match: flip back
-// game ends when all match
