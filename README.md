@@ -1,8 +1,7 @@
-# 📊 Project: Simple API 2 (COMEDY API)
 
 ### Goal: Display data returned from an api
 
-![alt tag](wuS.png)
+![alt tag](memgame.png)
 
 
 TOOLS used: HTML, CSS, JAVASCRIPT
