@@ -2,7 +2,7 @@
 
 ### Goal: Display data returned from an api
 
-![alt tag](wuSS.png)
+![alt tag](wuS.png)
 
 
 TOOLS used: HTML, CSS, JAVASCRIPT
