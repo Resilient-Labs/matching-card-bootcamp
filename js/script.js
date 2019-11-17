@@ -1,13 +1,12 @@
-// Grab all of the sections that match with the Memory Cards.
-const userChoice = document.querySelectorAll(".userChoice");
+const playerPick = document.querySelectorAll(".playerPick");
 
 let images = ['img/chief.jpeg', 'img/leon.png', 'img/giraffe.jpeg', 'img/download.jpeg', 'img/phone.jpeg', 'img/soccerball.png'];
-let firstCard = "", secondCard = "";
+let firstCard = ""
+let secondCard = "";
 let targetArray = images.concat(images);
-
 shuffle(targetArray);
 
-const cardMap = {
+const cardLayOut = {
   "topOne": targetArray[0],
   "topTwo": targetArray[1],
   "topThree": targetArray[2],
@@ -22,11 +21,11 @@ const cardMap = {
   "botFour": targetArray[11]
 }
 console.log(targetArray);
-userChoice.forEach(el => {
+playerPick.forEach(el => {
   el.addEventListener('click', event => {
     console.log(el);
     if(el.classList.contains("flip"))return;
-    event.target.querySelector('img').src=cardMap[event.target.id];
+    event.target.querySelector('img').src=cardLayOut[event.target.id];
     if(firstCard === "") {
       firstCard = event.target.id;
       el.classList.add("flip");
@@ -38,7 +37,7 @@ userChoice.forEach(el => {
   });
 });
 function matched () {
-  if(cardMap[firstCard] === cardMap[secondCard]) {
+  if(cardLayOut[firstCard] === cardLayOut[secondCard]) {
     console.log("win");
   } else {
     const cardOne = document.querySelector(`#${firstCard}`);
@@ -54,12 +53,9 @@ function matched () {
 }
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
-  // While there remain elements to shuffle...
   while (0 !== currentIndex) {
-    // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
-    // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
