@@ -10,7 +10,7 @@ Take a trip down memory lane with this memory matching card game inspired by Kan
 ![alt tag](https://github.com/anthonybetances/matching-card-bootcamp/blob/answer/Screen%20Shot%202019-11-17%20at%207.38.47%20AM.png)
 
 ## How It's Made:
-**Tech used:** HTML, CSS, JavaScript.
+**Tech used:** HTML, CSS, JavaScript.  Cards reshuffle upon refreshing the page, so each game is different.
 
 ## How To Use:
   1. Click on the link above.
