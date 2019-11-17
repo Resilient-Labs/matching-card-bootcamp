@@ -10,85 +10,70 @@ h1 {
   text-align: center;
   margin-bottom: 5%;
 }
-#gameBoard {
+#mainSec {
   display: grid;
   height: 400px;
-  width: 500px;
+  width: 40%;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 33.3333% 33.3333% 33.3333%;
   margin-left: 30%;
   background-color: yellow;
 }
-
-.userChoice {
-  border: 1px solid #000000;
+.playerPick {
+  border: 1px solid black;
 }
-
-.userChoice img {
+.playerPick img {
   width: 100%;
   height: 100%;
 }
-
 #topOne {
   grid-column: 1;
   grid-row: 1;
 }
-
 #topTwo {
   grid-column: 2;
   grid-row: 1;
 }
-
 #topThree {
   grid-column: 3;
   grid-row: 1;
 }
-
 #topFour {
   grid-column: 4;
   grid-row: 1;
 }
-
 #midOne {
   grid-column: 1;
   grid-row: 2;
 }
-
 #midTwo {
   grid-column: 2;
   grid-row: 2;
 }
-
 #midThree {
   grid-column: 3;
   grid-row: 2;
 }
-
 #midFour {
   grid-column: 4;
   grid-row: 2;
 }
-
 #botOne {
   grid-column: 1;
   grid-row: 3;
 }
-
 #botTwo {
   grid-column: 2;
   grid-row: 3;
 }
-
 #botThree {
   grid-column: 3;
   grid-row: 3;
 }
-
 #botFour {
   grid-column: 4;
   grid-row: 3;
 }
-
 table{
   width: 100%;
 }
