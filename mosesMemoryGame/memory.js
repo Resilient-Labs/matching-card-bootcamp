@@ -1,11 +1,11 @@
     //array of possible matches
-    let imgs =["img/hardenmem.jpg", "img/lebronmem.jpg", "img/durantmem.jpg", "img/lillardmem.jpg","img/memkobe.jpg"]
+    let imgs =["img/vmaye.jpg", "img/swayye.jpg", "img/creamye.jpg", "img/bushye.png", "img/fashionye.jpg"]
     imgs = imgs.concat(imgs);
     shuffle(imgs);
     const boxes = document.querySelectorAll('.box')
     let img = document.querySelector("img")
 
-  
+
     let clicks = 0;
     let array = [];
     let first,
@@ -29,7 +29,7 @@
             case "box4":
                 imageForBox = imgs[3]
                 break;
-            case "box5": 
+            case "box5":
                 imageForBox = imgs[4]
                 break;
             case "box6":
@@ -65,7 +65,7 @@ function checkWin(){
      for (let i = 0; i<array.length; i++){
      array[i].style.backgroundImage = "";
      array[i].style.backgroundImage = "";
-    
+
      }
      array = []
      clicks = 0;
@@ -81,6 +81,3 @@ function checkWin(){
         }
         return a;
     }
-
-   
-       

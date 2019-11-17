@@ -1,22 +1,23 @@
-/* CSS files add styling rules to your content */
+*{
+  font-family: 'Lalezar', cursive;
+}
 
 body {
-    font-family: helvetica, arial, sans-serif;
     margin: 2em;
-    color: black;
+    background-color: rgb(171, 32, 43)
   }
-  
+
   h1 {
     font-style: italic;
-    color: #373fff;
+    color: rgb(21, 126, 118);
+    font-size: 3em;
   }
-  
+
   .box{
-      /* border: 1px solid pink; */
-      width: 150px;
-      height: 100px;
+      width: 6em;
+      height: 4.3em;
       font-size: 40px;
-      font-weight: bold;
+      /* font-weight: bold; */
       border: 2px solid black;
       float: left;
       background-size: 100% 100%;
@@ -27,16 +28,16 @@ body {
   .rowTwo{
       float: left;
   }
-  span{
+  /* span{
       font-size: 12px;
-  }
-  .change{
+  } */
+  /* .change{
     color:red;
   }
   .start{
       color: white;
-  }
-  img{
-      width: 60%;
+  } */
+  /* img{
+      width: 100%;
       height: 100px;
-  }
+  } */
