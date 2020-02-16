@@ -4,13 +4,13 @@
 // })
 
 //Array of Cards
-let cards = ['images.png','images.png','images.jpeg','images.jpeg','images-4.png','images-4.png','images-3.png','images-3.png','images-2.png','images-2.png ']
+let cards = ['images/images.png','images/images.png','images/images.jpeg','images/images.jpeg','images/images-4.png','images/images-4.png','images/images-3.png','images/images-3.png','images/images-2.png','images/images-2.png', 'images/ein.jpg', 'images/ein.jpg']
 // URLsking.jpg
 //Fisher–Yates Shuffle OR  knuth shuffle (same)
 // https://www.npmjs.com/package/knuth-shuffle
-knuthShuffle(cards)
+knuthShuffle(cards, 12)
 // IIFE(immediately invoked function expression)
-console.log(cards)
+console.log( check.toString(), "shuffle")
 
 // count
 let count = 0
@@ -24,7 +24,7 @@ function check(){
 
 function checkMatch(){
   let selected = document.querySelectorAll(".selected")
-  if (selected[0].innerText === selected[1].innerText){
+  if (selected[0].src === selected[1].src){
     selected.forEach((element) => {
       element.classList.add("matched")
       element.onclick = null
@@ -34,7 +34,7 @@ function checkMatch(){
     setTimeout(() =>{
       removeClassSelected(selected)
       selected.forEach((element) => {
-        element.innerText = "back"
+        element.src = "images/back.png"
       })
     }, 1000)
   }
@@ -54,9 +54,10 @@ console.log(deck)
 deck.forEach((element, i) => {
   element.onclick = function(){
     //"guard - shortcircuits"
+    console.log(!element.classList.contains("selected"), "3d")
     if (element.classList.contains("selected")) return
     //guardEnds
-    element.innerText = cards[i]
+    element.src = cards[i]
     count += 1
     console.log(count)
     element.classList.add("selected")
