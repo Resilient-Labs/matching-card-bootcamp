@@ -11,6 +11,8 @@ const card = {
   back: "url('images/block.png') center /100%",
   front: "url('images/mario.jpg') center /100%"
 };
+
+// Tried to insert url strings to replace the color strings, but JS doesn't allow this to function the way the colors do in the conditional statements.
 // const item = {
 //   feather: "url('images/feather.png')no-repeat center /80%",
 //   boo: "url('images/boo.png') no-repeat center /80%",
