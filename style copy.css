@@ -1,0 +1,20 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: orange;
+}
+h1{
+
+  color: red;
+  font-size: 30px;
+}
+section{
+  border: 2px solid black;
+  height: 350px;
+  width: 20%;
+  float: left;
+  background-color: grey;
+  position: relative;
+  top: 150px;
+}
