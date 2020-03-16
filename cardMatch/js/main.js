@@ -11,15 +11,13 @@ const card = {
   back: "url('images/block.png') center /100%",
   front: "url('images/mario.jpg') center /100%"
 };
-
-// Tried to insert url strings to replace the color strings, but JS doesn't allow this to function the way the colors do in the conditional statements.
-// const item = {
-//   feather: "url('images/feather.png')no-repeat center /80%",
-//   boo: "url('images/boo.png') no-repeat center /80%",
-//   flower: "url('images/fireFlower.png') no-repeat center /80%",
-//   egg: "url('images/yoshi.jpg') no-repeat center /80%",
-//   mush: "url('images/mushroom.jpg') no-repeat center /80%"
-// };
+const item = {
+  feather: "url('images/feather.png')no-repeat center /75%",
+  boo: "url('images/boo.png') no-repeat center /80%",
+  flower: "url('images/fireFlower.png') no-repeat center /80%",
+  egg: "url('images/yoshi.jpg') no-repeat center /100%",
+  mush: "url('images/mushroom.png') no-repeat center /80%"
+};
 
 //Functions that return cards to 'item blocks' if they do not match and change background color of td card pairs on-click.
 const flipCard = (pairs, img) => {
@@ -38,11 +36,11 @@ const revealPowerUp = (pairs, item) => {
      });
    };
 
-revealPowerUp(pair1, "red");
-revealPowerUp(pair2, "blue");
-revealPowerUp(pair3, "yellow");
-revealPowerUp(pair4, "green");
-revealPowerUp(pair5, "purple");
+revealPowerUp(pair1, item.feather);
+revealPowerUp(pair2, item.boo);
+revealPowerUp(pair3, item.flower);
+revealPowerUp(pair4, item.egg);
+revealPowerUp(pair5, item.mush);
 
 //Function that checks if the cards do not match.
 const cardsDontMatch = () => {
@@ -64,64 +62,64 @@ const cardsDontMatch = () => {
   const firstCard = document.getElementById(cardPairs[0]).style.background;
   const secondCard = document.getElementById(cardPairs[1]).style.background;
 
-    if(firstCard === "red" && secondCard === "blue"){
+    if(firstCard.includes('feather') && secondCard.includes('boo')){
      flipCard(pair1, card.back);
      flipCard(pair2, card.back);
-  }else if(firstCard === "red" && secondCard === "yellow"){
+  }else if(firstCard.includes('feather') && secondCard.includes('fire')){
     flipCard(pair1, card.back);
     flipCard(pair3, card.back);
-  }else if(firstCard === "red" && secondCard === "green"){
+  }else if(firstCard.includes('feather') && secondCard.includes('yoshi')){
     flipCard(pair1, card.back);
     flipCard(pair4, card.back);
-  }else if(firstCard === "red" && secondCard === "green"){
+  }else if(firstCard.includes('feather') && secondCard.includes('mushroom')){
     flipCard(pair1, card.back);
     flipCard(pair5, card.back);
-  }else if (firstCard === "blue" && secondCard === "red"){
+  }else if (firstCard.includes('boo') && secondCard.includes('feather')){
     flipCard(pair2, card.back);
     flipCard(pair1, card.back);
-  }else if(firstCard === "blue" && secondCard === "yellow"){
+  }else if(firstCard.includes('boo') && secondCard.includes('fire')){
     flipCard(pair2, card.back);
     flipCard(pair3, card.back);
-  }else if(firstCard === "blue" && secondCard === "green"){
+  }else if(firstCard.includes('boo') && secondCard.includes('yoshi')){
     flipCard(pair2, card.back);
     flipCard(pair4, card.back);
-  }else if(firstCard === "blue" && secondCard === "green"){
+  }else if(firstCard.includes('boo') && secondCard.includes('mushroom')){
     flipCard(pair2, card.back);
     flipCard(pair5, card.back);
-  }else if (firstCard === "yellow" && secondCard === "red"){
+  }else if (firstCard.includes('fire') && secondCard.includes('feather')){
     flipCard(pair3, card.back);
     flipCard(pair1, card.back);
-  }else if(firstCard === "yellow" && secondCard === "blue"){
+  }else if(firstCard.includes('fire') && secondCard.includes('boo')){
     flipCard(pair3, card.back);
     flipCard(pair2, card.back);
-  }else if(firstCard === "yellow" && secondCard === "green"){
+  }else if(firstCard.includes('fire') && secondCard.includes('yoshi')){
     flipCard(pair3, card.back);
     flipCard(pair4, card.back);
-  }else if(firstCard === "yellow" && secondCard === "green"){
+  }else if(firstCard.includes('fire') && secondCard.includes('mushroom')){
     flipCard(pair3, card.back);
     flipCard(pair5, card.back);
-  }else if (firstCard === "green" && secondCard === "red"){
+  }else if(firstCard.includes('yoshi') && secondCard.includes('feather')){
     flipCard(pair4, card.back);
     flipCard(pair1, card.back);
-  }else if(firstCard === "green" && secondCard === "blue"){
+  }else if(firstCard.includes('yoshi') && secondCard.includes('boo')){
     flipCard(pair4, card.back);
     flipCard(pair2, card.back);
-  }else if(firstCard === "green" && secondCard === "yellow"){
+  }else if(firstCard.includes('yoshi') && secondCard.includes('fire')){
     flipCard(pair4, card.back);
     flipCard(pair3, card.back);
-  }else if(firstCard === "green" && secondCard === "green"){
+  }else if(firstCard.includes('yoshi') && secondCard.includes('mushroom')){
     flipCard(pair4, card.back);
     flipCard(pair5, card.back);
-  }else if (firstCard === "purple" && secondCard === "red"){
+  }else if (firstCard.includes('mushroom') && secondCard.includes('feather')){
     flipCard(pair5, card.back);
     flipCard(pair1, card.back);
-  }else if(firstCard === "purple" && secondCard === "blue"){
+  }else if(firstCard.includes('mushroom') && secondCard.includes('boo')){
     flipCard(pair5, card.back);
     flipCard(pair2, card.back);
-  }else if(firstCard === "purple" && secondCard === "yellow"){
+  }else if(firstCard.includes('mushroom') && secondCard.includes('fire')){
     flipCard(pair5, card.back);
     flipCard(pair3, card.back);
-  }else if(firstCard === "purple" && secondCard === "green"){
+  }else if(firstCard.includes('mushroom') && secondCard.includes('yoshi')){
     flipCard(pair5, card.back);
     flipCard(pair4, card.back);
     };
@@ -138,15 +136,15 @@ const cardsMatch = () => {
   const firstCard = document.getElementById(cardPairs[0]).style.background;
   const secondCard = document.getElementById(cardPairs[1]).style.background;
 
-  if (firstCard === "red" && secondCard === "red"){
+  if (firstCard.includes('feather') && secondCard.includes('feather')){
     flipCard(pair1, card.front);
-  }else if(firstCard === "blue" && secondCard === "blue"){
+  }else if(firstCard.includes('boo') && secondCard.includes('boo')){
     flipCard(pair2, card.front);
-  }else if( firstCard === "green" && secondCard === "green"){
-    flipCard(pair4, card.front);
-  }else if( firstCard === "yellow" && secondCard === "yellow"){
+  }else if( firstCard.includes('fire') && secondCard.includes('fire')){
     flipCard(pair3, card.front);
-  }else if( firstCard === "purple" && secondCard === "purple"){
+  }else if( firstCard.includes('yoshi') && secondCard.includes('yoshi')){
+    flipCard(pair4, card.front);
+  }else if( firstCard.includes('mushroom') && secondCard.includes('mushroom')){
     flipCard(pair5, card.front);
     };
   };
