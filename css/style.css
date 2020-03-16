@@ -1,0 +1,64 @@
+* {
+     box-sizing: border-box; 
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+ html{
+   font-size: 10px;
+   font-family: 'Bellota', cursive;
+ }
+
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     background-color: navy;
+}
+
+
+
+h1{
+  color:red;
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+
+.grid{
+  height: 175px;
+  width: 20%;
+  float:left;
+  background-image: url(/images/backCard.jpeg);
+  background-size: cover;
+  box-shadow: 10px 10px rgb(2, 2, 70) ;
+  margin: 10px 2.5% 10px 2.5%;
+
+}
+.matched{
+  background-image:url(https://media.giphy.com/media/vsyKKf1t22nmw/giphy.gif);
+}
+#gameSection{
+  height: 500px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media only screen and (min-width: 980px){
+
+  .grid{
+    width: 10%;
+    margin: 5px 6% 5px 6%;
+  
+  }
+
+
+
+}
