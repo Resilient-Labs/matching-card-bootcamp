@@ -1,0 +1,54 @@
+body {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+h1{
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-size: 5vw;
+  line-height: 1.1;
+  color: red;
+}
+
+table{
+  width: 100%;
+}
+
+tr{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  margin-top: .8rem;
+}
+
+td{
+  height: 8rem;
+  width: 9rem;
+  background-image: url('images/lv.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 34px;
+  border: 7px solid red;
+  cursor: pointer;
+}
+
+img{
+  width: 8rem;
+  border: 3.5px solid red;
+  border-radius: 50%;
+      border-style: dashed;
+}
+
+button{
+  float: right;
+  margin-right: -1rem;
+  border: none;
+  font-size: 20px;
+  color:red;
+
+  cursor: pointer;
+  outline: none;
+  background-color: black;
+}
