@@ -8,6 +8,6 @@
 ## Tech used:CSS, Javascript,html
 
 
-#Optimizations
+# Optimizations
 
-###When a card is clicked on it displays a color. Click on a another card to match the color. If color is matched then card will stay displayed with an image.
+### When a card is clicked on it displays a color. Click on a another card to match the color. If color is matched then card will stay displayed with an image.
