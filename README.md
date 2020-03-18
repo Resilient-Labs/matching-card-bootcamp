@@ -11,3 +11,7 @@ I feel good about my code: 4
 
 
 ## Tech used:CSS, Javascript,html
+
+
+#Optimizations
+###When a card is clicked on it displays a color. Click on a another card to match the color. If color is matched then card will stay displayed with an image.
