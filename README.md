@@ -1,5 +1,5 @@
 # Card Match Game
-#### Project Scope: Create a card match game with 5 pairs. If a player selects a matching pair, the cards remain selected. If a a pair does not match, return the cards to their original state. When a player selects all matching pairs, they win! 
+#### Project Scope: Create a card match game with 5 pairs. If a player selects a matching pair, the cards remain selected. If a a pair does not match, return the cards to their original state. When a player selects all matching pairs, they win! Click Mario in the bottom right to reset the game.
 #### View here: https://svdev-cardmatch.netlify.com
 ![](cardMatch/cardMatch.png)
 
