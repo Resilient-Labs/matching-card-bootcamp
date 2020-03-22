@@ -5,7 +5,7 @@
 # To-Do-List
 Project scope: The objective was to make a simple To Do List that add items to a list, crosses out completed task, clears completed tasks, keeps count of items left to complete, and clear whole list
 
-![ screenshot of application](https://github.com/asiahbennettdev/To-Do-List/blob/master/images/githubimageTODO.png)
+![ screenshot of application](https://github.com/asiahbennettdev/matching-card-bootcamp/blob/answer/images/crystal.png)
 
 
 # Link
