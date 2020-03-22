@@ -1,22 +1,14 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Card Match Game
+#### Project Scope: Create a card match game with 5 pairs. If a player selects a matching pair, the cards remain selected. If a a pair does not match, return the cards to their original state. When a player selects all matching pairs, they win! Click Mario in the bottom right to reset the game.
+#### View here: https://svdev-cardmatch.netlify.com
+![](cardMatch/cardMatch.png)
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+# How it was made:
+#### HTML5, CSS3, Javascript E6
 
-### How to submit your code for review:
+# Optimizations:
+#### When the player selects a matching pair, instead of keeping the cards selected, reveal another card that demonstrates the card is a successful match.    
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+# Lesson Learned: 
+#### I really enjoyed this project! The includes method provided an unexpected work around in my code. I ran into an issue with my code in which the string containing a background image url couldn't be read by JS in a conditional statement. I discovered that the includes method allows you to target strings in variables by enclosing the parameters with characters that are unique to the string that you wish to target. 
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
