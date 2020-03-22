@@ -18,9 +18,3 @@ Optimizations would include the user ability to select two cards and check if th
 * how to work with node
 * how to create images in javascript 
 * how to work with multiple javascript files
-
-
-I completed the challenge: 5
-I feel good about my code: 4
-I was not sure why index arrays had to be [0],[1]
-
