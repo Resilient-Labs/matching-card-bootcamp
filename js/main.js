@@ -1,4 +1,4 @@
-//Pseudo Code
+//Pseudo Code Created by: Team Moses
 //User Clicks on 1st card=> diplayed
     /*click the box
     //on the click, display value (or number (which will be image later)) of the box
