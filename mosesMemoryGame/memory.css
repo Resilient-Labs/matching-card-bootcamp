@@ -1,0 +1,43 @@
+*{
+  font-family: 'Lalezar', cursive;
+}
+
+body {
+    margin: 2em;
+    background-color: rgb(171, 32, 43)
+  }
+
+  h1 {
+    font-style: italic;
+    color: rgb(21, 126, 118);
+    font-size: 3em;
+  }
+
+  .box{
+      width: 6em;
+      height: 4.3em;
+      font-size: 40px;
+      /* font-weight: bold; */
+      border: 2px solid black;
+      float: left;
+      background-size: 100% 100%;
+  }
+  .rowOne{
+      float: left;
+  }
+  .rowTwo{
+      float: left;
+  }
+  /* span{
+      font-size: 12px;
+  } */
+  /* .change{
+    color:red;
+  }
+  .start{
+      color: white;
+  } */
+  /* img{
+      width: 100%;
+      height: 100px;
+  } */
