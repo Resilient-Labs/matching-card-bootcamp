@@ -15,10 +15,7 @@ header{
 h1 {
   font-size: 1.4rem;
 }
-h2{
-  font-size: 1.4rem;
 
-}
 .grid-container {
     display: grid;
     width: 44%;
