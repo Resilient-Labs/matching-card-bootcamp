@@ -1,22 +1,19 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+<h1> Project: Matching Card Game </h1>
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+   ![Alt Text](https://raw.githubusercontent.com/JohnbelMDev/matching-card-bootcamp/answer/matchinggard.png)
 
-### How to submit your code for review:
+<span><b>Project Scope</b> Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over.</span>
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<h2> Tech Used </h2>
+   <ul>
+      <li>HTML5</li>
+      <li>CSS</li>
+      <li>JAVASCRIPT ES6</li>
+   </ul>
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+<h2> Optimizations </h2>
+    <p> When the player select the correct match the cell of the matching cards empty out the cells. </p>
+
+
+<h2> Lesson Learned </h2>
+   <p> This game I enjoyed doing because I was able to run to a lot of different issues and fix the erros. At the start I ran into the issue of using the push method to push my images into the cells but that they not work well because there were no ways to condintion to check the next cells so instead of doing push. Create two while loops that would check the cells and insert the empty cells</p> 
