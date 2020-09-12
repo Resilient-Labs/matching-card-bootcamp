@@ -1,9 +1,24 @@
+*{
+  margin: 0;
+}
+
 body {
     height: 100vh;
     display: flex;
     background: pink;
 }
+header{
+  margin-top: 22%;
+  color: black;
+  width: 12%;
+}
+h1 {
+  font-size: 1.4rem;
+}
+h2{
+  font-size: 1.4rem;
 
+}
 .grid-container {
     display: grid;
     width: 44%;

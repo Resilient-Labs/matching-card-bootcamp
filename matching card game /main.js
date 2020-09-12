@@ -1,5 +1,6 @@
 // const cells = [...document.getElementsByTagName('img')]
-//
+// Mentor Gus Prevas guide me
+// worked with House Cass Ibrahim,Rahma,Shawn, Carolin
 
 
 
