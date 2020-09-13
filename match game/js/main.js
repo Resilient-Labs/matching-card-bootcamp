@@ -1,3 +1,4 @@
+//House Moses: Kim, Carlosalberto, Farrah and Gabriel
 const cards = document.querySelectorAll('.card-memory')
 const cardsContainer = document.querySelectorAll('.cards')
 const newGame = document.querySelector('.newGame')
@@ -18,7 +19,7 @@ function shuffle(array) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
 
-    // And swap it with the current element.
+    // And swap it with the current element. 
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
@@ -38,7 +39,6 @@ function check(){
 }
 
 function flip(){
-
   let flipped = document.querySelectorAll(".flipped")
   if (flipped[0].childNodes[0].src === flipped[1].childNodes[0].src){
     flipped.forEach((element) => {
