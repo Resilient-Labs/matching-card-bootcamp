@@ -1,3 +1,4 @@
+//worked on with House Hayden: Rebecca, Kadeisha, Jeffrey, and Anastasia
 let arrClick = [];
 const board = {
   count: 0,
