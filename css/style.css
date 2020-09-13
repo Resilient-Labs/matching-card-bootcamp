@@ -1,0 +1,141 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       -moz-box-sizing: border-box; /* Firexfox */
+            box-sizing: border-box; /* IE */
+}
+
+/***********************************
+//worked on with House Hayden: Rebecca, Kadeisha, Jeffrey, and Anastasia
+***********************************/
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+span{
+  margin-top: 1rem;
+  background-image: url("https://png2.cleanpng.com/sh/c52f1859052d3663c32f7f8b1505991f/L0KzQYm3VsI1N6JAjpH0aYP2gLBuTf5md6FqjOU2cIX9ir3sTfFlfpZzjOd7ZT3nebjwlPFtNaFqjJ93ZXBzdcX6TcVjO2E4etZtZkC4dIaATsY3O2M4SKoDMUW1SYmBV8cxQWo9TKc3cH7q/kisspng-neopets-puzzle-adventure-digital-pet-neopets-5b303bddf05d57.6632308815298877099845.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15vh;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border: 1px solid black;
+    transition: all .7s;
+    filter: brightness(0%);
+}
+
+.container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  border: 1px solid blue; /* */
+  background-color: rgba(255, 105, 105, 0.5);
+}
+
+.matched {
+  border: 3px solid red;
+}
+
+button {
+	box-shadow:inset -3px -3px 10px 0px #d9fbbe;
+	background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+	background-color:#b8e356;
+	border:2px solid #83c41a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:8px 29px;
+	text-decoration:none;
+	text-shadow:0px 2px 7px #86ae47;
+  height: 5rem;
+}
+button:hover {
+	background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+	background-color:#a5cc52;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+/**************/
+
+body {
+    background: linear-gradient(229deg, #a2ffe7, #eca2ff, #a2cfff, #f6ffa2, #ffb2a2, #c1ffa2);
+    background-size: 1200% 1200%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
+}
+
+.message{
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+p{
+    font-family: "Overpass Mono", monospace;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(84, 84, 84, 0);
+    text-shadow: rgba(0, 0, 0, 0.39) 2px 2px 2px;
+}
+
+/***********************************
+media query
+***********************************/
+
+@media screen and (min-width: 1441px) { /*big screen*/
+
+}
+
+@media only screen and (max-width: 768px) { /*tablet*/
+
+}
+
+@media only screen and (max-width: 425px) { /*phone*/
+
+}
