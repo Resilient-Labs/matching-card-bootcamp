@@ -1,0 +1,50 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       -moz-box-sizing: border-box; /* Firexfox */
+            box-sizing: border-box; /* IE */
+}
+
+/***********************************
+personal code
+***********************************/
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    padding: .2rem;
+    background-color: beige;
+    border: 2px solid grey;
+    border-radius: 1.2rem;
+    transition: all .5s;
+    filter: brightness(0%);
+}
+
+.container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  border: 2px solid grey;
+  border-radius: 1.2rem;
+}
+
+.matched {
+  border: 3px solid red;
+}
