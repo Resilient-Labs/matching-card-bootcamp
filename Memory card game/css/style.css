@@ -1,0 +1,32 @@
+body{
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  color: rgb(237,48,34);
+  font-family: 'Ranchers', cursive;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
+td{
+  border: 5px solid white;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+img{
+  width: 80%;
+}
+table{
+  margin: auto;
+}
+
+.card-memory.flipped{
+background-color: blue;
+animation-delay: 2s;
+}
