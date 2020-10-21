@@ -1,6 +1,6 @@
 # ♠️ Week 08 Project: Matching Card Game
 
-Live Code: cafe-match-game.netlify.app
+Live Code: https://cafe-match-game.netlify.app/
 
 # How It's Made:
 ### Tech used: 
