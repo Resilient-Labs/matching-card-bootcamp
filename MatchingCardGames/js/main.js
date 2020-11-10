@@ -1,5 +1,5 @@
-let audio = document.getElementById("song");
-audio.volume = 0.1;
+let audioPlayer = document.getElementById("song");
+audioPlayer.volume = 0.1;
 
 let Match = {
   restart: () => {
@@ -7,7 +7,6 @@ let Match = {
     Match.flipped = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     Match.randomize()
     document.querySelector('button').style.display = 'none'
-
 
   },
   removeEvents: () => {

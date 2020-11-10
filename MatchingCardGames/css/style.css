@@ -22,7 +22,7 @@ section {
 
 div {
   height: 200px;
-  width: 150px;
+  width: 145px;
   margin: 5px;
   cursor: pointer;
 
@@ -88,10 +88,41 @@ button {
 }
 
 .card11 {
-
   background-image: url('../images/milo.png');
+}
 
+.card12 {
+  background-image: url('../images/scizor.png');
+}
+.card13 {
+  background-image: url('../images/umbreon.png');
+}
+.card14 {
+  background-image: url('../images/xatu.png');
+}
+.card14 {
+  background-image: url('../images/pichu.png');
+}
+.card15 {
+  background-image: url('../images/hoothoot.png');
+}
+.card16 {
+  background-image: url('../images/tauros.png');
+}
 
+.card17 {
+  background-image: url('../images/staryu.png');
+}
+.card18 {
+  background-image: url('../images/machop.png');
+}
+
+.card19 {
+  background-image: url('../images/gastly.png');
+}
+
+.card20 {
+  background-image: url('../images/golem.png');
 }
 
 .flip {
@@ -120,6 +151,15 @@ button {
 .card9,
 .card10,
 .card11,
+.card12,
+.card13,
+.card14,
+.card15,
+.card16,
+.card17,
+.card18,
+.card19,
+.card20,
 .flip,
 .pokeball {
   background-size: contain;
