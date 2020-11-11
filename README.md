@@ -1,6 +1,6 @@
 # Week08 Matching Card Game
 
-Languages Used HTML,CSS, and JAVA SCRIPT
+Languages Used HTML,CSS, and JAVASCRIPT
 
 [Link to the Website hosted on Netlify](https://pokemongame-app.netlify.app/)
 
