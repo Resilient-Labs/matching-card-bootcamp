@@ -16,9 +16,12 @@ let botScore = 4000
 let playerLifePoint = document.querySelector('.playerLife span')
 let botLifePoint = document.querySelector('.botLife span')
 
+let audio = document.querySelector('.yugiohAudio')
+audio.volume = 0.2
 //Each card for player and bot
 const playerCard = document.querySelectorAll('.playerCard')
 const botCard = document.querySelectorAll('.botCard')
+
 
 //Player flip card event listener
 playerCard.forEach(card => card.addEventListener('click', flipCard))
