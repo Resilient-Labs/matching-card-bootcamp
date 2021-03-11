@@ -16,8 +16,8 @@ let botScore = 4000
 let playerLifePoint = document.querySelector('.playerLife span')
 let botLifePoint = document.querySelector('.botLife span')
 
-let audio = document.querySelector('.yugiohAudio')
-audio.volume = 0.2
+let audio = document.querySelector('#yugiohAudio')
+audio.volume = 0.15
 //Each card for player and bot
 const playerCard = document.querySelectorAll('.playerCard')
 const botCard = document.querySelectorAll('.botCard')
@@ -120,4 +120,9 @@ function botFlipCard(){
   botCardTwo = botCard[randomize]
   console.log(botCardOne.dataset.bot, botCardTwo.dataset.bot)
   checkBotMatch()
+}
+
+document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('yugiohAudio').play();
 }

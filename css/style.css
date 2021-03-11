@@ -167,13 +167,13 @@ body {
   background-size: contain;
 }
 
-.yugiohAudio {
+#yugiohAudio {
   height: 25px;
   width: 250px;
   margin: 0 auto;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
-.yugiohAudio:focus {
+#yugiohAudio:focus {
   outline: none;
 }
 
