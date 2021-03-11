@@ -168,9 +168,10 @@ body {
 }
 
 .yugiohAudio {
-  height: 30px;
+  height: 25px;
+  width: 250px;
   margin: 0 auto;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .yugiohAudio:focus {
   outline: none;
