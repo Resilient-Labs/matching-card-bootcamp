@@ -10,8 +10,8 @@
   font-size: 1.8rem;
 }
 
-body {
-  /* height: 100vh; */
+a:hover, a:link, a:active, a:visited {
+  color: inherit;
 }
 
 .container {
@@ -75,26 +75,36 @@ body {
   width: 33.333%;
   border: 1px solid rgb(23, 194, 224);
 }
-
-.playerScore {
-  display: flex;
-}
-.playerLife {
-  color:rgb(18, 109, 245);
-}
-
 .lifePoint {
   width: 40%;
   height: 60%;
 }
 
+.playerScore {
+  display: flex;
+  justify-content: space-around;
+}
+
 .botScore {
   display: flex;
   justify-content: flex-end;
+  justify-content: space-around;
+}
+
+.playerLife {
+  color:red;
+}
+
+.playerScore h3 {
+  color: red;
 }
 
 .botLife {
-  color:red;
+  color:rgb(18, 109, 245);
+}
+
+.botScore h3 {
+  color: rgb(18, 109, 245);
 }
 
 .winLoss {
@@ -107,6 +117,9 @@ body {
   border: 1px solid black;
   width: 20%;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .character img{
@@ -130,11 +143,6 @@ body {
 
 .frontOfCard {
   transform: rotateY(180deg);
-}
-
-.cardBackground {
-  width: 98%;
-  /* display: none; */
 }
 
 .extra, .character {
@@ -162,13 +170,61 @@ body {
   background-size: cover;
 }
 
+.kaiba h4, .yugimoto h4 {
+  font-family: yugioh;
+  font-size: .7rem;
+  text-align: center;
+}
+
+.character section {
+  background-color: rgba(255, 255, 255, 0.61);
+  width: 250px;
+  /* border: 4px solid black; */
+  border-radius: 10px;
+  height: 20px;
+  /* visibility: hidden; */
+}
+
+/* TITLE SECTION */
 .title { 
   background:url(../images/yugiohtitle.gif) no-repeat center;
   background-size: contain;
+  display: flex;
+  justify-content: space-between;
 }
 
+.music{
+  /* border: 1px solid black; */
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music i {
+  color:rgb(245, 21, 21);
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: rgb(0, 0 , 0);
+}
+
+.reset {
+  /* border: 1px solid black; */
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset a {
+  text-decoration: none;
+  font-size: 2rem;
+  color:rgb(245, 21, 21);
+  -webkit-text-stroke-width: 2.6px;
+  -webkit-text-stroke-color: rgb(0, 0 , 0);
+}
+
+/* AUDIO SECTION */
 #yugiohAudio {
-  height: 25px;
+  height: 1px;
   width: 250px;
   margin: 0 auto;
   visibility: hidden;
@@ -176,5 +232,4 @@ body {
 #yugiohAudio:focus {
   outline: none;
 }
-
 
