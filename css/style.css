@@ -1,0 +1,178 @@
+@font-face {
+  font-family: yugioh;
+  src: url(../font/Matrix\ Regular.ttf) format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: yugioh;
+  font-size: 1.8rem;
+}
+
+body {
+  /* height: 100vh; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: url(../images/background1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.allSection {
+  border: 1px solid rgb(23, 194, 224);;
+  width: 100%;
+  height: 100%;
+  border-left: none;
+  border-right: none;
+}
+
+.botCards, .userCards {
+  display: flex;
+  flex: 0 1 50%;
+  justify-content: center;
+}
+
+.playMat {
+  border: 1px solid rgb(23, 194, 224);
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: none;
+  perspective: 1000px;
+}
+
+.cardSlot {
+  /* border: 3px solid yellow; */
+  width: 10%;
+  /* height: 100%; */
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 1.3s;
+  position: relative;
+}
+
+.topMat, .bottomMat {
+  /* border: 1px solid black; */
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.middleSection {
+  flex: 0 3 10%;
+  display: flex;
+  width: 100%;
+}
+
+.data {
+  border: 1px solid black;
+  width: 33.333%;
+  border: 1px solid rgb(23, 194, 224);
+}
+
+.playerScore {
+  display: flex;
+}
+.playerLife {
+  color:rgb(18, 109, 245);
+}
+
+.lifePoint {
+  width: 40%;
+  height: 60%;
+}
+
+.botScore {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botLife {
+  color:red;
+}
+
+.winLoss {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.character, .extra {
+  border: 1px solid black;
+  width: 20%;
+  display: flex;
+}
+
+.character img{
+  width: 80%;
+}
+/* whenever clicked, change size */
+.cardSlot:active {
+  transform: scale(.95);
+  transition: transform .2s;
+}
+
+.cardSlot.flip {
+  transform: rotateY(180deg)
+}
+
+.frontOfCard, .backOfCard{
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.frontOfCard {
+  transform: rotateY(180deg);
+}
+
+.cardBackground {
+  width: 98%;
+  /* display: none; */
+}
+
+.extra, .character {
+  /* display: none; */
+}
+
+/* Background side areas & title*/
+.obeliskbackground {
+  background:url(../images/obeliskbackground.png) no-repeat center;
+  background-size: cover;
+}
+
+.sliferbackground {
+  background:url(../images/Sliferbackground.png) no-repeat center;
+  background-size: cover;
+}
+
+.kaiba {
+  background:url(../images/kaiba.png) no-repeat center;
+  background-size: cover;
+}
+
+.yugimoto {
+  background:url(../images/yugi1.png) no-repeat center;
+  background-size: cover;
+}
+
+.title { 
+  background:url(../images/yugiohtitle.gif) no-repeat center;
+  background-size: contain;
+}
+
+.yugiohAudio {
+  height: 30px;
+  margin: 0 auto;
+  visibility: hidden;
+}
+.yugiohAudio:focus {
+  outline: none;
+}
+
