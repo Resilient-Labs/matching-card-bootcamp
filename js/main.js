@@ -52,9 +52,9 @@ let cardOne, cardTwo, botCardOne, botCardTwo;
 // Flip animation toggle & card choice
 function flipCard(){
   let i = 0
-  let randomize = Math.floor(Math.random() * botCard.length)
-  while(i < botCard.length && botCard[randomize].classList.contains('match')){
-    randomize = Math.floor(Math.random() * botCard.length)
+  let randomize = Math.floor(Math.random() * 10)
+  while(i < 10 && botCard[randomize].classList.contains('match')){
+    randomize = Math.floor(Math.random() * 10)
     i++
   }
   if(stopCardFlipFeature) return
@@ -147,7 +147,7 @@ function botFlipCard(randomize){
   
   botCardFlipped = false
   botCardTwo = botCard[randomize]
-  // console.log(botCardOne.dataset.bot, botCardTwo.dataset.bot)
+  console.log(botCardOne, botCardTwo)
   checkBotMatch()
 }
 
@@ -178,13 +178,13 @@ function characterBanter(playerScore, botScore){
       yugiSpeech.innerText = 'I\'ll Duel you anytime Kaiba.'
     }
     
-    if(playerScore > 0 && botScore === 0){
-      kaibaSpeech.innerText = 'You\'re only second best. To me.'
-    }
+    // else if(playerScore > 0 && botScore === 0){
+    //   yugiSpeech.innerText = 'I win again, Kaiba.'
+    // }
 
-    if(playerScore === 0 && botScore > 0){
-      yugiSpeech.innerText = 'I win again, Kaiba.'
-    }
+    // else if(playerScore === 0 && botScore > 0){
+    //   kaibaSpeech.innerText = 'You\'re only second best. To me.'
+    // }
   }
   
   function musicPlay() {
