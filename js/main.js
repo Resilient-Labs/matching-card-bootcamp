@@ -107,11 +107,9 @@ function checkBotMatch(){
   }
 
   else {
-    stopCardFlipFeature = true
     setTimeout(() => {
       botCardOne.classList.remove('flip')
       botCardTwo.classList.remove('flip')
-      stopCardFlipFeature = false
     }, 1700)
   }
 }
@@ -124,7 +122,6 @@ function checkBotMatch(){
     card.style.order = random
   })
 })()
-
 
 //BOT FUNCTIONS
 //BOT SHUFFLE
