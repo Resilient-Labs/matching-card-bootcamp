@@ -1,0 +1,177 @@
+*{
+	box-sizing: border-box;
+	font-size: 62.5%;
+	font-family: 'Yusei Magic', sans-serif;
+  }
+  
+  body{
+	background-image: url(../pic/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(113, 27, 130, 0.2);
+	/* height: 100vh; */
+	padding: 0;
+	margin: 0; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	 
+  }
+
+  .secTitle{
+	  width: 80%;
+	  text-align: center;
+  }
+
+  h1{
+	  height: 10rem;
+	  width: 100%;
+	  border: .1rem solid navy;
+	  background-color: rgba(57, 100, 150, 0.2);
+	  font-size: 6rem;
+	  color: white;
+  }
+
+  .secGame{
+	  display: flex;
+  }
+
+ .divGameBoard{
+     display: grid;
+     grid-template-columns: 25% 25% 25% 25%;
+     grid-template-rows: 20rem 20rem 20rem;
+     height: 80rem;
+     width: 60%;
+	 margin-left: 3%;
+ }
+
+ .secGridItem{
+	 border: .5rem solid white;
+	 font-size: 10rem;
+	 width: 100%;
+ }
+
+ .secGridItem img{
+	 border: .1rem solid green;
+	 width: 100%;
+	 height: 19rem;
+ }
+
+ .hide{
+	 
+	 opacity : 0.0000001;
+ }
+
+
+ .clear{
+	 visibility: hidden;
+	 
+ }
+
+ .secReport{
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 height: 40rem;
+	 width: 30%;
+	 border: .1rem solid purple;
+	 background-color: rgba(162, 95, 165, 0.3); 
+	 margin-left: 4%;
+ }
+
+ .scoreboard{
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+ }
+
+ .h3Score, .spanScore{
+	 font-size: 4rem;
+	 color: white;
+	
+ }
+
+ .h3Results{
+	 font-size: 4rem;
+	 color: white;
+ }
+
+ .buttonReset{
+	 font-size: 3rem;
+	 border-radius: 15%;;
+ }
+
+ @media only screen and (max-width: 50rem) {
+
+
+	  h1{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 3rem;
+	  }
+	
+	  .secGame{
+		  display: flex;
+		  flex-direction: column;
+	  }
+	
+	 .divGameBoard{
+		 height: 60rem;
+		 width: 100%;
+		 margin: 0%;
+
+	 }
+	
+	
+	 .secReport{
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: space-evenly;
+		 height: 15rem;
+		 width: 90%;
+		 margin: 0 auto;
+	 }
+	
+	 .scoreboard{
+		 display: flex;
+		 flex-direction: column;
+		 align-items: center;
+		 margin-left: 8%;
+		 margin-right: 8%;
+	 }
+	
+	 .h3Score, .spanScore{
+		 font-size: 3rem;
+		
+	 }
+
+	 .h3Score{
+		 margin-top: 0%;
+	 }
+
+	 .reportResults{
+		 margin-right: 5%;
+		 width: 25%;
+	 }
+	
+	 .h3Results{
+		 font-size: 3rem;
+		 color: white;
+	 }
+	
+	 .buttonReset{
+		 font-size: 3rem;
+		 border-radius: 15%;;
+	 }
+ }
+
+ @media (min-width: 50rem) and (max-width: 80rem) {
+
+	h1{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 3.5rem;
+	}
+ }

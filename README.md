@@ -1,22 +1,22 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# matching-card-game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+This is a Harry Potter-themed, matching game application. The player must match the cards with the same image together. There are 6 pairs of images, so there are 6 matches. 
 
-### How to submit your code for review:
+Link to Project: https://harry-potter-creatures-matching.netlify.app/
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![Project Image](/pic/game.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+### How It's Made:
+
+This game uses an array with 12 elements (each element represents a square on the game board) to organze itself. The position of the elements in the array are shuffled before the start of each game. As the array's elements are shuffled, the position of the cards are shuffled on the game board. 
+
+After the player selects 2 cards, they cannot click on any other cards as the event listener will be removed. The 2 selected cards will be evaluated to determine if it's a match. If it is, the squares will become black. If it isn't, the cards--the cards are flipped over. Once, the player matches all 6 images--they win. 
+
+
+### Lesson Learned
+
+I learned how to randomize the shuffling of the array through using the Fisher-Yates Shuffle. Also. I learned how to use the 'setTimeout' method to delay the evaluation of an expression. 
+ 
+
+###
