@@ -1,0 +1,57 @@
+body{
+  position: relative;
+  background-image: url("http://wallup.net/wp-content/uploads/2016/03/09/151072-Madagascar_movie.jpg");
+  background-size: cover;
+  background-repeat: none;
+
+  }
+ 
+  .listCard{
+  background-position: center ;
+  background-size: cover;
+  height:220px;
+  width:180px;
+  list-style-type:none;
+  float:left;
+  border:2px  solid rgba(199, 139, 66, 0.993);;
+  margin:20px;
+
+  }
+
+  h1,h2{
+  text-align: center;
+  color:white;
+  background-color:rgba(199, 139, 66, 0.993);
+  width:25%;
+  margin-left:35%;
+  border-radius: 25%;
+  border:1px solid black;
+
+  }
+
+li{
+  background-color:white;
+}
+
+button{
+  position:absolute;
+  left:10%;
+  top:35%;
+  color:white;
+  background-color:rgba(199, 139, 66, 0.993);
+  font-size:15px;
+  font-weight:bolder;
+  width:10%;
+  border-radius: 25%;
+}
+
+#logo{
+
+  width:500px;
+  height:89%;
+  transform: rotate(-90deg);
+  position:absolute;
+  left:75%;
+  top:280px;
+
+}
