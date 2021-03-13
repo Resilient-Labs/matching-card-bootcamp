@@ -1,0 +1,77 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: url(../mainBackground.jpg);
+  font-size: 3rem;
+  margin: 0;
+  font-family: fantasy;
+  text-align: center;
+  position: relative;
+}
+span{
+  font-size: 2rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.grid-container {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+.grid-item{
+  border: 1px solid gray;
+  height: 15rem;
+  margin: 0.5rem;
+  background: url(../pattern.png);
+}
+.hide{
+  /* background-color: black; */
+   opacity : 0.0000001;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.clear{
+  display: block;
+}
+.CongratsMessage{
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+img{
+  height: inherit;
+  width: 100%;
+  transition: 1s;
+}
+h4{
+    margin: 0
+}
+h5{
+  margin: 0;
+  display: inline;
+}
