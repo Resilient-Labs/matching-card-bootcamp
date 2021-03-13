@@ -45,7 +45,6 @@ body {
   transform: translateY(-100%);
 }
 
-
 img {
   height: 150px;
   width: 200px;
@@ -59,6 +58,7 @@ button {
   margin-left: 120px;
   font-size: 1.5rem;
   width: 40%;
+  background: white;
 }
 
 .title {

@@ -12,20 +12,6 @@ for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener('click', turnCard)
 }
 
-// const cardClick = card => card.addEventListener('click', turnCard)
-//
-// function cardClick(card){
-//   card.card.addEventListener('click', turnCard)
-// }
-//
-// cards.forEach(card => card.addEventListener('click', turnCard))
-// cards.forEach(cardClick)
-//different ways to write the function on lines 13 and 15
-//line 19 forEach loop is the same as the for loop on line 9
-
-// 0
-// 1 keep it fillped over and wait til another card is selected
-// 2 compare it with the previous card and if it matches it stays up
 
 let cardArray = ['eye.png', 'eyeshadow.png', 'face.png', 'makeup.png', 'lipstick.png', 'eye.png', 'face.png', 'powder.png', 'makeup.png',
   'eyeshadow.png', 'lipstick.png', 'powder.png'
@@ -62,7 +48,7 @@ function turnCard(event) {
     //check for a match between currentCard and previousClicked
     if (previousClicked.src === img.src) {
       if (checkWinner() === true) {
-            alert('winner')
+        alert('winner')
       }
       previousClicked = null
 
@@ -103,7 +89,8 @@ function resetGame() {
     cards[i].src = 'backcard.png'
   }
   //recieved this code to shuffle my deck from stackoverflow
-  var currentIndex = cardArray.length, temporaryValue, randomIndex;
+  var currentIndex = cardArray.length,
+    temporaryValue, randomIndex;
   while (0 !== currentIndex) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
@@ -112,5 +99,4 @@ function resetGame() {
     cardArray[randomIndex] = temporaryValue;
   }
 }
-
 resetGame()
