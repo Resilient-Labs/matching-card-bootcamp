@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+text-align: center;
+  background: url("spring.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.3em;
+}
+
+h1, h3{
+    color:rgb(43, 163, 234, 1)
+}
+
+img {
+  width: 100%;
+}
+
+.container{
+width: 85%;
+margin-left: auto;
+margin-right: auto;
+}
+
+section {
+    border: 5px solid black;
+    background-color:rgb(218, 239, 237);
+    width: 15.9rem;
+    height: 16rem;
+    margin: 1rem 1rem;
+    padding: 0.1rem;
+    display: inline-block;
+  }
+
+  button {
+    font-family: 'DotGothic16', sans-serif;
+    margin-left: 20px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgb(75, 75, 75);
+    background-color: #ffd04f;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #cd760b;
+  }
+  
+  button:hover {
+    background-color: #ffd68f;
+    color: black;
+  }
+  
+  button:active {
+    background-color: #ffd68f;
+    box-shadow: 0 5px #f0ae57;
+    transform: translateY(4px);
+  }
+  
+.revealed .A {
+
+}
