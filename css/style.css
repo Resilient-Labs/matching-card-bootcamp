@@ -1,0 +1,109 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 12px;
+}
+
+body {
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #ec7b25;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  border: 1px solid black;
+  display: flex;
+  width: 100%;
+  height: 5vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  position: fixed;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.docTitle {
+  margin: auto;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 85%;
+  height: 88%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  perspective: 1000px;
+}
+
+div {
+  width: 16%;
+  height: 48%;
+  position:  relative;
+  transform: scale(1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.cardSet, .cardBack{
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.cardSet{
+  transform: rotateY(180deg);
+}
+
+/* shows cards if js allows it */
+div.flip,
+div.matched{
+  transform: rotateY(180deg);
+}
+
+/* click animation */
+div:active{
+  transform: scale(.95);
+  transition: transform .2s;
+}
+img{
+  height: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
