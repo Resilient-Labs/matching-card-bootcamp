@@ -10,4 +10,4 @@ The backside is a BBS Rim and when the user hovers over the rim the wheel will s
 -CSS
 -JAVASCRIPT
 
- ![Screenshot](jdmPic.png)
+ ![Screenshot](jdmPic.jpg)
