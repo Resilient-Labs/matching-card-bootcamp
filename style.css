@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 62.5;
+}
+
+body {
+  margin: min(2rem, 2vw);
+  display: flex;
+  background-color: pink;
+}
+
+.parent {
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  border: 5px solid black;
+  border-radius: 9%;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.show {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.back {
+  transition: transform 1s ease;
+  transform: translateY(0);
+}
+
+.selected {
+  transition: transform 1s ease;
+  transform: translateY(-100%);
+}
+
+img {
+  height: 150px;
+  width: 200px;
+}
+
+h1 {
+  border-bottom: 2px solid black;
+}
+
+button {
+  margin-left: 120px;
+  font-size: 1.5rem;
+  width: 40%;
+  background: white;
+}
+
+.title {
+  margin-top: 250px;
+  margin-left: 50px;
+  font-size: 3rem;
+}
