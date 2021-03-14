@@ -6,7 +6,7 @@ Every time card is turned
 --------------------------------------------
 Each match stays on screen until reset pressed.
 Whichever side gets matches the other player loses -800LP
-Whichever side matches all the cards win! eg. Enemy with 0LP.
+Whichever side matches all the cards win! i.e. Enemy with 0LP.
 Have a card reset button
 */
 
