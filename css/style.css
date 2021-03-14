@@ -24,9 +24,17 @@
 ===Base Styles====
 *******************/
 
+h1{
+  text-transform: uppercase;
+  font-size: min(15vw,3rem);
+  text-align: center;
+  margin-top: .25rem;
+  font-weight: 300;
+}
+
 html {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #9869ff;
   color: white;
 }
@@ -65,7 +73,7 @@ Flex classes
 }
 
 .readable-width {
-  max-width: 800px;
+  max-width: 1300px;
 
 }
 
@@ -267,15 +275,18 @@ aside .profile-container img {
 
 .main {
   background-color: rgba(255,255,255,.3);
-  padding: 3rem;
+  padding: min(3rem, 2vw);
   border-radius: 1rem;
   position: relative;
+  width: 100%;
+  padding-top: 3rem;
 }
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: min(1rem, 1vw);
 }
 
 
@@ -286,9 +297,71 @@ img {
   width:100%;
 }
 
+.gameboard {
+  grid-template-columns: repeat(auto-fill, minmax(min(7rem, 20vw), 1fr) minmax(min(7rem, 20vw), 1fr));
+  /* grid-template-columns: repeat(5, minmax(7rem, 1fr)) repeat(auto-fill, minmax(7rem, 1fr) minmax(7rem, 1fr)); */
+  grid-gap: min(1rem, 2vw);
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: repeat(auto-fit, minmax(min(7rem, 20vw), 1fr));
+}
+
+.menu {
+  margin-bottom: 1rem;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  margin-top: .5rem;
+
+
+  background-color: rgba(255,255,255,.3);
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 2rem;
+}
+
 /************************
 ===Additional Styling====
 *************************/
+
+
+.menu > * {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.primary-button {
+  background-color: rgb(255, 230, 234);
+  position: relative;
+  padding: 1rem 1rem;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 .5rem 0 0rem rgb(255, 184, 196), 0rem 1rem 10px 0px grey;
+  /* border-radius: 1rem; */
+}
+
+.primary-button + .primary-button {
+  margin-left: .75rem;
+}
+
+.primary-button,
+.primary-button:active {
+  outline: none;
+}
+
+.primary-button:active,
+.primary-button:disabled {
+  box-shadow: 0rem 0rem 2px 0px grey;
+  top:.5rem;
+}
+
+.primary-button:active {
+  box-shadow: inset 0 0 5px 1px;
+}
+
+
 
 /***Card Styling***/
 .card {
@@ -305,17 +378,18 @@ img {
   content: '';
   position: absolute;
   min-width: 100%;
-  min-height: 2rem;
+  min-height: 1rem;
   bottom: 0;
   left: 0;
+  box-shadow: 0rem 1.25rem 10px -5px rgba(41,41,41,1);
   /* animation: passive-hover-shadow 2s both linear infinite; */
 }
 
 .card,
 .card .face,
 .card .tail {
-  min-height: 10rem;
-  min-width: 7rem;
+  height: min(25vw, 10rem);
+  width: min(20vw, 7rem);
   border-radius: 5px;
 }
 
@@ -336,9 +410,7 @@ img {
 .card .face {
   background-color: pink;
   transform: rotateY(180deg);
-  outline: .4rem solid white;
-  outline-offset: -1rem;
-  padding: 1rem;
+  padding: min(2vw,1rem);
 }
 
 .card .tail {

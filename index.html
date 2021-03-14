@@ -5,19 +5,28 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
   <section class='main'>
-    <!-- <h1>FlipCuP?</h1> -->
-    <section id='menu' class='menu'>
-      <a href="index.html">
-        <button type="button" name="button">Reset</button>
-      </a>
+    <h1>Card Match!</h1>
+    <section id='menu' class='menu flex-container flex-wrap'>
+
+      <div class="difficulty flex-container">
+        <button id='easy' class='primary-button easy' type="button" name="button">Easy</button>
+        <button id='medium' class='primary-button medium' type="button" name="button">Medium</button>
+        <button id='hard' class='primary-button hard' type="button" name="button">Hard</button>
+      </div>
+      <div class="card-type">
+        <button id='numbers' class='primary-button base' type="button" name="button">Numbers</button>
+        <button id='portfolio' class='primary-button portfolio' type="button" name="button">Portfolio</button>
+        <button id='mix' class='primary-button mix' type="button" name="button">Mix</button>
+      </div>
+      <button id='reset' type="button" class='primary-button' name="button">Reset</button>
     </section>
-    <section id='gameboard' class='gameboard grid-container grid-5w'>
+    <section id='gameboard' class='gameboard grid-container '>
     </section>
     <button class="info-button">...</button>
   </section>
