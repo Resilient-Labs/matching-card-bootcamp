@@ -1,0 +1,144 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-image: url('../img/drift.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+html{
+  font-size: 10px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+section{
+  background-size: 111px 114px;
+    height: 120px;
+    display: flex;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+}
+button{
+  height: 100px;
+    width: 100px;
+    background-image: url(../img/nrg.png);
+    background-size: 100px 100px;
+    background-color: transparent;
+    border: 0;
+    outline:none;
+
+}
+button:active{
+  transform: translatex(-10px);
+  transform: translateY(4px);
+}
+img{
+  height: 233px;
+    margin: 5px;
+    width: 252px;
+    object-fit: cover;
+    border-radius: 140px;
+}
+
+.wheel:hover{
+  animation:rotation 3s infinite linear;
+}
+/* img:hover{
+  animation:rotation 3s infinite linear;
+} */
+h3{
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Akaya Telivigala',sans-serif;
+  color: #fff;
+  text-shadow:
+    0 0 5px #89CFF0,
+    0 0 10px #89CFF0,
+    0 0 20px #89CFF0,
+    0 0 40px #89CFF0,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+div{
+  display: flex;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+}
+table{
+  display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 1072px;
+}
+h1{
+  font-size: 5rem;
+  font-family: 'Akaya Telivigala',sans-serif;
+}
+h2{
+  font-size: 3rem;
+  font-family: 'Akaya Telivigala',sans-serif;
+}
+header{
+  height: 100px;
+    text-align: center;
+    height: 140px;
+}
+
+@keyframes rotation {
+  from {
+    background-image: url('bbs.png');
+    transform: rotate(0deg);
+  }
+  to {
+    background-image: url('bbs.png');
+    transform: rotate(359deg);
+  }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
