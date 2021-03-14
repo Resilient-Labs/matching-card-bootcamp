@@ -154,16 +154,3 @@ function addClick(item){
         document.querySelector('.Level').innerText = `Level ${level}`
       document.querySelector('.CongratsMessage').style.display = 'none'
     }
-// let arr = [1,2,3,4,5,6,7,8,9]
-//
-// function select(){
-//   let player1 = Math.ceil(Math.random() * 10)
-//   let player2 = Math.ceil(Math.random() * 10)
-//
-//   if(player1 == player2){
-//     console.log("card Match");
-//   }
-//   else {
-//     console.log("Nassing");
-//   }
-// }
