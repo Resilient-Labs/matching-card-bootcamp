@@ -1,3 +1,4 @@
+// Collaborated with Anvy, Zrybea & Hillary
 let gameboard = document.querySelectorAll('.hide').forEach(item => {
   item.addEventListener('click',gridClick)
 });
