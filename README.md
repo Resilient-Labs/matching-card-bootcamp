@@ -1,6 +1,6 @@
 # Yugioh Matching Card Game
 
-This project reinforces my understanding on the core concepts of OOP and Javascript ES6 features and their applications. I wanted to keep my code as compact as possible. I wanted to do a Neon theme for this project! The product came out clean, eye catching and fun! By the end of it. I'm excited for the future projects, so stay tuned!
+This project is a card matching game with the theme of Yugioh! Originally it was meant to be a simple card matching game with only 10 cards.. But I had this crazy idea! Why not have 2 sides and have them go against one another! It mirrors an actual Yugioh dual and with every card match, the opposing side loses life points! I loved working on this and would love some feedback!
 
 &emsp;
 
@@ -11,8 +11,6 @@ This project reinforces my understanding on the core concepts of OOP and Javascr
 ## How Its Made 
 
 **Languages used:** Html, CSS, Javascript
-
-# What I Learned
 
 ### My Other Projects 
 
