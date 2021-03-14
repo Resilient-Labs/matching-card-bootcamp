@@ -4,7 +4,7 @@ This project reinforces my understanding on the core concepts of OOP and Javascr
 
 &emsp;
 
-<img src="https://github.com/DashlinS/matching-card-bootcamp/tree/answer/images/yugiohdemo.gif" width="700">
+<img src="https://github.com/DashlinS/matching-card-bootcamp/blob/answer/images/yugiohdemo.gif" width="700">
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Click Here to go to the website!](https://yugiohmatch.netlify.app/)
 
