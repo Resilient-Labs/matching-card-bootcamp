@@ -1,0 +1,106 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* in this order for shorthand
+background-color
+background-image
+background-repeat
+background-attachment
+background-position */
+
+body{
+  text-align: center;
+}
+.grid-container{
+  width: 60%;
+  margin:auto;
+}
+.grid-row{
+  display: flex;
+}
+div{
+  height: 260px;
+  width: 100px;
+  border: 1px solid black;
+  flex: 1 0 25%;
+}
+.cards{
+  background: #927887 url(../img/cover.png) no-repeat center;
+  background-size: contain;
+  /* transform-style: preserve-3d; */
+  /* transition:0.5s linear;
+  transform: rotateY(180deg); */
+}
+.grid-row{
+  transition: .5s linear;
+  transform: rotateY(720deg);
+
+}
+.nineOfStaves{
+  background-image: url(../img/img1.png);
+  transition: .5s linear;
+  transform: rotateY(720deg);
+}
+.nineOfDiscs{
+  background-image: url(../img/img2.png);
+}
+.threeOfCups{
+  background-image: url(../img/img3.png);
+}
+.theHermit{
+  background-image: url(../img/img4.png);
+}
+.highPriestess{
+  background-image: url(../img/img5.png);
+}
+.theFool{
+  background-image: url(../img/img6.png);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
