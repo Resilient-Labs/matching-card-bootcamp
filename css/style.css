@@ -1,0 +1,73 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: 40%;
+    border: 2px black solid;
+  }
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+
+  /* .container {
+    height: auto;
+    width: auto;
+    background: url('../images/mic.jpg')
+      no-repeat center center/cover;
+
+  } */
+
+    .cardSection{
+      box-sizing: border-box 1px solid black;
+      height:980px;
+      width:50%;
+      border:3px black solid;
+      border-radius:5px; 
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: 400px;
+      /* the transform can help with positioning */
+      transform: translate(-50%, -80%);
+      box-shadow: 0 2px 8px rgb(104, 103, 103);
+      /* width: auto;
+      height: auto; */
+      text-align: center;
+      background: url('../images/mic.jpg')
+      no-repeat center center/cover;
+      /* display: flex; */
+      
+     
+  }
+  section{
+      border:2px black solid;
+      height:160px;
+      width:50%;
+      float:left;
+      margin:2% 2% 2% 2%;
+      border-radius:6px;
+      /* background: url('../images/dc5.png')
+      no-repeat center center/cover; */
+      /* display: flex */
+  }
+  .card{
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }  
+  
