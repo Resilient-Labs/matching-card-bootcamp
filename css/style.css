@@ -1,0 +1,51 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* CSS files add styling rules to your content */
+img{
+  display: none;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+
+
+.flex-container {
+  display:flex;
+}
+
+.card {
+  min-height: 200px;
+  min-width: 200px;
+  cursor: pointer;
+  background-color: grey;
+  margin: 1rem;
+}
+h2{
+  display: none;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
