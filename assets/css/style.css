@@ -1,0 +1,131 @@
+@font-face {
+    font-family:Naruto;
+    src: url('../fonts/Ninja-Naruto.ttf');
+}
+
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* h1 {
+    font-family: Naruto, sans-serif;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    background: linear-gradient(to right, rgba(253, 125, 34, 1), rgba(237, 42, 38, 1));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0.5rem 0.5rem 0.2rem rgba(15, 24, 181, 1);
+} */
+
+img {
+    height: 20rem;
+    width: auto;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+h2, h3, h4 {
+    font-size: 3rem;
+}
+
+button {
+    margin-left: 24%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    height: 1150px;
+    width: 957px;
+    margin-left: 24%;
+    column-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    transition: transform 0.35s ease-in-out;
+    list-style-type: none;
+    height: 280px;
+    width: 143px;
+    border-radius: 10px;
+}
+
+.flip {
+    transform: rotateY(180deg);
+    transition: transform 0.35s ease-in-out;
+}
+
+.back {
+    border-radius: 10px;
+    height: 200px;
+    width: 143px;
+    background-position: center;
+    background-size: cover;
+}
+
+.deidara, .hidan, .itachi,
+.kakuzu, .kisame, .konan,
+.nagato, .orochimaru, .pain,
+.sasori, .tobi, .zetsu {
+    position: relative;
+    height: 200px;
+    width: 143px;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.back {
+    transition: transform 0.05s ease-in-out;
+    position: relative;
+    top: -200px;
+    background-image: url('../images/back.jpg');
+    transform: rotateY(180deg);
+}
+
+.deidara {
+    background-image: url('../images/deidara.png');
+}
+.hidan {
+    background-image: url('../images/hidan.png');
+}
+.itachi {
+    background-image: url('../images/itachi.png');
+}
+.kakuzu {
+    background-image: url('../images/kakuzu.png');
+}
+.kisame {
+    background-image: url('../images/kisame.png');
+}
+.konan {
+    background-image: url('../images/konan.png');
+}
+.nagato {
+    background-image: url('../images/nagato.png');
+}
+.orochimaru {
+    background-image: url('../images/orochimaru.png');
+}
+.pain {
+    background-image: url('../images/pain.png');
+}
+.sasori {
+    background-image: url('../images/sasori.png');
+}
+.tobi {
+    background-image: url('../images/tobi.png');
+}
+.zetsu {
+    background-image: url('../images/zetsu.png');
+}
