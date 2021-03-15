@@ -1,7 +1,7 @@
 //Set up gameboard randomized
-let gameArray= [0,1,2,3,4,5,0,1,2,3,4,5]
+let gameArray= ["img/ikora.gif", "img/mara.gif", "img/saint14.gif", "img/uldren.gif", "img/variks.gif", "img/zavala.gif", "img/ikora.gif", "img/mara.gif", "img/saint14.gif", "img/uldren.gif", "img/variks.gif", "img/zavala.gif"]
 
-// let imgArray = ["img1", "img2", "img3", "img4", "img5", "img6", "img1", "img2", "img3", "img4", "img5", "img6"]
+// let imgArray =
 
 function shuffleArray(gameArray) {
     for (let i = gameArray.length - 1; i > 0; i--) {
@@ -12,9 +12,8 @@ function shuffleArray(gameArray) {
 
 function insertGameArray(){
   for(i=0; i<gameArray.length; i++){
-    document.querySelectorAll("span")[i].setAttribute("value", gameArray[i])
+    document.querySelectorAll("img")[i].setAttribute("src", gameArray[i])
 
-    document.querySelectorAll("span")[i].innerText = gameArray[i]
   }
 }
 shuffleArray(gameArray)
@@ -42,7 +41,7 @@ function selectCard(click){
     let selectedItem = click.target
     selectedItem.classList.remove("hide")
 
-    holdValues.push(selectedItem.getAttribute("value"))
+    holdValues.push(selectedItem.getAttribute("src"))
     idArray.push(selectedItem.getAttribute("id"))
     console.log(idArray);
 

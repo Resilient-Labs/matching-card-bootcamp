@@ -16,13 +16,10 @@ html{
 img{
   display: block;
   margin: 0 auto;
+  height:18rem;
+  width:100%;
 }
 
-span{
-  border: 1rem solid black;
-  display: block;
-  height:18rem;
-}
 .grid{
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -35,11 +32,11 @@ span{
 }
 
 .hide{
-  background: black;
+  opacity: 0.0000001;
 }
 
 .clear{
-  display: none;
+  background: black;
 }
 
 
