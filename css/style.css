@@ -1,0 +1,77 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  background-color: skyblue;
+  text-align: center;
+}
+
+/******************************************
+/* Basic Layout
+/*******************************************/
+body{
+  margin: 0 10%;
+}
+
+
+/******************************************
+/* Other
+/*******************************************/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.grid-container > div{
+  position: relative;
+}
+
+.row-1{
+  grid-row: 1;
+  height: 200px;
+}
+
+.row-2{
+  grid-row: 2;
+  height: 200px;
+}
+
+.back{
+  pointer-events: none; //allows to click under this element
+  z-index: 10;
+}
+
+section{
+  border: 3px solid red;
+}
+
+.grid-item{
+  border: 2px solid black;
+  height: 200px;
+  background-color: aliceblue;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.grid-item:not(.hide){
+  z-index: 20; /*for layering the one with the higher index will show first*/
+}
+
+.button{
+  height: 50px;
+  width: 100px;
+}
+
+.button-section{
+  margin-top: 50px;
+}
