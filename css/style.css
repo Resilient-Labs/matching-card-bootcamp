@@ -1,0 +1,80 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Noto Sans JP', helvetica, sans-serif;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  background: url(../img/destinybackground.jpeg);
+  background-size: cover;
+}
+button{
+  background: rgb(232,232,232);
+  border: 1px solid rgb(232,232,232);
+  border-radius: 10%;
+  font-family: inherit;
+  letter-spacing: 1rem;
+  padding: 1rem;
+}
+form{
+  text-align: center;
+}
+h1, h2{
+  color: rgb(232,232,232);
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 2rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+img{
+  display: block;
+  margin: 0 auto;
+  height:100%;
+  width:100%;
+}
+main{
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.decoration{
+  margin-top: 2rem;
+  height: 5rem;
+  width:5rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.cards{
+  border: 1px solid rgba(232,232,232, .5);
+  height:20rem;
+  margin: 1rem;
+}
+
+.hide{
+  opacity: 0.0000001;
+}
+
+.clear{
+  background: black;
+}
+
+.resetCounter{
+  height:30rem;
+  margin: auto 0;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
