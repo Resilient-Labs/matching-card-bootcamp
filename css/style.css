@@ -1,0 +1,48 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+span{
+  border: 1rem solid black;
+  display: block;
+  height:18rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 0 auto;
+}
+.cards{
+  border:1rem solid green;
+  height:20rem;
+  margin: 2rem;
+}
+
+.hide{
+  background: black;
+}
+
+.clear{
+  display: none;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
