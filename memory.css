@@ -58,5 +58,6 @@ button {
 }
 
 body {
-  background-image: url(https://static.wikia.nocookie.net/codelyoko/images/4/42/Decors_008.jpg/revision/latest?cb=20111021171233)
+  background-image: url(lab.jpg);
+  background-repeat: center center;
 }
