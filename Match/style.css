@@ -1,0 +1,318 @@
+/* CSS files add styling rules to your content */
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: helvetica, arial, sans-serif;
+    position: absolute;
+    display: flex;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+}
+header{
+    width: 300px;
+    height: 958px;
+    margin-bottom: 60px;
+    background: rgba(255, 255, 255, 0.041);
+}
+.leagueh2{
+    color: white;
+    text-align: center;
+}
+.overh2{
+    color: black;
+    text-align: center;
+}
+  
+h1 {
+    font-style: italic;
+    color: #ee7322;
+    text-align: center;
+}
+
+.main{
+    perspective: 200px;
+    display: block;
+    margin: 23px auto 0px 0px;
+}
+  
+.flex-container {
+    display:flex;
+}
+  
+.card{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/back.png);
+    transition: all 0.4s ease;
+    border-radius: 18px;
+    box-shadow: 7px 7px 9px 2px rgb(0 0 0 / 64%);
+}
+.heart{
+    height: 269px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 120%;
+    background-image: url(gif/cardback2.gif);
+    transition: all 0.4s ease;
+    border-radius: 18px;
+    box-shadow: 7px 7px 9px 2px rgb(221 181 49 / 66%);
+    background-position-x: center;
+    background-position-y: 69%;
+}
+.mind{
+    height: 269px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 117%;
+    background-image: url(gif/cardback_66.gif);
+    transition: all 0.4s ease;
+    border-radius: 18px;
+    box-shadow: 7px 7px 9px 2px rgb(221 181 49 / 66%);
+    background-position-x: center;
+    background-position-y: 65%;
+}
+.soul{
+    height: 269px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 128%;
+    background-image: url(gif/Card_Back_Void.gif);
+    transition: all 0.4s ease;
+    border-radius: 18px;
+    box-shadow: 7px 7px 9px 2px rgb(221 181 49 / 66%);
+    background-position-x: center;
+    background-position-y: 67%;
+}
+.blank{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-image: url(gif/logo.gif);
+}
+.blank2{
+    height: 260px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 228%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-image: url(gif/leaguelogo.gif);
+    position: relative;
+}
+.leaguebutton{
+    position: absolute;
+    top: 76%;
+    height: 40px;
+    left: 30%;
+    width: 75px;
+    font-size: 18px;
+    background: gold;
+    color: white;
+    border-radius: 10px;
+    font-family: ui-serif;
+    background-image: url(images/gold.png);
+    background-position: center;
+    background-size: 239%;
+}
+.leaguebutton:hover{
+    transition: all 1.5s ease;
+    background-position: center;
+    border: 1px solid white;
+    box-shadow: 1px 1px 20px 2px rgba(255, 255, 255, 0.664);
+    cursor: pointer;
+}
+.spy.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/sombra.png);
+    
+}
+.outlaw.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/mccree.png);
+}
+.reaper.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/reaper.png);
+}
+.healer.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/mercy.png);
+}
+.monk.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/zen.png);
+}
+.pilot.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/pharah.png);
+}
+.archer.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/hanzo.png);
+}
+.huntress.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/widow.png);
+}
+.assassin.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/genji.png);
+}
+.protector.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/orisa.png);
+}
+.mountain.selected{
+    height: 306px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 100%;
+    background-image: url(images/rein.png);
+}
+.lux.selected{
+    height: 269px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-image: url(gif/lux.gif);
+}
+.pyke.selected{
+    height: 269px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-image: url(gif/Pyke.gif);
+}
+.thresh.selected{
+    height: 269px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-image: url(gif/thresh.gif);
+}
+.udyr.selected{
+    height: 269px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-image: url(gif/udyr.gif);
+}
+.irelia.selected{
+    height: 269px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-image: url(gif/irelia.gif);
+}
+.ekko.selected{
+    height: 269px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-image: url(gif/ekko.gif);
+}
+.ezreal.selected{
+    height: 269px;
+    width: 182px;
+    cursor: pointer;
+    margin: 1rem;
+    background-size: 104%;
+    background-repeat: no-repeat;
+    background-image: url(gif/ezreal.gif);
+}
+ul{
+    list-style: none;
+    height: 100%;
+    position: relative;
+    display: grid;
+
+}
+.overlogo{
+    width: 203px;
+    display: block;
+    margin: auto;
+}
+.leaguelogo{
+    width: 211px;
+    display: block;
+    margin: auto;
+}
+.overlogo:hover{
+    border: 1px solid white;
+    box-shadow: 1px 1px 20px 2px rgba(255, 255, 255, 0.664);
+    transition: all 0.8s ease;
+}
+
+.leaguelogo:hover{
+    border: 1px solid white;
+    box-shadow: 1px 1px 20px 2px rgba(255, 255, 255, 0.664);
+    transition: all 0.8s ease;
+}
