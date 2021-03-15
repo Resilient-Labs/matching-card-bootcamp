@@ -12,7 +12,7 @@ function shuffleArray(gameArray) {
 
 function insertGameArray(){
   for(i=0; i<gameArray.length; i++){
-    document.querySelectorAll("img")[i].setAttribute("src", gameArray[i])
+    document.querySelectorAll(".d2Cards")[i].setAttribute("src", gameArray[i])
 
   }
 }
@@ -67,7 +67,7 @@ function matchCheck(){
 
   if(holdValues[0] === holdValues[1]){
     matchCounter++
-    document.querySelector(".matchCount").innerText = matchCounter
+    document.querySelector(".matchCount").innerText = `Matches: ${matchCounter}`
 
     let x= document.getElementById(`${idArray[0]}`)
     let y= document.getElementById(`${idArray[1]}`)
@@ -91,7 +91,9 @@ function matchCheck(){
 
 function win(){
   if(matchCounter === 6){
-    alert("you Win")
+    document.querySelector(".matchCount").innerText = "Win!"
 
   }
 }
+
+document.querySelector("button").addEventListener("click", ()=>{location.reload()})
