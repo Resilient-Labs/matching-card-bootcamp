@@ -5,9 +5,10 @@
 }
 h1{
     text-align: center;
-    font-family: 'Wallpoet', cursive;
+    font-family: 'Ruslan Display', cursive;
     font-size: 4rem;
-    margin-bottom: 36px;
+    margin-top: 18px;
+    margin-bottom: 54px;
     color:color;
 }
   .back{
@@ -18,7 +19,7 @@ h1{
     background-image: url("./img/spotify.png");
   }
   .front-pairTwo{
-    background-image: url("./img/tidal.jpg");
+    background-image: url("./img/tidal1.jpg");
   }
   .front-pairThree{
     background-image: url("./img/ableton.png");
@@ -29,15 +30,19 @@ h1{
   .front-pairFive{
     background-image: url("./img/Apple-Music-Logo.jpg");
   }
+  .front-pairSix{
+    background-image: url("./img/Songtrust_Logo.png");
+  }
 
   .card{
     float: left;
-    width: 200px;
-    height: 200px;
-    margin-right: 9px;
+    width: 234px;
+    height: 234px;
+    margin-right: 18px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 18px;
   }
 
   .clear{
@@ -45,7 +50,7 @@ h1{
 }
 
 .container{
-    margin-left: 17%;
+    margin-left: 10%;
 }
 
 body{
