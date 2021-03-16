@@ -17,9 +17,12 @@ class Card {
 /************************************************
 =================FlipCardGame Class==============
 Shows Player cards and handles how to take turns
-cardFaces: array of Cards to duplicate
+htmlElement: DOM element
+cardFaces: array of Card Prototypes represented
+by an array containing the value of the card,
+and a boolean if the value is an img source
 **Assumes cardFaces are all text or all img paths
-match number: number of card duplicates to match
+matchAmount: number of card duplicates to match
 *************************************************/
 class FlipCardGame{
   constructor(htmlElement, matchAmount = 2, cardFaces = [[1, false],[2, false],[3,false],[4, false],[5,false]]){
