@@ -150,12 +150,12 @@ a:hover, a:link, a:active, a:visited {
 }
 
 /* Background side areas & title*/
-.obeliskbackground {
+.obeliskBackground {
   background:url(../images/obeliskbackground.png) no-repeat center;
   background-size: cover;
 }
 
-.sliferbackground {
+.sliferBackground {
   background:url(../images/Sliferbackground.png) no-repeat center;
   background-size: cover;
 }
