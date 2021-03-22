@@ -1,6 +1,6 @@
 # Matching Card Game
 
-### Goal: Welcome to the Bad Boys of Anime Matching Cards Game! 
+### Welcome to the Bad Boys of Anime Matching Cards Game! 
 
 ### About this project
 
