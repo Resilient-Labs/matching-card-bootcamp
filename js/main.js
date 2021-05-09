@@ -148,8 +148,6 @@ function botFlipCard(randomize){
   checkBotMatch()
 }
 
-
-
 function checkWinner(playerScore, botScore){
   console.log(playerScore, botScore)
   if(playerScore === 0 && botScore > 0){
