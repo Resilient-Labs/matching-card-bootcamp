@@ -109,3 +109,12 @@ document.addEventListener('DOMContentLoaded', () =>{
  function reset() {
      location.reload()
  }
+//scoreboard
+ let scoreBoard = i;
+ let myPlays = 10;
+ function newGame(){
+  myPlays -= 2//countdown by 2s
+  scoreBoard +=2  // each match would equal  10
+
+
+ }
