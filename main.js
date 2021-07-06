@@ -118,3 +118,5 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 
  }
+console.log(myPlays)
+console.log(scoreBoard)
