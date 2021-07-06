@@ -1,22 +1,26 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# ♠️ Week 08 Project: Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+Live Code: https://cafe-match-game.netlify.app/
 
-### How to submit your code for review:
+# How It's Made:
+### Tech used: 
+HTML, CSS, & JS. Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+![Match Game Final](matchgame.png)
+
+
+
+
+# Lessons Learned:
+Found it challenging figuring out how the cards would "flip" over and change but once I did it felt great to have a better understanding of JS, CSS with creating classes and targeting sources. Happy with how it turned out.
+
+# Examples:
+
+Take a look at these couple examples that I have in my own portfolio:
+
+Wu-Tang Generator: https://github.com/Kim-Flores/wu-tang-generator-bootcamp/tree/answer
+
+Palindrome Checker: https://github.com/Kim-Flores/node-palindrome-bootcamp/tree/answer
+
+Coin Flip: https://github.com/Kim-Flores/node-coin-flip-bootcamp/tree/answer

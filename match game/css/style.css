@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/bg6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.logo{
+  width: 22%;
+}
+
+.img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+td{
+  border: 2px solid #d8a356;
+  background: #9a885378;
+  height: 125px;
+  width: 125px;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  color: #FFF;
+  font-size: 35px;
+}
+
+img{
+  width: 80%;
+}
+
+table{
+  margin: auto;
+  border-spacing: 45px;
+}
+
+.form{
+  text-align: center;
+}
+
+/* button */
+.newGame{
+  width: 92px;
+  height: 38px;
+  background: #70aa5c;
+  font-size: 15px;
+  color: #FFF;
+  font-weight: bold;
+  border: 2px double #009688;
+}
+
+.flipped{
+  background-color: #ffb3078a;
+  animation-delay: 1s;
+}
