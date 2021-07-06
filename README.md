@@ -1,22 +1,9 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+##This is an NBA inspired matching memory game that I built. The most important part of it to me is the use of the shuffle function to randomize the images which I had put in an array from the global scope.
 
-### How to submit your code for review:
+I also kept track of the clicks for each box with the class classifcation, and with the help of the conditional statements I was able to configure those images in the boxes based on which one was clicked.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![alt tag](memgame.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+TOOLS used: HTML, CSS, JAVASCRIPT
