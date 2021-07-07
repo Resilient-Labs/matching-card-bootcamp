@@ -110,11 +110,13 @@ document.addEventListener('DOMContentLoaded', () =>{
      location.reload()
  }
 //scoreboard
- let scoreBoard = i;
- let myPlays = 10;
+ let scoreBoard = document.querySelector('.wins');
+ let myPlays = document.querySelector('.moves');
  function newGame(){
-  myPlays -= 2//countdown by 2s
-  scoreBoard +=2  // each match would equal  10
+     if scoreBoard == myPlays -2{
+         let 
+//   myPlays -= 2//countdown by 2s
+//   scoreBoard +=2  // each match would equal  10
 
 
  }
