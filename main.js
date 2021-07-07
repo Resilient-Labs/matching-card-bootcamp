@@ -83,7 +83,9 @@ document.addEventListener('DOMContentLoaded', () =>{
              matches[optionTwoId].classList.add("hidden")
              matchesWon.push(cardsChosen)  
              scoreElem.innerHTML = score += 2
+             console.log(score)
              cardsElem.innerHTML = cardAmount -= 2
+             console.log(cardAmount)
 
          }
          else{
