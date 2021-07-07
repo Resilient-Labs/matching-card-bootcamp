@@ -1,0 +1,63 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background: rgb(71,108,138);
+}
+body > section{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+h1{
+  font-family: 'Lilita One', cursive;
+  font-size: 3em;
+  text-shadow: 3px 3px 3px green;
+}
+div{
+  background: black;
+  width: 67%;
+  height: 600px;
+  margin: 30px 0 0 18%;
+  border-radius: 30px;
+}
+.board{
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 55px;
+  left: 109px;
+}
+.card{
+  width: 20%;
+  height: 245px;
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 20px;
+  background: white;
+}
+img{
+  width: 100%;
+  margin-top: 25px;
+}
+.cat.match{
+background: url('../img/blackcat.jpg')
+}
+.skull.match{
+background: url('../img/skull.png')
+}
+.apple.match{
+background: url('../img/applebite.jpg')
+}
+.potion.match{
+background: url('../img/potion.png')
+}
+.dagger.match{
+background: url('../img/dagger.png')
+}
