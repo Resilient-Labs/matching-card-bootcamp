@@ -114,7 +114,10 @@ document.addEventListener('DOMContentLoaded', () =>{
  let myPlays = document.querySelector('.moves');
  function newGame(){
      if scoreBoard == myPlays -2{
-         let 
+         return (scoreBoard +2)
+     }
+     if myPlays == scoreBoard +2{
+         return (myPlays -2)
 //   myPlays -= 2//countdown by 2s
 //   scoreBoard +=2  // each match would equal  10
 
