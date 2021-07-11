@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    background: url(images/back.jpg) no-repeat center;
+    background-size: cover;
+    flex-direction: column;
+}
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+}
+img{
+    height: 200px;
+    width:200px;
+}
+.hidden{
+    display: none;
+}
+button{
+
+    width: 60px;
+    height: 20px;
+}
+.score{
+  height: 200px;
+  width: 100px;
+  border: 1px solid black;
+}
