@@ -1,0 +1,58 @@
+body{
+    background-image: url('map.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center; 
+    background-size: 100% 100%;
+}
+h1{
+    color: rgb(87, 102, 241);
+}
+.cardSection{
+    box-sizing: border-box 1px solid black;
+    height:400px;
+    width:70%;
+    border:3px black solid;
+    border-radius:5px; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* the transform can help with positioning */
+    transform: translate(-50%, -80%);
+    box-shadow: 0 2px 8px rgb(104, 103, 103);
+    width: auto;
+    height: auto;
+    text-align: center;
+   
+}
+.cardSection{
+    margin-top: 10%;
+    background-color: rgba(4, 31, 3, 0.527);
+}
+button{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 30px;
+}
+section{
+    border:2px black solid;
+    height:150px;
+    width:120px;
+    float:left;
+    margin:2% 2% 2% 2%;
+    border-radius:6px;   
+}
+.card{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+button{
+    margin-top: 5%;
+    padding: 2.4%;
+}
+@media only screen and (max-width: 1296px) {
+    img{
+        display: none;
+    }
+}
