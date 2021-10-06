@@ -1,0 +1,63 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+
+
+.flex-container {
+  display:flex;
+  margin: auto;
+  text-align: center;
+}
+
+.card {
+  width: 20%;
+  cursor: pointer;
+  float: left;
+  margin: 1px;
+  text-align: center;
+
+
+}
+
+.main12 img {
+  width: 60%;
+  float:left;
+}
+.main {
+  text-align: center;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+.main12 {
+  float: left;
+  width: 10%;
+}
+.main13 {
+  float: left;
+  height: 80%;
+  margin-top: 90px;
+  width: 18%;
+}
+
+button {
+  margin-top: 400px;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 100px;
+}
+
+body {
+  background-image: url(lab.jpg);
+  background-repeat: center center;
+}

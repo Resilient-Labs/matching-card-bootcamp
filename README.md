@@ -1,6 +1,17 @@
 # ♠️ Week08 Bootcamp2019a Project: Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+
+# Code Lyoko themed matching card game
+
+This Javascript project applies this code lyoko to a matching card game. I used arrays, loops, and the setTimeout() method to create an appropriate pace.
+
+To see deployed site, visit [The Application here](https://wonderful-easley-4bdc4b.netlify.app). See my other projects there as well!
+
+## Screenshots
+
+![Application Screen Shot](img.jpg)
+
+### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game
 
 ### How to submit your code for review:
 
