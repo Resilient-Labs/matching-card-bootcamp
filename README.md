@@ -1,22 +1,13 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+#  Project:Card Matching game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+### Goal: Create a game of Matching cards.
 
-### How to submit your code for review:
+This Card-Matching game uses 6 possibilities of 6 JDM cars. To initiate the game the user needs to press the NRG steering wheel icon and user will be prompted with the game.
+The backside is a BBS Rim and when the user hovers over the rim the wheel will start spinning to create a small effect of the wheel moving. This application will allow the user to pick 2 cars at a time and will be prompted if they are a match or not. If the cars are a match then the user will be propted the name of the car and the cars will stay fillped over to ease the proccess of finding the rest. Each press to the steering will reset the game if the user wishes so.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+# What I used:
+-HTML
+-CSS
+-JAVASCRIPT
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+ ![Screenshot](jdmPic.jpg)
