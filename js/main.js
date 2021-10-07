@@ -80,23 +80,23 @@ function checkForMatch() {
   if (firstChoice == secondChoice) { // same ID, same card
     cards[firstChoice].setAttribute("src", "img/card.png")
     cards[secondChoice].setAttribute("src", "img/card.png")
-    alert("You clicked the same image!")
+    alert("Same card")
   } else if (chosenCards[0] === chosenCards[1]) { // if the name is the same, they match
-    alert("We have a match")
+    alert("You got a matching pair!")
     cards[firstChoice].setAttribute("src", "img/blank.png")
     cards[secondChoice].setAttribute("src", "img/blank.png")
     cardsMatched.push(chosenCards)
   } else { // if not the same card, no match, then they weren't matching
     cards[firstChoice].setAttribute("src", "img/card.png")
     cards[secondChoice].setAttribute("src", "img/card.png")
-    alert("No match here ")
+    alert("No match. Try again ")
   }
   // reset the 2 chosen cards
   chosenCards = []
   chosenCardsId = []
   result.textContent = cardsMatched.length
   if (cardsMatched.length === cardArray.length / 2) {
-    result.textContent = "Congratulations! You found them all "
+    result.textContent = "Congratulations! You won!"
     cardsMatched = []
     cards.forEach(card => card.setAttribute("src", "img/card.png"))
   }

@@ -1,14 +1,18 @@
 div {
     display:flex;
     flex-wrap: wrap;
-    height: 900px;
-    width: 1500px;
+    justify-content: space-evenly;
+    height: 700px;
+    width: 1600px;
     margin: 0 auto;
+}
+img {
+    margin: 4px 0;
 }
 img:hover {
     cursor: pointer;
-    outline: 5px solid lightblue;
+    outline: 5px solid #4B5CA6;
 }
 img:active {
-    outline: 5px solid blue;
+    outline: 5px solid #202747;
 }
