@@ -1,0 +1,14 @@
+div {
+    display:flex;
+    flex-wrap: wrap;
+    height: 900px;
+    width: 1500px;
+    margin: 0 auto;
+}
+img:hover {
+    cursor: pointer;
+    outline: 5px solid lightblue;
+}
+img:active {
+    outline: 5px solid blue;
+}
