@@ -1,3 +1,4 @@
+// collaborated with team Hayden to successfully complete the project
 const cards = document.querySelectorAll('.card')
 cards.forEach(card => card.addEventListener('click', flipCard))
 document.querySelector('#reset').addEventListener('click', resetGame)
@@ -65,3 +66,4 @@ function resetGame() {
 }
 
 resetGame()
+// collaborated with team Hayden to successfully complete the project
