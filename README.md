@@ -1,7 +1,5 @@
 # 🃏 Matching Card Game 🃏
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
-
 This matching card memory game allows the user to select two cards and checks if they are a match. If they are not, the cards flip back over, and the user continues game play.
 
 ## Link to Project: 
