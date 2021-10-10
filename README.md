@@ -4,7 +4,7 @@ This matching card memory game allows the user to select two cards and checks if
 
 ## Link to Project: 
 
-![Matching Card Game Demo](url)
+![Matching Card Game Demo](https://github.com/cat-goncalves/matching-card-bootcamp/blob/answer/css/img/matching-card-demo.gif?raw=true)
 
 
 ## How It's Made:
