@@ -37,38 +37,68 @@
 
 body {
      color: #000;
+     background-color: #FFFBE7;
      font-size: 12px;
+     text-align: center;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Montserrat', Arial, sans-serif;
 }
-section {
-     border: 2px solid black
+h1 {
+     font-size: 5vw;
+     font-family: 'Monoton', Arial, sans-serif;
+     margin: 2%;
+}
+p {
+     width: 60%;
+     margin: 3% 20%;
+     font-size: 2vw;
 }
 img {
      width: 100%;
-     
+     height: 100%;
+     border-radius: 20px;
 }
-
+button {
+     margin-top: 1%;
+     margin-bottom: 5%;
+     font-size: 2vw;
+     padding: 1% 2%;
+     border: 1px solid #000;
+     border-radius: 20px;
+     font-weight: bold;
+     background-color: transparent;
+     color: black;
+}
+button:hover {
+     background-color: #AEFCFF;
+     color: #fff;
+     border: 1px solid #fff;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
 .container {
      display: flex;
-     flex-direction: row;
-     width: 750px;
-}
-/* .row {
-     display: flex;
      flex-direction: column;
-} */
+     width: 80%;
+     margin-left: 10%;
+}
+.row {
+     display: flex;
+     flex-direction: row;
+}
 .card {
-     height: 150px;
-     width: 150px;
+     background-color: #AEFCFF;
+     background: url('img/back.png');
+     background-size: cover;
+     width: 200px;
+     border: 2px solid black;;
+     border-radius: 20px;
+     margin: 2%;
 }
 .cardDown img{
      visibility: hidden;
 }
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

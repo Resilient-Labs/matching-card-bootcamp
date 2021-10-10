@@ -1,9 +1,11 @@
-const cards = ['css/img/bar.png', 'css/img/bar.png', 'css/img/cherries.png', 'css/img/cherries.png', 'css/img/diamond.png', 'css/img/diamond.png', 'css/img/lemon.png', 'css/img/lemon.png', 'css/img/seven.png', 'css/img/seven.png']
+document.querySelector('.container').addEventListener('click', testCard)
+document.querySelector('button').addEventListener('click', resetGame)
+const cards = ['css/img/front-1.png', 'css/img/front-1.png', 'css/img/front-2.png', 'css/img/front-2.png', 'css/img/front-3.png', 'css/img/front-3.png', 'css/img/front-4.png', 'css/img/front-4.png', 'css/img/front-5.png', 'css/img/front-5.png']
 
 // Fisher-Yates Shuffle
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+    let j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array
@@ -26,7 +28,6 @@ document.querySelector('#seven').src = cards[7]
 document.querySelector('#eight').src = cards[8]
 document.querySelector('#nine').src = cards[9]
 
-document.querySelector('.container').addEventListener('click', testCard)
 
 function testCard(event) {
   if(!event.target.classList.value.includes('cardDown')) return
@@ -58,13 +59,14 @@ function testCard(event) {
   }
 }
 
-
-
-
-
-
-
-
+function resetGame(){
+  document.querySelectorAll('.card').forEach(card => {
+    if (card.classList.value.includes('match')){
+      card.classList.remove('match')
+      card.classList.add('cardDown')
+    }
+  })
+}
 
 /*
 Fisher-Yates Shuffle:

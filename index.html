@@ -8,13 +8,18 @@
 
 	<title>Matching Card Game</title>
 
-	<!-- external CSS link -->
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<section class="main container clearfix">
+	<h1>Cocktail Card Matching</h1>
+	<p>Ready to put your memory to the test? Click to find all the card matches you can!</p>
+	<section class="container clearfix">
 		<section class="row">
 			<section class="card cardDown" id="0"><img src="" alt="" id="zero"></section>
 			<section class="card cardDown" id="1"><img src="" alt="" id="one"></section>
@@ -30,7 +35,7 @@
 			<section class="card cardDown" id="9"><img src="" alt="" id="nine"></section>
 		</section>
 	</section>
-	<button id="play"></button>
+	<button id="play">Reset</button>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 
