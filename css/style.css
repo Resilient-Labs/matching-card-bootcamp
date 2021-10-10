@@ -1,0 +1,79 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+/* Clear fix hack */ 
+ .clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0; 
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     height: 100vh;
+     display:flex;
+     background-image: url('../images/back.jpg');
+     background-repeat: no-repeat;
+     background-size: contain;
+}
+.container{
+     width: 1000px;
+     height: 1000px;
+     display: flex;
+     flex-wrap: wrap;
+     margin:auto
+
+}
+
+.card{
+     width:18%;
+     height:33%;
+     position: relative;
+     margin: 5px
+}
+
+
+
+.back, .front{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     padding: 5px;
+     border-radius: 5px;
+     background: rgb(160, 181, 195);
+     
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
