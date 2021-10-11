@@ -1,0 +1,94 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    color: #000;
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1{
+  font-size: 2.5rem;
+  color: magenta;
+}
+
+tr{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+td{
+  /* border: 1px solid black; */
+  margin: .5%;
+
+} 
+img{
+  height: 30rem;
+  width: 25em;
+  border: .3rem solid black;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  font-size: 2rem;
+  color: gold;
+  background: purple;
+  border: solid magenta;
+  
+
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

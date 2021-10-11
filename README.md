@@ -2,21 +2,20 @@
 
 ### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
 
-### How to submit your code for review:
+This is my simple Matching Card Game! Users can click on any card to start, but in order to win, they must keep matching two cards consecutively in order to continue or else it will flip back over!
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<img src="matchingcard.png"></img>
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+Link to live site: [https://danielmtran-matchingcard.netlify.app]
+
+### How It's Made:
+
+Tech used: HTML, CSS, JAVASCRIPT, Node.js
+
+I made the basic styling and layout of the app via HTML and CSS. The main functionality of the app was made using Javascript and Node.js.
+
+
+### Optimizations:
+
+
+### Lessons Learned:
