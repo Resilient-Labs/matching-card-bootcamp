@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Title</title>
+		<!--Font Styles-->
+		
+		<!-- external CSS link -->
+		<!--<link rel="stylesheet" href="css/normalize.css">-->
+		<!--<link rel="stylesheet" href="css/reset.css">-->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+        <h1>Game of Thrones - Matching Game</h1>
+        <div class="button">
+            <button id="reset">Reset Game</button>
+        </div>
+	    <!-- Game board -->
+        <div id="container">
+            <table class="table">
+                <tr>
+                    <td><img src= "imgs/default.png" class="Card A" data-value = "" id="0"></td>
+                    <td><img src= "imgs/default.png" class="Card B" id="1"></td>
+                    <td><img src="imgs/default.png" class="Card C" id="2"></td>
+                    <td><img src="imgs/default.png" class="Card D" id="3"></td>
+                    <td><img src="imgs/default.png" class="Card E" id="4"></td>
+                    <td><img src="imgs/default.png" class="Card F" id="5"></td>
+                </tr>
+                <tr>
+                    <td><img src="imgs/default.png"class="Card A" id="6"></td>
+                    <td><img src= "imgs/default.png" class="Card B" id="7"></td>
+                    <td><img src= "imgs/default.png" class="Card C" id="8"></td>
+                    <td><img src="imgs/default.png" class="Card D" id="9"></td>
+                    <td><img src= "imgs/default.png" class="Card E" id="10"></td>
+                    <td><img src= "imgs/default.png" class="Card F" id="11"></td>
+                </tr>
+                <!-- <tr>
+                    <td><div class="Card A" id="0"></div></td>
+                    <td><div class="Card B" id="1"></div></td>
+                    <td><div class="Card C" id="2"></div></td>
+                    <td><div class="Card D" id="3"></div></td>
+                    <td><div class="Card E" id="4"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="Card A" id="5"></div></td>
+                    <td><div class="Card B" id="6"></div></td>
+                    <td><div class="Card C" id="7"></div></td>
+                    <td><div class="Card D" id="8"></div></td>
+                    <td><div class="Card E" id="9"></div></td>
+                </tr> -->
+            </table>
+        </div>
+        <!-- After Game options -->
+        <h2 id='message'><span id="finished"></span></h2>
+		<script src="https://kit.fontawesome.com/c0e668a8ad.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
