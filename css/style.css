@@ -1,0 +1,145 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  .alignright {
+      float: right;
+      padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  }
+  
+  .alignleft {
+      float: left;
+      padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  }
+  /*1px  = 0.0625rem
+  10px = 0.625rem
+  12px = 0.75rem
+  14px = 0.875rem
+  16px = 1rem (base)
+  18px = 1.125rem
+  20px = 1.25rem
+  24px = 1.5rem
+  30px = 1.875rem
+  32px = 2rem*/
+  
+  /*.bodyCont {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      max-width: 1350;
+  }*/
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+       color: #000;
+       font-size: 12px;
+       line-height: 1.4;
+       font-family: 'Teko', sans-serif;
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  body{
+    background: black;
+    /* background-image: url(../imgs/whitesmoke.gif);
+    background-size: 146%;
+    background-position: right;
+    background-repeat: no-repeat; */
+  }
+  h1{
+    color: rgb(236,204,142);
+    font-size: 5em;
+    text-align: center;
+    margin: auto;
+  }
+  h2{
+    color: white;
+    font-size: 7em;
+    text-align: center;
+    margin-top: 0em;
+    margin-bottom: -5px;
+  }
+  .table{
+    margin: auto;
+  }
+  td{
+    border: none;
+    margin: auto;
+    height: 2%;
+    width: 2%;
+  }
+  img{
+       width: 90%;
+       padding: 0;
+       border: 0;
+  
+  }
+  .button{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  button{
+    text-align: center;
+    font-size: 1.5em;
+    height: 2em;
+    width: 15em;
+    color: rgb(236,204,142);
+    background: black;
+    border-radius: 2em;
+    border-color: rgb(236,204,142);
+    margin-bottom: 1em;
+  }
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  .card{
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+  .card{
+    transform: rotateY(180deg);
+  }
+  
+  /* shows cards if js allows it */
+  td.flip,
+  td.matched{
+    transform: rotateY(180deg);
+  }
+  
+  /* click animation */
+  td:active{
+    transform: scale(.100);
+    transition: transform .5s;
+  }
+  img{
+    height: 100%;
+  }
+  
