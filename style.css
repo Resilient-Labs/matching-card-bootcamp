@@ -1,0 +1,82 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%; 
+  }
+
+  body {
+    margin: 0;
+    background: rgb(113,60,0);
+    background: linear-gradient(45deg, rgba(113,60,0,1) 27%, rgba(179,150,3,1) 82%);
+  }
+
+  /* main {
+    display: block;
+  } */
+  h1 {
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    color: white;
+    text-align: center;
+    letter-spacing: .75em;
+    
+  }
+
+  #head > button {
+    width: 20%;
+    margin: auto;
+    color: brown;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: white;
+    background-color: #663300;
+    border: solid 1px white;
+    padding: 10px;
+    align: center;
+  }
+
+  #cardGrid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1em;
+   }
+
+   section{
+       width: 70%;
+       margin: 1em;
+       padding: .5em;
+       border-radius: 5px 5px 5px 5px;
+       box-shadow: 5px 5px 30px 10px #FFD744;
+   }
+
+    hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+
+  section > h4{
+    display: none;
+    font-size: 3rem;
+    height: 300px;
+    width: 200px;
+  }
+ 
+ img{
+   width: 100%;
+   height: 100%;
+ }
+
+ button {
+   width: 20%;
+   margin: auto;
+ }
+ .hide{
+  transition:all .7s;
+  visibility: hidden;
+ }
+ .show{
+  display: unset;
+}
+  
