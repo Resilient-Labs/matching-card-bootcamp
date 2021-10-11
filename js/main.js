@@ -5,7 +5,6 @@ Game is done when all cards are matched and flipped over.*/
 
 //Example Demo: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card
 
-
 //functions: flip card
     //on the click, the card will display the image
     // then an if/else, if the cards that are flipped match, the poitns go up, but if they are not a match, they flip back over
@@ -17,8 +16,8 @@ Game is done when all cards are matched and flipped over.*/
 
     //  let A
     //  let B
-    let cards = ['exodia/exoHead.jpg','exodia/exoLeftArm.jpg','exodia/exoLeftLeg.jpg','exodia/exoRightArm.jpg','exodia/exoRightLeg.jpg', 
-        'exodia/exoHead.jpg','exodia/exoLeftArm.jpg','exodia/exoLeftLeg.jpg','exodia/exoRightArm.jpg','exodia/exoRightLeg.jpg']
+    let cards = ['images/greenLine.jpeg','images/redLine.jpeg','images/blueLine.jpeg','images/silverLine.jpeg','images/orangeLine.jpeg', 
+    'images/greenLine.jpeg','images/redLine.jpeg','images/blueLine.jpeg','images/silverLine.jpeg','images/orangeLine.jpeg']
     cards.sort(() => (Math.random() - 0.5 ));
 
 
@@ -46,6 +45,7 @@ Game is done when all cards are matched and flipped over.*/
             } else { // This is the second card
                 //the second card in this match
                 if(firstCard.src === e.target.firstElementChild.src){// <- tests if the firstCard and the second card, represented by 'e.target...etc' match
+                    // document.querySelector('h3').textContent = 'match'
                 alert('match')
                 firstCard = null
                 } else{ //<- this 'else' will hide both cards if they are not matching
