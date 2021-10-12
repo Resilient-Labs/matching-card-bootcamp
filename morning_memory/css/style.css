@@ -1,0 +1,109 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+body{
+  text-align: center;
+  color: cornflowerblue;
+  background-size: cover;
+}
+
+img{
+  height: 10%;
+  width: 50%;
+}
+
+
+h1{
+  color: whitesmoke;
+  text-shadow: cornflowerblue;
+  text-shadow: cornflowerblue;
+}
+
+.gameBoardOne{
+  width: 100%;
+  margin-left: 5em;
+  margin-bottom: 15em;
+}
+
+.gameBoardTwo{
+  width: 100%;
+  margin-left: 5em;
+  margin-bottom: 5em;
+  align-items: center;
+}
+
+.card{
+  float: left;
+  width:17.5%;
+  align-items: center;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+
+
+.but{
+  margin-top: 25em;
+  clear: both;
+}
+
+/* refrenced flaviocopes.com/ */
+
+
+/* @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+} */
+
+button{
+  background-color: white;
+  color: navy;
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.1em 0.1em 0;
+  border:0.16em solid black;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+clear:both;
+}
+
+button:hover{
+  background-color: cornflowerblue;;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+}
+
