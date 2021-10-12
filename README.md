@@ -1,22 +1,17 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+## Memory Matching Cards
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+An matching card app where you can ~~match with Danny Devito~~. A Danny Devito matching card game that you can play with your family.
 
-### How to submit your code for review:
+## A Picture of the Exciting Website:
+![matchingcard](https://user-images.githubusercontent.com/88857875/136879855-fb2464d0-7bff-42c5-b24e-cc4708dcbdc9.gif)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made:
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Tech used:** HTML5, CSS3, JavaScript ES6
+
+# Lessons Learned
+
+* Learned how to add elements via JavaScript
+* How to "flip cards" that have two/three images
+* Checking if another card is the same
+* Checking if all matching pairs have been chosen
