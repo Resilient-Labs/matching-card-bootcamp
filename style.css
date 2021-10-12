@@ -1,0 +1,33 @@
+div{
+    width: 80%;
+    height: 550px;
+    
+}
+
+img{
+   
+    width: 19.5%;
+    height: 250px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+
+body{
+    background-image: url(pics/korra.jpg);
+    background-size: cover;
+}
+
+cards{
+    border: 1px solid black;
+}
+
+button{
+    width: 120px;
+    padding: 10px 0;
+    border: 2.5px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
