@@ -1,0 +1,82 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%; 
+  }
+
+  body {
+    background: radial-gradient(#EAA500, #EA2000, #F08080 )
+  }
+
+  main {
+    display: block;
+  }
+
+  #cardGrid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 2px solid;
+    justify-content: stretch;
+    padding: 5px;
+   }
+
+   .gameDetails{
+     height: 200px;
+     border: black 1px solid;
+     padding: 5px;
+     margin-bottom: 2%;
+     display: flex;
+     background: black;
+     color: white;
+   }
+
+   .gameDetails section{
+       border:black solid 1px;
+       flex:1;
+       padding: 5px;
+       box-shadow: 10px 5px 5px white;
+       margin-left: 5px;
+       margin-right: 5px;
+   }
+
+    hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+
+  #cardGrid section{
+    background: linear-gradient(#D7AC6E, #E67768 );
+    height: 200px;
+      border: 2px solid;
+  }
+
+  .buttonAndResults{
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    width: 150px;
+  }
+
+  /* section > h4{
+    display: none;
+    font-size: 3rem;
+    height: 300px;
+    width: 200px;
+  } */
+ 
+ img{
+   width: 100%;
+   height: 100%;
+ }
+ .hide{
+  transition:all .7s;
+  visibility: hidden;
+ }
+ .show{
+  display: unset;
+}
+
+h2{
+  text-align: center;
+}
+  
