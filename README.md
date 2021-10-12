@@ -1,22 +1,29 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Slot Machine
+This is a project for creating a matching card game. There are twelve cards that have 6 matching images. Match the images to win the game. A twist on this game is that you have lives that deplete by one for each incorrect match. When your lives hit zero, the cards flip over and your lives restart. The cards are randomized after each restart.
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+**Link to project:** 
 
-### How to submit your code for review:
+![screenshot](images/live_screenshot.png)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made:
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Tech used:** HTML, CSS, JavaScript
+
+I took a different approach to making this card game by using the javascript DOM model. The boxes are dynamically created in javascript. There are two additional boxes dynamically created in javascript that represent the front of card and back of card. CSS styling is used to have the cards rotate 180 degrees along the x axis, and transition with ease. 
+
+The logic in this project is done by javascript. When two cards are selected a flipped class is added to a card using classList.add. an array is created representing flipped cards and stored in a variable. When the array size goes to 2, the game status is verified for a correct move by comparing the attribute names of the flipped cards, and they should match. If correct, the cards stay flipped. If not correct they flip back over.
+
+## Optimizations
+
+
+## Lessons Learned:
+
+Some great takeaways from this project are using the javascript DOM to dynamically create the sections and card faces. This significantly reduced the code in the html to only a few lines of code.
+
+The only downside is that we did break the separation of concerns by having our content in our Javascript instead of HTML. We also did not implement OOP so the game logic is exposed to the end user by inspecting the elements. I would not consider this project ready for implementation for these reasons.
+
+Also, using pictures of my daughter made this project more enjoyable!
+
+## Examples:
+
+
