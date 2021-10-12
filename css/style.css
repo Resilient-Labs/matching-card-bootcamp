@@ -1,0 +1,57 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    color: black;
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  .clear {
+   clear: both;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+
+  h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    background-color: hotpink;
+  }
+
+  body{
+    background: url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:670px;
+  }
+
+  table{
+    margin-top: 1%;
+  }
+
+  img{
+    height: 20em;
+    width: 20em;
+    margin-left: 35%;
+  }
+
+  button{
+    margin-left: 43%;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(0, 107, 189);
+    border: none;
+    font-size: 20px;
+    color: white;
+  }
