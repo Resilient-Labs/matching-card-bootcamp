@@ -11,6 +11,12 @@ An matching card app where you can ~~match with Danny Devito~~. A Danny Devito m
 
 Initially, I used array code from my Tic Tac Toe app since this was a similar project that detected matches. I then realized that I did not need to compute which column or row they are in. All I needed was to check if they were not the same exact card but still the same images. To figure out successful matches, they are in a separate array where I check the length of to see if all 5 pairs have been found.
 
+## Optimizations
+
+* Fix "empty" cards having the hover effect
+* Fix the congratulations DOM manipulation not working
+* Make the cards design more complex
+
 # Lessons Learned
 
 * Learned how to add elements via JavaScript
