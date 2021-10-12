@@ -1,0 +1,28 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+section{
+  width: 100%;
+  height: 100vh
+}
+section div{
+  border: 1px solid black;
+  width: 25%;
+  height: 25vh;
+  float: left
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
