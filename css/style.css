@@ -9,6 +9,9 @@ html {
     align-items: center;
     justify-content: center;
     align-content: center;
+    background-image: url("/Users/resilientcoders/Desktop/resilient_coders/rcWork/week_nine/matchingCardGame/matching-card-bootcamp/images/newEnglandAutumn.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   main {
