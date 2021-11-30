@@ -2,6 +2,7 @@
 This is a project for creating a matching card game. There are twelve cards that have 6 matching images. Match the images to win the game. A twist on this game is that you have lives that deplete by one for each incorrect match. When your lives hit zero, the cards flip over and your lives restart. The cards are randomized after each restart.
 
 **Link to project:** 
+https://kind-tereshkova-6829d9.netlify.app/
 
 ![screenshot](images/live_screenshot.png)
 
