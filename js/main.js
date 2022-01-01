@@ -98,7 +98,9 @@ function checkForMatch() {
   if (cardsWon.length === cardArray.length / 2) {
     result.textContent = "Congratulations! You found them all ";
     cardsWon = [];
+    cardArray.sort(() => 0.5 - Math.random());
     cards.forEach((element) => element.setAttribute("src", "images/card.png"));
+
   }
 }
 //logic for pushing values to array, quite confused 
