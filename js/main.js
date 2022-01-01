@@ -51,17 +51,16 @@ const cardArray = [
   },
 ];
 
-//sorting array order 
+//sorting array order
 cardArray.sort(() => 0.5 - Math.random());
-
+//creating elements and arrays
 const section = document.querySelector(".container");
 const result = document.querySelector("#result");
-let card = document.createElement("img");
 let chosenCards = [];
-console.log(chosenCards);
 let chosenCardsId = [];
 let cardsWon = [];
 
+//creating default board
 function createBoard() {
   for (let i = 0; i < cardArray.length; i++) {
     let card = document.createElement("img");
@@ -71,9 +70,9 @@ function createBoard() {
     section.appendChild(card);
   }
 }
-
+//logic for checking for matching array values
 function checkForMatch() {
-   let cards = document.querySelectorAll("img");
+  let cards = document.querySelectorAll("img");
   const firstChoice = chosenCardsId[0];
   const secondChoice = chosenCardsId[1];
   if (firstChoice == secondChoice) {
@@ -84,31 +83,36 @@ function checkForMatch() {
     alert("We have a match");
     cards[firstChoice].setAttribute("src", "images/blank.png");
     cards[secondChoice].setAttribute("src", "images/blank.png");
-    cardsWon.push(chosenCards);
-  } else {
+    cardsWon.push(chosenCardsId);
+  } 
+ else {
     cards[firstChoice].setAttribute("src", "images/card.png");
     cards[secondChoice].setAttribute("src", "images/card.png");
     alert("No match here ");
   }
+  //emptying out the arrays after each check
   chosenCards = [];
   chosenCardsId = [];
   result.textContent = cardsWon.length;
+  //win and restart logic
   if (cardsWon.length === cardArray.length / 2) {
     result.textContent = "Congratulations! You found them all ";
     cardsWon = [];
-    cards.forEach(element => element.setAttribute('src', 'images/card.png'))
-    
+    cards.forEach((element) => element.setAttribute("src", "images/card.png"));
   }
 }
-
+//logic for pushing values to array, quite confused 
 function flipCard() {
   let cardID = this.getAttribute("id");
+  let dupes = cardsWon.some(arr => arr.includes(cardID))
+  if(dupes === false){
   chosenCards.push(cardArray[cardID].name);
   chosenCardsId.push(cardID);
-  this.setAttribute("src", cardArray[cardID].img);
+  this.setAttribute("src", cardArray[cardID].img)
   if (chosenCards.length === 2) {
     setTimeout(checkForMatch, 500);
   }
+}
 }
 
 createBoard();
