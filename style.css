@@ -1,0 +1,40 @@
+/******************************************
+/* CSS
+/*******************************************/
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  /* html {
+    font-size: 62.5%;
+  } */
+  
+  div {
+    width: 20%;
+    border: 1px solid black;
+    /* display: flex; */
+  }
+  
+  img {
+    height: 100px;
+  }
+  
+  .hide {
+    display: none;
+    visibility: hidden;
+  }
+
+  
