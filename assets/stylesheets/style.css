@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* header styling */
+
+.title {
+  font-size: 6rem;
+  text-align: center;
+}
+
+/* game board styling  */
+
+img {
+  height: 175px;
+  float: left;
+  padding: 3px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  /* Changed to wrap for photos to line up */
+}
+
+.card {
+  width: 20%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+/* play again section styling */
+
+.reset {
+  text-align: center;
+  font-size: 3rem;
+}
+
+button {
+  display: inline-block;
+  background: red;
+  border-radius: 50%;
+  display: block;
+}
