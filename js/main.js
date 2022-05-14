@@ -5,11 +5,11 @@
 10 card matching game
 Can select 2 cards and they flip
 If matching stay up
-If not matching turns back around. 
+If not matching turns back around.
 When all cards are up, user wins
 Needs to check each turn if all cards are flipped.
 Class to toggle image
-Class to toggle if matching. 
+Class to toggle if matching.
 */
 
 let gameCards = Array.from(document.querySelectorAll('section'))
@@ -18,7 +18,7 @@ console.log(gameCards)
 let winMessage = document.querySelector('span')
 let counter = 0
 let selectedCards = []
-let matchedCards = [] 
+let matchedCards = []
 //console.log(`This is the array of all the game cards: ${gameCards}`)
 //console.log(gameCards[2].classList)
 //console.log(gameCards[2].classList[1])
@@ -34,19 +34,19 @@ assignRandomPicsToGameCards()
 //Shuffle the picture array.Code from Stack Overflow (https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
-  
+
     // While there remain elements to shuffle.
     while (currentIndex != 0) {
-        
+
       // Pick a remaining element.
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
-      
+
       // And swap it with the current element.
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex], array[currentIndex]];
     }
-    
+
     return array;
 }
 
@@ -71,7 +71,7 @@ function flipCard(e){
     if (!e.target.classList.contains('selected')){
         e.target.classList.add('selected')
         console.log(`The click target focus: ${e.target}`)
-        
+
         counter++
         selectedCards.push(e.target)
     }
@@ -100,15 +100,15 @@ function checkForMatch(){
     //     // console.log(gameCards)
     //     // && (gameCards[i].classList.contains('selected'))
     // }
-    
+
 
     // gameCards.filter(card => {
     //     card.classList.contains('selected')
     // }).forEach(scard => {
     //     s
     // })
-    
-    //The push option to check match    
+
+    //The push option to check match
     if(selectedCards.length === 3){
         if (selectedCards[0].classList.value === selectedCards[1].classList.value){
             selectedCards[0].classList.add('matched')
@@ -117,7 +117,7 @@ function checkForMatch(){
             selectedCards[1].classList.remove('selected')
             matchedCards.push(selectedCards[0], selectedCards[1])
             selectedCards.splice(0,2)
-            
+
         }else{
             selectedCards[0].classList.remove('selected')
             selectedCards[1].classList.remove('selected')
@@ -136,7 +136,7 @@ function checkForMatch(){
     }
 }
 
-//function to restart game 
+//function to restart game
 function restartGame(){
     matchedCards = []
     selectedCards = []
@@ -147,6 +147,7 @@ function restartGame(){
     })
     shuffle(cardPics)
     assignRandomPicsToGameCards()
+    winMessage.innerText = 'Let\'s Go!'
 }
 
 

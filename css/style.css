@@ -1,7 +1,3 @@
-/******************************************
-/* CSS
-/*******************************************/
-
 /* Box Model Hack */
 *{
   box-sizing: border-box;
@@ -10,11 +6,10 @@
 html{
   font-size: 62.5%;
 }
-/******************************************
-/* LAYOUT
-/*******************************************/
+
 body{
   text-align: center;
+  background: rgb(184, 169, 219);
 }
 h1{
   font-size: 3rem;
@@ -22,9 +17,7 @@ h1{
 section{
   text-align: center;
 }
-/* img{
-  text-align: center;
-} */
+
 section{
   width: 80px;
   height: 100px;
@@ -63,18 +56,7 @@ span{
   box-shadow: 2px 2px 2px 2px #d698b9;
   border: 2px solid #d698b9;
 }
-/* img{
-  width: 100%;
-  height: 100%;
-} */
 
-/* .hidden{
-  display: none;
-} */
-
-/* .show{
-  display:inline-block;
-} */
 
 .back{
   background-image: url(../img/cardback1.jpg);
@@ -94,7 +76,3 @@ span{
 .picFive.selected,.picFive.matched{
   background-image: url(../img/mpic5.jpg);
 }
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
