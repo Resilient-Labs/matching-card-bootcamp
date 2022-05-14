@@ -1,0 +1,130 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  text-align: center;
+  background: url(../img/cardback1.jpg);
+  background: cover;
+}
+h1{
+  font-size: 6rem;
+  background: #ff9800;
+  color: white;
+}
+section{
+  text-align: center;
+}
+
+main{
+  
+}
+
+/* img{
+  text-align: center;
+} */
+section{
+  width: 150px;
+  height: 200px;
+  box-shadow: 2px 2px 2px 2px #ff9800;
+  border: 2px solid #473f57;
+  cursor: pointer;
+  line-height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section:hover{
+  background-color: lightblue;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 10px auto;
+}
+span{
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+  #231557 0%,
+  #00d123 29%,
+  #ff1313 67%,
+  #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  font-size: 2.5rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#restartBtn{
+  background-color: rgb(246 244 234);
+  width: 200px;
+  height: 50px;
+  font-size: 2rem;
+  box-shadow: 2px 2px 2px 2px #ff9800;
+  border: 2px solid #ff9800;
+}
+/* img{
+  width: 100%;
+  height: 100%;
+} */
+
+/* .hidden{
+  display: none;
+} */
+
+/* .show{
+  display:inline-block;
+} */
+
+.back{
+  background-image: url(../img/ballislife.jpeg);
+}
+.picOne.selected, .picOne.matched{
+  background-image: url(../img/ja.jpeg);
+}
+.picTwo.selected,.picTwo.matched{
+  background-image: url(../img/kobe.jpeg);
+}
+.picThree.selected,.picThree.matched{
+  background-image: url(../img/kyrie.jpeg);
+}
+.picFour.selected,.picFour.matched{
+  background-image: url(../img/lebron.png);
+}
+.picFive.selected,.picFive.matched{
+  background-image: url(../img/curry.jpeg);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
