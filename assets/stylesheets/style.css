@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  text-align: center;
+  font-family: 'Patrick Hand', Arial, Helvetica, sans-serif;
+  background: rgb(247, 213, 238);
+}
+
+/* header styling */
+
+header {
+  background: rgba(250, 194, 202);
+  margin: 0 10%;
+}
+
+.title {
+  font-size: 6rem;
+  margin: 0;
+}
+
+.instructions {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.result {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+/* game board styling  */
+
+img {
+  height: 175px;
+  float: left;
+  padding: 3px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background: rgba(250, 194, 202);
+  margin: 0 10%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+}
+
+.card {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+/* play again section styling */
+
+.reset {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+button {
+  background: rgba(250, 194, 202);
+  border-radius: 50%;
+  height: 50px;
+}
+
+/* footer styling */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 25%;
+}
+
+li {
+  float: left;
+  margin: 1%;
+  font-size: 1.5rem;
+  padding: 0;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  transition: color .5s;
+}
+
+a:hover {
+  color: yellow;
+}
