@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 1%;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height:600px;
+    background-color:yellow;
+    border: 1px solid red;
+}
+
+html{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+   background-color: black;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0 .3em red;
+    color: white;
+    background-color: black;
+}
+
+h1{
+    font-size: 1.67em;
+    text-shadow: 0 .07em red;
+    font-weight: bold;
+}
