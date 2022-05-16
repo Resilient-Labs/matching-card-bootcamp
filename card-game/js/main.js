@@ -11,28 +11,32 @@
 
 //Event Listener to flip the card when it is clicked
 
+const images = [
+    "img/asami.png",
+    "img/bolin.png",
+    "img/korra.png",
+    "img/mako.png",
+    "img/tenzin.png",
+    "img/asami.png",
+    "img/bolin.png",
+    "img/korra.png",
+    "img/mako.png",
+    "img/tenzin.png"
+]
 
-const images = ["img/air.jpeg",
-    "img/earth.jpeg",
-    "img/water.jpeg",
-    "img/fire.jpeg",
-    "img/lotus.jpeg",
-    "img/air.jpeg",
-    "img/earth.jpeg",
-    "img/water.jpeg",
-    "img/fire.jpeg",
-    "img/lotus.jpeg"]
 let shuffledImages = []
+
 while (images.length > 0) {
     let randomIndex = Math.floor(Math.random() * images.length)
     shuffledImages.push(images[randomIndex])
     images.splice(randomIndex, 1)
 }
+
 const hiddenImages = Array.from(document.querySelectorAll('.hide'))
+
 for (let i = 0; i < hiddenImages.length; i++) {
     hiddenImages[i].src = shuffledImages[i]
-} 
-
+}
 
 let count = 0
 
@@ -49,7 +53,7 @@ function flipCard() {
     this.children[1].classList.toggle('hide')
     this.children[1].classList.add('backside')
     count++
-    console.log(count)
+    // console.log(count)
     // console.log(e.target.children, e.target.children[0], e.target.children[1])
     match()
     endGame()
@@ -86,13 +90,9 @@ function endGame() {
     }
 }
 
-const startOver = () => {
-    location.reload()
-}
-
+const startOver = () => location.reload()
 
 document.querySelectorAll('.card').forEach(card => card.addEventListener('click', flipCard))
 document.querySelector('button').addEventListener('click', startOver)
-
 
 //Things to work on:
