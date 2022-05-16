@@ -12,7 +12,7 @@ Class to toggle image
 Class to toggle if matching. 
 */
 
-let gameCards = Array.from(document.querySelectorAll('section'))
+let gameCards = Array.from(document.querySelectorAll('.back'))
 console.log(gameCards)
 
 let winMessage = document.querySelector('span')
@@ -76,38 +76,12 @@ function flipCard(e){
         selectedCards.push(e.target)
     }
     return checkForMatch()
-    //  let select = gameCards.filter(card => card.classList.contains('selected'))
-    //  console.log(select)
 
 }
 
 //function to check for match
 function checkForMatch(){
-//the nested loop option to check match
-    // for(let i = 0; i < gameCards.length; i++){
-    //     console.log(`loop one ${gameCards[i]}`)
-    //     for(let j = i + 1; j < gameCards.length; j++){
-    //         //console.log(`baby loop ${gameCards[j]}`)
-    //         if((gameCards[i].classList.value === gameCards[j].classList.value) && (gameCards[i].classList.contains('selected'))){
-    //             console.log('Issa a bigole match')
-    //             console.log(gameCards[i].classList.value === gameCards[j].classList.value)
-    //             gameCards[i].classList.add('matched')
-    //             gameCards[j].classList.add('matched')
-    //             gameCards[i].classList.remove('selected')
-    //             gameCards[j].classList.remove('selected')
-    //         }
-    //     }
-    //     // console.log(gameCards)
-    //     // && (gameCards[i].classList.contains('selected'))
-    // }
-    
 
-    // gameCards.filter(card => {
-    //     card.classList.contains('selected')
-    // }).forEach(scard => {
-    //     s
-    // })
-    
     //The push option to check match    
     if(selectedCards.length === 3){
         if (selectedCards[0].classList.value === selectedCards[1].classList.value){
@@ -144,10 +118,19 @@ function restartGame(){
     gameCards.forEach(card => {
         card.classList.remove('matched')
         card.classList.remove('selected')
+        card.classList.remove('picOne')
+        card.classList.remove('picTwo')
+        card.classList.remove('picThree')
+        card.classList.remove('picFour')
+        card.classList.remove('picFive')
+
     })
     shuffle(cardPics)
     assignRandomPicsToGameCards()
+
+       //location.reload()
 }
+
 
 
 document.querySelector('#restartBtn').addEventListener('click', restartGame)
