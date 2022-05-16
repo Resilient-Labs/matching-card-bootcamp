@@ -8,11 +8,13 @@ const images = [
   'assets/images/dog.jpeg',
   'assets/images/shibu_ccexpress.png',
   'assets/images/red panda.png',
+  'assets/images/sloth.png',
   'assets/images/funny.og.jpeg',
   'assets/images/happydog.jpeg',
   'assets/images/dog.jpeg',
   'assets/images/shibu_ccexpress.png',
-  'assets/images/red panda.png'
+  'assets/images/red panda.png',
+  'assets/images/sloth.png'
 ]
 // Create an array to shuffle the images, it's empty since we will push our randomized images into it.
 let shuffledImages = []
@@ -79,7 +81,7 @@ function match() {
 }
 
 function endGame() {
-    if (count === 10) {
+    if (count === 12) {
         document.querySelector('.result').innerText = 'You Win!'
     }
     //as long as all of the cards match, the count will increase to 10

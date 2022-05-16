@@ -4,13 +4,31 @@
 
 html {
   font-size: 62.5%;
+  text-align: center;
+  font-family: 'Patrick Hand', Arial, Helvetica, sans-serif;
+  background: rgb(247, 213, 238);
 }
 
 /* header styling */
 
+header {
+  background: rgba(250, 194, 202);
+  margin: 0 10%;
+}
+
 .title {
   font-size: 6rem;
-  text-align: center;
+  margin: 0;
+}
+
+.instructions {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.result {
+  font-size: 3.5rem;
+  margin: 0;
 }
 
 /* game board styling  */
@@ -21,15 +39,22 @@ img {
   padding: 3px;
 }
 
-section {
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background: rgba(250, 194, 202);
+  margin: 0 10%;
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
-  /* Changed to wrap for photos to line up */
+  width: 85%;
 }
 
 .card {
-  width: 20%;
-  border: 1px solid black;
+  width: 25%;
   display: flex;
   justify-content: center;
 }
@@ -42,12 +67,42 @@ section {
 
 .reset {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 button {
-  display: inline-block;
-  background: red;
+  background: rgba(250, 194, 202);
   border-radius: 50%;
-  display: block;
+  height: 50px;
+}
+
+/* footer styling */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 25%;
+}
+
+li {
+  float: left;
+  margin: 1%;
+  font-size: 1.5rem;
+  padding: 0;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  transition: color .5s;
+}
+
+a:hover {
+  color: yellow;
 }
