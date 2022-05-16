@@ -1,13 +1,18 @@
 /******************************************
 /* CSS
 /*******************************************/
-*{
+* {
     box-sizing: border-box;
   }
   
   /******************************************
   /* LAYOUT
   /*******************************************/
+  
+  body {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,57,57,1) 35%, rgba(0,212,255,1) 100%);
+  }
   
   section {
     display: flex;
@@ -37,4 +42,15 @@
     visibility: hidden;
   }
 
-  
+  h1 {
+    color: rgb(12, 10, 10);
+    font-style: italic;
+    text-align: center;
+    padding: 32px;
+
+  }
+
+  span {
+    margin: auto;
+    margin-top: 12px;
+  }
