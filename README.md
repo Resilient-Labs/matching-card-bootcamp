@@ -2,7 +2,7 @@
 
 Created a matching card game where you have to match the cards.
 
-**Link to project**: https://animalcrossingapi.netlify.app/
+**Link to project**: https://matchingcardsapp.netlify.app/
 
 
 ![h](https://user-images.githubusercontent.com/101950707/168517316-57cb8f0a-9516-4ac1-aa44-1136023781bf.png)
