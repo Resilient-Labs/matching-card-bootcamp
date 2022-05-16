@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-family: arial;
+  /* background-color: rgb(215, 162, 231); */
+  background-image: linear-gradient(rgb(241, 182, 182), rgb(243, 243, 143));
+  
+}
+
+.board{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+
+}
+span{
+color: rgb(223, 132, 184);
+}
+.yellow{
+  color:yellow;
+}
+h1{
+  color: rgb(151, 124, 177);
+  font-style: italic;
+}
+button{
+  transform: scale(1.5);
+  background-color: rgb(124, 56, 168);
+  border-radius: 10px;
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  margin-bottom: 1%;
+  margin-right: 1%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #4b4642;
+}
+.box:hover{
+  background-color: rgb(224, 205, 189, .6);
+}
+
+.frontFace, .backFace {
+  height: 200px;
+  padding: 20px;
+ 
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.backFace{
+  background-color: rgb(218, 202, 182);
+}
+
+.box.flip {
+  transform: rotateY(180deg);
+  transition: transform .5s;
+} 
+.hidden{
+  display: none;
+}
+img{
+  width: 100%;
+}
+.appleFront{
+background-color: rgb(236, 148, 148);
+}
+
+.peachFront{
+  background-color:peachpuff;
+}
+.pearFront{
+  background-color: rgb(197, 221, 181);
+}
+.cherryFront{
+  background-color: rgba(207, 118, 155);
+}
+
+.orangeFront{
+  background-color: rgb(234, 202, 128);
+}
