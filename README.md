@@ -4,7 +4,7 @@
 
 ### How to submit your code for review:
 
-- Fork and clone this repo
+<!-- - Fork and clone this repo
 - Create a new branch called answer
 - Checkout answer branch
 - Push to your fork
@@ -19,4 +19,4 @@ Example:
 I completed the challenge: 5
 I feel good about my code: 4
 I'm not sure if my constructors are setup cleanly...
-```
+``` -->
