@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: 'Josefin Sans', 'Poppins', 'Futura', sans-serif;
+  background-image: url ("/img/image.png");
+  background-repeat: repeat;
+  background-color:rgb(192, 230, 244);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vh;
+  height: 60vh;
+  margin: auto;
+  gap: 2%;
+}
+
+.card {
+  background: black;
+  border-radius: 8px;
+  width: 18%;
+  height: 45%;
+  cursor: pointer;
+}
+
+.red {
+  background: rgb(255, 174, 251);
+}
+.blue {
+  background: rgb(156, 156, 217);
+}
+
+.green {
+  background: rgb(134, 187, 134);
+}
+.brown {
+  background: rgb(255, 171, 92);
+}
+.purple {
+  background: rgb(194, 149, 243);
+}
+
+.card.hidden {
+  background: black;
+}
+
+.card.hidden:hover {
+  background: grey;
+}
