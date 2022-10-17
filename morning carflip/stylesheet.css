@@ -1,0 +1,93 @@
+h1{
+  text-align: center;
+  color: bisque;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+}
+.card{
+  border:2px solid black;
+  float: left;
+  width:17.5%;
+  height:170px;
+  margin:8px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.233);
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+#cardStack{
+  width:81%;
+  text-align: center;
+  margin-left:9%;
+  margin-top:2.6%;
+  height:430px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5{
+  width:100%;
+  height:100%;
+  display: none;
+}
+
+.backCard{
+  display: inline;
+  width:100%;
+  height:100%;
+}
+
+.flipped img, .matched img{
+  display:inline;
+}
+/* this says dsiplay fron img  */
+
+.flipped .backCard{
+  display:none;
+}
+/* display bakc image  */
+.matched .backCard{
+  display: none;
+}
+
+.header{
+  text-align: center;
+  padding:10px;
+}
+
+button{
+  font-weight: 700;
+  padding:8px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.233);
+  margin-left:44.5%;
+  border-radius: 8px;
+  border:none;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: translateY(10px);
+}
+
+body{
+  background:url(https://i.pinimg.com/originals/5d/45/3a/5d453a797fa54005ec2c87108f0caab4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wholeThing{
+  border:2px solid black;
+  width:70%;
+  margin:auto;
+  height:675px;
+  margin-top:1.5%;
+  background-image: url(https://media.giphy.com/media/Nu1mWIN2SHHu8/giphy.gif);
+}
