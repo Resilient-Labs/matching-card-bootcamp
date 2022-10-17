@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toontown Memory Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="">
+        <h2>Welcome to the Toon Memory Game!</h2>
+        <p>Inspired by the Toontown orginal trolley game. The objective is to match all card pairs. 
+        <br>Flip the cards over to reveal an image and find a matching card hidden somewhere on the board.</p>
+        <audio controls preload="auto" loop="true">
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+    </header>
+    <section class="container">
+        <section id="allCards">
+            <section class="cardRow">
+                <section class="card" data="0">
+                    <!-- the data attribute just stores info in an html element-->
+                    <img src="" class="card1">
+                    <img src="one.jpg" class="backCard">
+                </section>
+                <section class="card" data="1">
+                    <!-- could use data attribute to...??? -->
+                    <img src="" class="card2">
+                    <img src="one.jpg" class="backCard">
+                </section>
+                <section class="card" data="2">
+                    <img src="" class="card3">
+                    <img src="one.jpg" class="backCard">
+                </section>
+                <section class="card" data="3">
+                    <img src="" class="card4">
+                    <img src="one.jpg" class="backCard">
+                </section>
+                <section class="card" data="4">
+                    <img src="" class="card5">
+                    <img src="one.jpg" class="backCard">
+                </section>
+            </section>
+            <section class="cardRow">
+                <section class="card" data="0">
+                    <img src="" class="card1">
+                    <img src="one.jpg" class="backCard">
+                    <!-- maybe back card img isnt necessary, culd make it a css background img then remove it  -->
+                    <!-- why do all cards have a diff back img? -->
+                </section>
+                <section class="card" data="1">
+                    <img src="" class="card2">
+                    <img src="one.jpg" class="backCard">
+                </section>
+                <section class="card" data="2">
+                    <img src="" class="card3">
+                    <img src="one.jpg" class="backCard">
+                </section>
+                <section class="card" data="3">
+                    <img src="" class="card4">
+                    <img src="one.jpg" class="backCard">
+                </section>
+                <section class="card" data="4">
+                    <img src="" class="card5">
+                    <img src="one.jpg" class="backCard">
+                </section>
+            </section>
+        </section>
+        <button id="reset">Reset Game</button>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
