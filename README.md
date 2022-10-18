@@ -1,22 +1,22 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# ♠️ Project: Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+This webiste lets you play a game of match. You choose two cards and if they match they stay faced forward, if not they flip back around. 
 
-### How to submit your code for review:
+**Link to project:** https://kerlinaugustin-matchingcardgame.netlify.app/
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![ballislife](https://user-images.githubusercontent.com/102834611/169628510-45cc228e-800e-4df7-bd0c-bfc082cad392.jpeg)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript
+
+I put the card choices into an array that was equal to a variable. Then put the variable into a shuffle function. Then did if statements to check if two cards match keep facing up. If they are not flip.
+
+## Optimizations
+
+location.reload() is a life time saver. I was rattling my brain creating a function to shuffle the cards for every new game. Half way through I googled to see if there was a easier way to shuffle cards and I realized not only is there a shuffle function. But location.reload() will reload the entire page for me forcing the shuffle to shuffle my cards for me.
+
+## Lessons Learned:
+
+I learned location.reload() will reload your entire page for you. It helped me save a lot of time on creating a function that would shuffle the cards for me to play a new round.
+
