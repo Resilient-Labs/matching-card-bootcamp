@@ -1,0 +1,78 @@
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  text-align: center;
+  background: rgb(184, 169, 219);
+}
+h1{
+  font-size: 3rem;
+}
+section{
+  text-align: center;
+}
+
+section{
+  width: 80px;
+  height: 100px;
+  box-shadow: 2px 2px 2px 2px rgb(214 152 185);
+  border: 2px solid #473f57;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: lightsalmon;
+}
+
+section:hover{
+  background-color: lightblue;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 10px auto;
+}
+span{
+  display: block;
+  font-size: 2rem;
+}
+#restartBtn{
+  background-color: rgb(246 244 234);
+  width: 200px;
+  height: 50px;
+  font-size: 2rem;
+  box-shadow: 2px 2px 2px 2px #d698b9;
+  border: 2px solid #d698b9;
+}
+
+
+.back{
+  background-image: url(../img/cardback1.jpg);
+}
+.picOne.selected, .picOne.matched{
+  background-image: url(../img/mpic1.jpg);
+}
+.picTwo.selected,.picTwo.matched{
+  background-image: url(../img/mpic2.jpg);
+}
+.picThree.selected,.picThree.matched{
+  background-image: url(../img/mpic3.jpg);
+}
+.picFour.selected,.picFour.matched{
+  background-image: url(../img/mpic4.jpg);
+}
+.picFive.selected,.picFive.matched{
+  background-image: url(../img/mpic5.jpg);
+}
