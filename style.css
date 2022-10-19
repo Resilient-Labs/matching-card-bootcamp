@@ -1,0 +1,42 @@
+   * {
+    box-sizing: border-box;
+
+}
+
+main {
+  width: 60%;
+  margin: 0 20%;
+  height: 300px;
+}
+
+section {
+  float:left;
+  width: 20%;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 3px; 
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+ 
+button {
+  width: 60%;
+  margin: 20%;
+}
+
+.hidden{
+  display: block;
+}
+
+.match {
+  display:block;
+}
+
+img {
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  pointer-events: none;
+}
