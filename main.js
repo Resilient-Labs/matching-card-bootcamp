@@ -35,18 +35,6 @@ let matchingCards = []
 
 theCard.forEach(card => card.addEventListener('click', flip)) 
 
-// function testClick(event){
-//     let cardnum = event.target.dataset.cardnum
-//     console.log(cardnum)
-//     event.target.style.backgroundImage = `url(${cardImages[cardnum]})`
-//     console.log(event.target.style.backgroundImage)
-// let allCardImages = []
-// cardImages.forEach(img => {allCardImages.push(img)
-//     allCardImages.push(img)})
-// console.log('aci', allCardImages)
-
-
-
 // declare function to assign images to cards
 function pictureAssignment(){
 

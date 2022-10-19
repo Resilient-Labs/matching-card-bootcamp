@@ -12,6 +12,9 @@
 /*                          LAYOUT                                   */
 /* ***************************************************************** */
 
+.body{
+    background-color: rgba(239, 232, 246, 0.81); 
+}
 
 /* title */
 
@@ -42,7 +45,7 @@ h1 {
     background-size: cover;
     background-position: center;
     background-image: url(./back.jpg);
-    transition: transform .1s;
+    transition: transform .3s;
 
 
 }
@@ -52,7 +55,7 @@ h1 {
 }
 
 .card:active {
-    transform: rotateY(55deg);
+    transform: rotateY(75deg);
 }
 
 .cardContainer {
@@ -68,29 +71,29 @@ h1 {
 h3 {
     text-align: center;
     font-family: Georgia, serif;
-font-size: 18px;
-letter-spacing: 1.6px;
-word-spacing: 0px;
-color: #0A008C;
-font-weight: 700;
-text-decoration: none solid rgb(80, 1, 1);
-font-style: normal;
-font-variant: normal;
-text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    word-spacing: 0px;
+    color: #0A008C;
+    font-weight: 700;
+    text-decoration: none solid rgb(80, 1, 1);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
 }
 
 h2 {
     text-align: center;
     font-family: Georgia, serif;
-font-size: 18px;
-letter-spacing: 1.6px;
-word-spacing: 0px;
-color: #0A008C;
-font-weight: 700;
-text-decoration: none solid rgb(68, 68, 68);
-font-style: normal;
-font-variant: normal;
-text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    word-spacing: 0px;
+    color: #0A008C;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
 }
 
 
