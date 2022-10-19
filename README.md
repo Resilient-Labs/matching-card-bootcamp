@@ -1,22 +1,16 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# matchinggame
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+# Matching Game
 
-### How to submit your code for review:
+Out of ten cards, users are able to click on two cards (facedown) at any given time to flip them over, and see if they are a match. If they are a match, they remain faceup. If they are not a match, the cards will be flipped over. Once the game ends, users are able to click on the "play again" button to start a new game. 
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![matchingsample jpg](https://user-images.githubusercontent.com/102040536/172030979-bb095eeb-c88a-4010-b06d-d34c6f2eda85.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+## How It's Made:
+
+Languages/frameworks use: HTML, CSS, JavaScript
+
+## Thoughts:
+
+My group really put in the work for this project, and it came out really nice. It came out pretty close to how we wanted it. 
