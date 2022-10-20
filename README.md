@@ -7,7 +7,7 @@ Participants need to find the match of the Joanne, the scammer gifs! When you fo
 ## Demo
 
 https://cheerful-sfogliatella-a93468.netlify.app/
-!(matchinggame.png)
+!(https://github.com/sarahbouayad/matching-card-bootcamp/blob/a691d4e0edfa2f733bca2ec005c217bf4db5ff4d/README.md)
 
 
 ## Tech Stack
