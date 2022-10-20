@@ -46,7 +46,7 @@ function playGame (){
         gameBoard.push(row)
     }
 
-setTimeout(hide, 10000)
+setTimeout(hide, 1000)
 }
 playGame()
 
