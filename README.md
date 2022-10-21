@@ -1,22 +1,20 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# ♠️ Squid Game Matching Card Project
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+###  A 10 card memory game that enables users to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over.
 
-### How to submit your code for review:
+### Link to project: https://friendly-jang-d0581e.netlify.app/
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+### <img width="1440" alt="Screen Shot 2021-10-07 at 8 54 48 PM" src="https://user-images.githubusercontent.com/88958905/137604959-a0b5f409-8397-4498-817e-ed166be2b1bf.png">
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+### How It's Made:
+
+Tech used: HTML, CSS, JavaScript, NodeJS
+
+### What I learned:
+
+By building this project I learned how to properly use the setTimeOut Method. I also built on my understanding of NodeJs.
+
+
+
+
+
