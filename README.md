@@ -23,6 +23,9 @@ https://cheerful-sfogliatella-a93468.netlify.app/
 
 This project solidified key concepts of JS to me, including but not limited to, splice(), push() and Array.from().
 
-I feel confident about my code. - 5
-I feel like this is a learning journey and I can constantly do better. - 4
+5 - I feel confident about my code.
+4 - I feel like this is a learning journey and I can constantly do better. 
 
+## Optimization 
+
+- Rotate and flipping cards
