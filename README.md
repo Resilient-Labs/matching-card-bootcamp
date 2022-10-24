@@ -2,6 +2,9 @@
 
 ### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
 
+**Link to project:** https://memory-card-deck.netlify.app/
+
+
 <img width="900" alt="Screen Shot 2022-10-23 at 8 17 21 PM" src="https://user-images.githubusercontent.com/91163017/197425498-bbe12cac-521d-414a-a51f-75fc8ba1e5bf.png">
 <img width="900" alt="Screen Shot 2022-10-23 at 8 17 38 PM" src="https://user-images.githubusercontent.com/91163017/197425500-c6e643e5-737a-47d5-af20-dbf5c2c5244f.png">
 
