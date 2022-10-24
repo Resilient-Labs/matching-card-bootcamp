@@ -1,0 +1,98 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("/img/background.webp");
+  background-size: contain;
+
+}
+
+#container {
+  width: 60%;
+  margin: 10rem auto;
+
+}
+
+.backImage, .front img {
+  width: 100%;
+}
+
+
+div {
+  width: 15%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+.front{
+  display: none;
+
+}
+
+
+.backImage, .flipped img, .match img{
+  width:100%;
+  display: inline;
+}
+
+.flipped .backImage{
+  display: none;
+}
+
+.match .backImage{
+  display: none;
+}
+
+div:active {
+  transform: rotateY(55deg);
+}
+/* Display the winner div*/
+.displayWinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .9);
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.hidden {
+  display: none;
+}
