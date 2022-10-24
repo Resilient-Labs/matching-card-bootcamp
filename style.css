@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    /* repeat(5, 100px); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    color: pink;
+    margin: auto;
+    width: 30%;
+    grid-gap: 10px;
+}
+
+.grid-item {
+    border: 1px solid tomato;
+    text-align: center;
+    width: 100px;
+}
+
+.grid-item {
+    margin: 1%;
+    width: 210px;
+    height: 300px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    border: 2px solid black;
+    cursor: pointer;
+    line-height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: transform .3s;
+
+
+}
+
+.grid-item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+}
+
+.grid-item:active {
+    transform: rotateY(75deg);
+}
+
+.card1 {
+    background-image: url(./Skips.png);
+    background-color: red;
+}
+
+.card2 {
+    background-color: orange;
+    background-image: url(./mordecai.png)
+}
+
+.card3 {
+    background-color: yellow;
+    background-image: url(./Rigby.png)
+}
+
+.card4 {
+    background-color: pink;
+    background-image: url(./pops.png)
+}
+
+.card5 {
+    background-color: blue;
+    background-image: url(./muscleman.png)
+}
+
+.card6 {
+    background-color: brown;
+    background-image: url(./benson.png)
+}
+
+.flippeddown {
+    background-color: aliceblue;
+    background-image: url(./3772.gif);
+}
