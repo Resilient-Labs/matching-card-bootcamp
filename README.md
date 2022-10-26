@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/112201564/198077661-1cfd2ff9-608e-4d1d-983f-a8b697aff270.png)
 
-I made a name generator based on the best rap group of all time, Wu-Tang Clan. 
+I made matching card game based on Legend of Runterra(League of Legends Lore)
 
 **Link to project:** coming soon
 
@@ -15,10 +15,12 @@ I made a name generator based on the best rap group of all time, Wu-Tang Clan.
 The matching card game allows you to click two cards. If the cards are the same, they stay facing up. If they are different they turn back over. Once, you matched all the cards, the game reset and randomizes all the cards. 
 
 
-##Additional Features
+## Additional Features:
+
 ![image](https://user-images.githubusercontent.com/112201564/198077784-571e04ca-48ee-409d-be48-bffa8926f2bc.png)
 
 - Background changes randomly every few seconds
+
 ![image](https://user-images.githubusercontent.com/112201564/198078135-61e871da-7270-4ca4-8335-8cbb4b6db64d.png)
 
 - The card sleeves change every time the game resets 
