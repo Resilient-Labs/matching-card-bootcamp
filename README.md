@@ -1,25 +1,31 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+## Matching Card Game
 
-![image](https://user-images.githubusercontent.com/112201564/197439446-524ac65d-764e-491b-803f-ceb89d5e20d0.png)
-Tech used: JS, HTML, CSS
+![image](https://user-images.githubusercontent.com/112201564/198077661-1cfd2ff9-608e-4d1d-983f-a8b697aff270.png)
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+I made a name generator based on the best rap group of all time, Wu-Tang Clan. 
 
-### How to submit your code for review:
+**Link to project:** coming soon
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript
+
+The matching card game allows you to click two cards. If the cards are the same, they stay facing up. If they are different they turn back over. Once, you matched all the cards, the game reset and randomizes all the cards. 
+
+
+##Additional Features
+![image](https://user-images.githubusercontent.com/112201564/198077784-571e04ca-48ee-409d-be48-bffa8926f2bc.png)
+
+- Background changes randomly every few seconds
+![image](https://user-images.githubusercontent.com/112201564/198078135-61e871da-7270-4ca4-8335-8cbb4b6db64d.png)
+
+- The card sleeves change every time the game resets 
+
+
+
+## Lessons Learned:
+
+I learned that coding is not about taking one approach but instead coding is about considering your options and taking steps towards the best solution. I learned that every lesson is applicable to another lesson. For an example, I wrote my background changer similar to how I learn how to target multiple html elements(using forEach). Coding skills build on previous things learned. 
+
