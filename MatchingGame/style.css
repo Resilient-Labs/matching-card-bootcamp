@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+
+}
+
+/* ***************************************************************** */
+/*                          HEADER                                   */
+/* ***************************************************************** */
+
+
+/* ***************************************************************** */
+/*                          LAYOUT                                   */
+/* ***************************************************************** */
+
+.body{
+    background-image: url(./Background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+/* title */
+
+h1 {
+    text-align:center; 
+    font-size: 30px; 
+    text-transform:uppercase; 
+    font-weight: bold;
+    color: #eaa6a6ce; 
+    letter-spacing:1px;
+    font-family:"Playfair Display", serif; 
+    font-weight:400;
+}
+
+/* container style */
+.card {
+    margin: 1%;
+    width: 160px;
+    height: 180px; 
+    box-shadow: 1px 1px 1px 1px lightgray;
+    cursor: pointer;
+    border: 1px solid burlywood;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./back.png);
+    transition: transform .3s;
+    margin: 7px;
+
+
+
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+}
+
+.card:active {
+    transform: rotateY(75deg);
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 10px auto;
+}
+
+
+h3 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    word-spacing: 0px;
+    color: #0A008C;
+    font-weight: 700;
+    text-decoration: none solid rgb(80, 1, 1);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    word-spacing: 0px;
+    color: #0A008C;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+
+.firstImage.selected,
+.firstImage.matchingCards {
+    background-image: url(./firstgif.gif);
+}
+
+.secondImage.selected,
+.secondImage.matchingCards {
+    background-image: url(./secondgif.gif);
+}
+
+.thirdImage.selected,
+.thirdImage.matchingCards {
+    background-image: url(./thirdgif.gif);
+}
+
+.fourthImage.selected,
+.fourthImage.matchingCards {
+    background-image: url(./fourthgif.gif);
+}
+
+.fifthImage.selected,
+.fifthImage.matchingCards {
+    background-image: url(./fifthgif.gif);
+}
+
+
+
+
+/* button style */
+
+#restartBtn {
+    margin-left: 46%;
+    color: #310c0c;
+    font-weight: bold;
+    border: 5px solid #310c0c;
+    padding: 10px;
+    transition: .2s;
+}
+
+#restartBtn:hover {
+    color: white;
+    background-color: #310c0c;
+}
+
+
+
+/* ***************************************************************** */
+/*                               FOOTER                              */
+/* ***************************************************************** */
+
+
+/* ***************************************************************** */
+/*                        ADDITIONAL STYLES                          */
+/* ***************************************************************** */
+
+
+/* ***************************************************************** */
+/*                            MEDIA QUERIES                          */
+/* ***************************************************************** */
