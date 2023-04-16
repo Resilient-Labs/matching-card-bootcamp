@@ -73,3 +73,4 @@ function createReset() {
 
   document.body.appendChild(link);
 }
+
