@@ -1,3 +1,5 @@
+// Sat down with Mark, Yorelisa, and Taquan to work on Memory Game
+
 const card = document.querySelectorAll('div')
 const img = document.querySelectorAll('img')
 const reset = document.querySelector('button')
