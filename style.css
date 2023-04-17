@@ -1,0 +1,72 @@
+body {
+  font-family: 'Teko', sans-serif;
+  background-color: pink;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #ff69b4; /* This is a shade of pink */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color:white;
+  color:lightcoral;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: hotpink;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+table {
+  margin: auto;
+}
+
+td {
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.Card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.Card:hover {
+  transform: scale(1.05);
+}
+
+.matched {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+#message {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+
+
