@@ -1,0 +1,18 @@
+.game-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.card{
+    height: calc(25% - 15px) ;
+    width: calc(33.3333% - 15px) ;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: lightcoral;
+    text-align: center;
+    font-size:  48px;
+    cursor:crosshair;
+}
