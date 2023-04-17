@@ -1,0 +1,53 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  border: 1px dashed rebeccapurple;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+td
+{
+  text-align: center;
+  justify-items: center;
+  font-size: xx-large;
+  height: 200px;
+  width: 150px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
