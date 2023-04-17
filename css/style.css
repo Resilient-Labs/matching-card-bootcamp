@@ -1,0 +1,119 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  height: 100vh;
+  background:red;
+  display: flex;
+}
+
+.instructions{
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color:white;
+  width:30%;
+  border: 4px dotted white;
+  padding:5px;
+  font-size:30px;
+}
+
+
+
+.game{
+  width:750px;
+  height:750px;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.card{
+  width:calc(25% - 10px);
+  height:calc(33.333% - 10px);
+  margin: 5px;
+  position: relative; 
+  transform-style: preserve-3d;
+  transform:scale(1);
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.card:active{
+  transform: scale(0.97);
+  transition:transfrom .2s;
+}
+
+.card.flip{
+  transform: rotateY(180deg);
+}
+
+.front, .back{
+  position: absolute;
+  height: 100%;
+  width:100%;
+  padding: 20px;
+  border-radius: 5px;
+  background:white;
+  backface-visibility: hidden;
+}
+
+.front{
+  transform: rotateY(180deg);
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* .front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #1C7CCC;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+} */
