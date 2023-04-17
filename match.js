@@ -4,22 +4,25 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+cards.forEach(card => card.addEventListener('click', flipCard));
+
 // if we flip the card then do this
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
 
-  this.classList.add('flip');
+  this.classList.toggle('flip');
 
   if (!hasFlippedCard) {
     hasFlippedCard = true;
     firstCard = this;
-
+    console.log(firstCard)
     return;
   }
 
-//   when we flip the secon card do this
+//   when we flip the second card do this
   secondCard = this;
+  console.log(secondCard)
   checkForMatch();
 }
 
@@ -64,4 +67,3 @@ function resetBoard() {
   });
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCard));

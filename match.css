@@ -40,7 +40,7 @@ h2{
     transition: transform .2s;
 }
 .cards.flip{
-    transform: rotateY('180deg');
+    transform: rotateY(180deg);
 }
 
 .front-face{
