@@ -1,5 +1,5 @@
-// Multiple Youtube videos and stackover flow and prayers. Worked with Mark(Mentor), Christina, Yorelisa
-
+// Multiple Youtube videos and prayers. Worked with Mark(Mentor), Christina, Yorelisa
+// https://medium.com/@funkiefabulous003/how-to-build-a-memory-matching-game-in-javascript-fbe0bf9884a2
 
 const giphyGifs = ['gifOne', 'gifTwo', 'gifThree', 'gifFour', 'gifFive', 'gifOne', 'gifTwo', 'gifThree', 'gifFour', 'gifFive'];
 
