@@ -1,0 +1,83 @@
+/*
+=========================================
+Global
+=========================================
+*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: white;
+    background-color: black;
+}
+
+/*
+=========================================
+Layout
+=========================================
+*/
+table {
+    width: 70%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+th {
+    border: 50px;
+}
+
+td {
+    height: 200px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    background-clip: content-box;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.rotated {
+    transform: rotateY(180deg);
+}
+
+td[data-value="cat"].rotate {
+    background-image: url('../images/cat.jpg');
+}
+
+td[data-value="kirby"].rotate {
+    background-image: url('../images/kirby.jpeg');
+}
+
+td[data-value="pepe"].rotate {
+    background-image: url('../images/pepe.jpg');
+}
+
+td[data-value="ytho"].rotate {
+    background-image: url('../images/Rugrats.jpg');
+}
+
+td[data-value="rugrats"].rotate {
+    background-image: url('../images/ytho.jpg');
+}
+
+/*
+=========================================
+Styling
+=========================================
+*/
+h1,
+h2 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
