@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sedgwick Ave Display";
+}
+body{
+    background-color: rgb(8, 8, 116);
+}
+.wrapper{
+    box-sizing: content-box;
+    width: 26.87em;
+    padding: 2.5em 3em;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top:50%;
+    border-radius: 0.6em;
+    box-shadow:0 0.9em 2.8em rgba(86,66,0,0.2);
+}
+.game-container{
+    position: relative;
+    width: 100%;
+    display: grid;
+    gap: 0.6em;
+}
+.stats-container{
+    text-align: right;
+    margin-bottom: 1.2em;
+}
+.stats-container span{
+    font-weight: 600;
+}
+.card-container{
+    position: relative;
+    width: 6.25em;
+    height: 6.25em;
+    cursor: pointer;
+}
+.card-before,
+.card-after{
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border: 4px solid black;
+    transition: transform 0.5s ease-out;
+}
+.card-before{
+    background-color: rgb(8, 8, 116);
+    font-size: 2.8em;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.365);
+    z-index: 5;
+}
+.card-before.flipped{
+    display: none;
+}
+.card-after{
+    /* background-color: white; */
+    transform: rotateY(0deg);
+    z-index: -5;
+}
+.card-container.flipped .card-before{
+    transform: rotateY(90deg);
+}
+.card-container.fliped .card-after{
+    transform: rotateY(90deg);
+}
+img{
+    width: 90%;
+}
+.controls-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 8, 116);
+    top: 0;
+}
+button{
+    border: none;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+#stop{
+    font-size: 1.5em;
+    display: block;
+    margin: 1.1em auto 0 auto;
+    background-color: black;
+    color: white;
+}
+.controls-container button{
+    font-size: 2.3em;
+    box-shadow: 0 0.6em 2em rgba(86,66,0,0.2);
+}
+.hide{
+    display: none;
+}
+#result{
+    text-align: center;
+}
+#result h2{
+    font-size: 3.5em;
+    color: white;
+}
+#result h4{
+    font-size: 2.8em;
+    color: white;
+    margin: 0.6em 0 1em 0;
+}
