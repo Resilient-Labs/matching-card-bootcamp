@@ -79,3 +79,14 @@
   .back-face{
     border-radius: 20px;
   }
+
+  button{
+    width: 10%;
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: 'Lilita One', Arial, Helvetica, sans-serif;
+    background: rgb(211, 50, 211);
+    color:white;
+    font-size: 2rem;
+  }

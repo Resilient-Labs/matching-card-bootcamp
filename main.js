@@ -4,10 +4,10 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard;
 let secondCard;
-let matchedCards = 0; 
+let matchedCards = 0; // Added 
 
 
-function flipCard() {
+function flipDaCard() {
   if (lockBoard) return; 
   if (this === firstCard) return;
 
@@ -20,34 +20,32 @@ function flipCard() {
   }
 
   secondCard = this;
-  checkForMatch();
+  anyMatches();
 }
 
-function checkForMatch() {
+function anyMatches() {
   let isMatch = firstCard.dataset.card === secondCard.dataset.card; //read only prop = dataset
 
-  isMatch ? disableCards() : unflipCards();
+  isMatch ? disable() : unflipDaCards();
 }
 
 
-function disableCards() {
-  firstCard.removeEventListener('click', flipCard);
-  secondCard.removeEventListener('click', flipCard);
+function disable() {
+  firstCard.removeEventListener('click', flipDaCard);
+  secondCard.removeEventListener('click', flipDaCard);
   matchedCards += 2;
 
   if (matchedCards === cards.length) {
     setTimeout(() => {
       alert('Did you really win, in a "No You" game?');
     }, 500); //game finished with an alert
-
-    //I need a button to reset the game, would love to go back and add one.
     
   }
 
   resetBoard();
 }
 
-function unflipCards() {
+function unflipDaCards() {
   lockBoard = true;
 
   setTimeout(() => {
@@ -63,6 +61,10 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
+function resetGame(){
+  location.reload()
+}
+
 //Shuffles all cards in the beginning
 (function shuffle() {
   cards.forEach(card => {
@@ -72,6 +74,7 @@ function resetBoard() {
 })();
 
 //Event Listeners for each card
-cards.forEach(card => card.addEventListener('click', flipCard));
+cards.forEach(card => card.addEventListener('click', flipDaCard));
+document.querySelector('button').addEventListener('click', resetGame)
 
 //I followed a Youtube tutorial by Marina Ferreira called "Memory Card Game - Javascript tutorial"
