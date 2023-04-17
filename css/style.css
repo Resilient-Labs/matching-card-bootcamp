@@ -1,0 +1,93 @@
+@font-face {
+  font-family: caesarDressingRegular;
+  src: url("caesarDressingRegular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: caesarDressingRegular;
+  /* background: url(togepi-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #333;
+}
+
+.intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.intro h1 {
+  font-size: 3rem;
+}
+
+.intro p {
+  font-size: 1.5rem;
+}
+
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: 100px auto auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  /* border: 2px solid lime; */
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  position: relative;
+  margin: 5px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  /* border: 2px solid aqua; */
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+/* img {
+  width: 100px;
+} */
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  /* background: #1c7ccc; */
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
