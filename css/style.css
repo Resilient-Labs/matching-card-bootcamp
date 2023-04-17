@@ -1,0 +1,126 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+html{
+  font-size: 62.5%;
+  background: url(../images/background.webp);
+  background-color: #fdc355;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.btn{
+  margin-right: 5px;
+  width: 71px;
+  height: 26px;
+  font-size: 1.3rem;
+  background: darkred;
+  border-radius: 4px;
+  color: white;
+}
+.gameboard{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 94%;
+  border-radius: 5px;
+  padding: 6px 0;
+}
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.scoreboard{
+  text-align: center;
+}
+img{
+  margin-right: 5px;
+  width: 300px;
+  height: 224px;
+}
+/* img:nth-child(4), img:nth-child(8), img:nth-child(12), img:nth-child(16), img:nth-child(20), img:nth-child(24), img:nth-child(28), img:nth-child(32), img:nth-child(36), img:nth-child(40), img:nth-child(44), img:nth-child(48), img:nth-child(52), img:last-child{
+  margin-right: 0px;
+} */
+.card{
+
+}
+.startButton{
+  width: 50px;
+    height: 36px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+}
+/* The Modal (background) */
+.modal {
+  display: none;  /* Hidden by default; */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
