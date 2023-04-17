@@ -1,0 +1,89 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #eee;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  height: 150px;
+  width: 128px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card.gifOne.matched{
+  background-image: url('incredibles1.gif');
+  background-repeat: no-repeat;
+}
+
+.card.gifTwo.matched{
+  background-image: url('incredibles2.gif');
+  background-repeat: no-repeat;
+}
+
+.card.gifThree.matched {
+  background-image: url('incredibles3.gif');
+  background-repeat: no-repeat;
+}
+
+.card.gifFour.matched {
+  background-image: url('incredibles4.gif');
+  background-repeat: no-repeat;
+}
+
+.card.gifFive.matched {
+  background-image: url('incredibles5.gif');
+  background-repeat: no-repeat;
+}
+.card.gifOne.flipped{
+  background-image: url('incredibles1.gif');
+  background-repeat: no-repeat;
+}
+.card.gifTwo.flipped{
+  background-image: url('incredibles2.gif');
+  background-repeat: no-repeat;
+}
+
+.card.gifThree.flipped {
+  background-image: url('incredibles3.gif');
+  background-repeat: no-repeat;
+}
+
+.card.gifFour.flipped {
+  background-image: url('incredibles4.gif');
+  background-repeat: no-repeat;
+}
+
+.card.gifFive.flipped {
+  background-image: url('incredibles5.gif');
+  background-repeat: no-repeat;
+}
+
+
+.card.flipped {
+  background-color: #ffb6c1;
+ 
+}
+
+.card.matched {
+  background-color: #90ee90;
+  cursor: default;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
