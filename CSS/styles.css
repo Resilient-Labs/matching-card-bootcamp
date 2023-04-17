@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+.gameBoard{
+    /* text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    width: 50%;
+    height: 471px;
+}
+    .card{
+        width: 19%;
+        height: 145px;
+        margin: 5px;
+        border: 2px solid black;
+        /* position: relative; */
+        background-color: #fff;
+    }
+        .flippedCard , .front{
+            transform: rotateX(0deg) ;
+        
+        }
+        .flippedCard , .back{
+            transform: rotateX(180deg) ;
+            /* background-color: aquamarine; */
+        
+        }
+        .matchingCards{
+            border: 1px solid green;
+          }
+          
+          .front, .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          
+          .front {
+            transform: rotateY(0deg);
+          }
+          
+          .back {
+            transform: rotateY(180deg);
+          }
+          
+          .back {
+            background-color: #804040;
+          }
