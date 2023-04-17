@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+}
+
+
+table, tr, td{
+  border: 2px solid black;
+}
+
+td{
+  height: 250px;
+  width: 175px;
+}
+
