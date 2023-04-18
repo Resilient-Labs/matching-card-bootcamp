@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Cinzel Decorative";
+    text-decoration: underline;
+    text-decoration-color: rgb(19, 108, 19);
+    text-shadow: 4px 4px 4px whitesmoke;
+    color: black;
+}
+
+table {
+    height: 500px;
+    width: 1013px;
+    margin-left: 228px;
+    border-collapse: separate;
+    border-spacing: 20px;
+
+
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 15px groove goldenrod;
+    background: rgba(20, 96, 20, 0.563);
+}
+
+.card {
+    background-image: url("../css/pics/goldframe.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.card[data-card="1"].flipped {
+    background-image: url("../css/pics/image1.jpeg");
+}
+
+.card[data-card="2"].flipped {
+    background-image: url("../css/pics/image2.jpeg");
+}
+
+.card[data-card="3"].flipped {
+    background-image: url("../css/pics/image3.jpeg");
+}
+
+.card[data-card="4"].flipped {
+    background-image: url("../css/pics/image4.jpeg");
+}
+
+.card[data-card="5"].flipped {
+    background-image: url("../css/pics/image5.jpeg");
+}
+
+html {
+    background: url("../css/pics/silverb.jpeg");
+    background-size: cover;
+}
