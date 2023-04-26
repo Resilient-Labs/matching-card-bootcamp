@@ -1,6 +1,8 @@
 # Hades Matching Card Game
 A 12 card memory game - users are able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over.
 
+Link to project: https://menahassan-hades-matching-card-games.netlify.app/
+
 # How It's Made
 Tech used: HTML, CSS, JavaScript
 
