@@ -5,6 +5,7 @@ function shuffleCards(){
   let imThree = 'louis.png'
   let imFour = 'ysl.png'
   let imFive = 'tomford.png'
+  let imSix = 
  
   num = [imOne, imTwo, imThree, imFour, imFive, ]
   
@@ -29,12 +30,12 @@ let arrImg = [
 ]
 cards.forEach(em=>em.addEventListener('click',checkMatch))
 
- // using data-value to store city name in the HTML 
+ // using data-value to store  name in the HTML 
   // then use if statements in the matching function to check if data values of clicked elements are the same.
 let clicked = []
 let count = 0
 function checkMatch(click) {
-  click.target.src = `img${click.target.dataset.value}.png`
+  click.target.src = click.target.dataset.value;
 // store clicked element in an array 
   clicked.push(click.target)
 if (clicked.length===2){
