@@ -5,9 +5,9 @@ function shuffleCards(){
   let imThree = 'louis.png'
   let imFour = 'ysl.png'
   let imFive = 'tomford.png'
-  let imSix = 
+  let imSix = 'valentino.png'
  
-  num = [imOne, imTwo, imThree, imFour, imFive, ]
+  num = [imOne, imTwo, imThree, imFour, imFive, imSix ]
   
   num = num.concat(num).sort(() => Math.random() - 0.5)
   cards.forEach(( em , i) => {
@@ -27,6 +27,7 @@ let arrImg = [
   'louis.png',
   'ysl.png',
   'tomford.png',
+  'valentino.png'
 ]
 cards.forEach(em=>em.addEventListener('click',checkMatch))
 
