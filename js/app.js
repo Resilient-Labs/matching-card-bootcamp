@@ -27,11 +27,20 @@ function checkForMatch() {
   isMatch ? disableCards() : unflipCards();
 }
 
+let matchedCards = 0;
+const totalCards = cards.length;
+
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
 
+  matchedCards += 2;
   resetBoard();
+
+  if (matchedCards === totalCards) {
+    alert('Congratulations! You have matched all the cards!');
+    createReset()
+  }
 }
 
 function unflipCards() {
@@ -73,4 +82,5 @@ function createReset() {
 
   document.body.appendChild(link);
 }
+
 
