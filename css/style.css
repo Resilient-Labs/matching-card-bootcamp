@@ -1,34 +1,40 @@
 * {
-  padding: 0;
-  margin: 0;
+ 
   box-sizing: border-box;
 }
 
 body {
-  height: 100vh;
-  display: flex;
-  background: #e1f9b1;
+ 
+ background-repeat: no-repeat;
+
+ background-size: cover; 
+  background-image: url('https://userstyles.org/style_screenshots/258915_after.gif');
 }
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-  }
-  
-  body {
-	height: 100vh;
-	display: flex;
-	background: #e0f4ae;
-  }
-  
+h1 {
+  color: #f781ee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center; /* Center the text horizontally */
+  margin: 50px 0; /* Added margin for spacing */
+  text-shadow: 5px 5px white, 0 2px rgb(236, 91, 116); /* Added a cute pink shadow with white outline */
+}
+
+
+
   .machine-game {
-	width: 800px;
-    height: 600px;
+	width: 700px;
+    height: 500px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    perspective: 1000px;
+    perspective: 9000px;
     align-content: flex-end;
     flex-direction: row;
     justify-content: center;
@@ -62,7 +68,7 @@ body {
 	padding: 11px;
 	position: absolute;
 	border-radius: 5px;
-	background: #c9e197;
+	background: #d5add2;
 	backface-visibility: hidden;
   }
   
@@ -70,13 +76,40 @@ body {
 	transform: rotateY(180deg);
   }
 
- 
-  #button{
-	display: flex;
-    flex-direction: column-reverse;
-    align-content: stretch;
-    justify-content: space-evenly;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #f49cfa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 auto; /* Center the button horizontally */
+    width: fit-content; /* Adjust the width based on content */
+  }
   
+  .button:hover {
+    background-color: #ff7ce5;
+    transform: scale(1.05);
+  }
+  
+  .button:active {
+    background-color: #f35584;
+    transform: scale(0.95);
+  }
+
+  
+  @media (max-width: 768px) {
+    .machine-game {
+      max-width: 100%;
+    }
+    
+    .card {
+      width: calc(29% - 5%);
+      height: calc(25% - 3%);
+    }
+  }
