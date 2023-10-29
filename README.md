@@ -1,22 +1,11 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# ♠️ Memory Game 🃏
+A 10 card memory game where users must select two cards and check if they are a match! If they are a match they will stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. You are also able to play again / reset by hitting shuffle. Good luck and have fun!
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+Go checkout the adorable animal themed game here - https://matchingcard-game.netlify.app/
 
-### How to submit your code for review:
+## Tech Used:
+- Javascript, HTML, CSS
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+### Things I'm proud of:
+- Being able to figure out all of the use cases that were possible from the user's interaction with the game. (For example, some user's could click too fast, triggering the flip of a card too early and breaking the logic at hand) Therefore, it was awesome being able to incorporate setTimeouts that could help with this. Or removing event listeners when needed
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
