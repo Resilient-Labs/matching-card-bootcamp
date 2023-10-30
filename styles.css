@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(50, 155, 97)
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button,
+h1 {
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 8rem;
+    color: white;
+}
+
+button {
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#cardContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    margin-left: 5rem;
+
+}
+
+.card {
+    width: 15rem;
+    height: 25rem;
+    margin: 5rem 0;
+    position: relative
+}
+
+.cardBack,
+.elemental-img {
+    height: 100%;
+    width: 100%;
+    border: 4px solid black;
+    border-radius: 2rem;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+
+/* Initially hide the elemental-img */
+.card .elemental-img {
+    display: none;
+}
+
+.card.flipped .elemental-img {
+    display: block;
+}
+
+.card .cardBack {
+    display: block;
+    /* Initially display cardBack */
+}
+
+.card.flipped .cardBack {
+    display: none;
+    /* Hide cardBack when flipped */
+}
