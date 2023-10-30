@@ -1,0 +1,117 @@
+/* some of these styles were used from following along with a video on youtube by Code Sketch */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    font-size: 62.5%
+  }
+
+body{
+    background-color: black;
+    color: #FE9CB4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Roboto Condensed;
+}
+
+.gameBoardDisplay{
+    display: flex;
+
+}
+  
+.gameBoard{
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    perspective: 1000px;
+
+}
+
+.gameCards{
+    width: 20%;
+    height: 50%;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.gameCards:active{
+    transform: scale(.97);
+    transition: transform .15s;
+}
+
+
+
+.gameCards.flip {
+    transform: rotateY(180deg);
+}
+
+.front-card, .back-card{
+    position: absolute;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    backface-visibility:hidden;
+}
+
+.front-card{
+    transform: rotateY(180deg);
+} 
+
+.header{
+    text-align: center;
+
+}
+
+.header > h1{
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header >  button{
+    padding:10px 20px 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+
+
+/* .gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-content: space-between; 
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+
+.gameCards {
+    width: 15%; 
+    height: 280px; 
+    margin: 1%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gameCards img {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+#hidden{
+    display: none;
+} */
