@@ -1,0 +1,29 @@
+ *{
+  box-sizing:border-box;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  height: 100px;
+  margin: 10px;
+  perspective: 1000px;
+  width: 100px;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+
