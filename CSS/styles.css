@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5%;
+    border: none;
+    color: rgb(155, 72, 41);
+}
+
+button:hover {
+    background: navy;
+    color: white;
+}
+
+h1,
+#status {
+    font-size: 3rem;
+}
+
+body {
+    height: 100vh;
+    background: peachpuff;
+}
+
+.gameSpace {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+    perspective: 100rem;
+}
+
+.card {
+    width: 20%;
+    height: 50%;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .2s;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 5rem;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: rotateY(180deg)
+}
+
+/*When clicked it has a shrinking effect added transform scale to .card class*/
+.card:active {
+    transform: scale(.95);
+    transition: transform .2s;
+}
+
+/*card when flip class fired*/
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+#status:active {
+    transition: scale(.60);
+    transition: transform .3s;
+}
+
+img {
+    width: 100%;
+}
