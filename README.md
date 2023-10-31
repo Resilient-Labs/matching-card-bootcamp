@@ -1,5 +1,7 @@
 # Memory Game
 
+<img width="1456" alt="Screenshot 2023-10-30 at 8 58 51 PM" src="https://github.com/codedbycass/Memory-Game/assets/122684139/b2a3f39b-d54a-4cd9-8103-78e80618e4e4">
+
 ## How it's made
 HTML, CSS, JS
 
