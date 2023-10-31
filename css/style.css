@@ -1,0 +1,64 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+#memory-game {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100%;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s; /* Flipping */
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg); /* Rotate card when flipped */
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  position: absolute;
+  backface-visibility: hidden; /* Hide back side during flip */
+}
+.card-front{
+  background-color: rgb(18, 82, 61);
+}
+.card-back {
+  background: #66ccff;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
