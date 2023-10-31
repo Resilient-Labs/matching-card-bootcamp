@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Andy;
+    src: url(fonts/andy.ttf);
+}
+
+@font-face {
+    font-family: 'PKMN RBYGSC';
+    src: url(fonts/PKMN\ RBYGSC.ttf);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Andy;
+    cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#logo {
+    width: 15rem;
+}
+
+h1 {
+    font: 2rem;
+    padding-bottom: 1%;
+    color: white;
+    text-shadow:
+    0 0 5px #2d6ab3,
+    0 0 5px #2d6ab3,
+    0 0 5px #2d6ab3,
+    0 0 5px #2d6ab3;
+}
+
+button {
+    font: 1rem 'PKMN RBYGSC';
+    padding: 5px;
+    margin-top: 2%;
+    background: #f9f9f9;
+    color: #474050;
+    border: 3px solid #706980;
+    border-radius: 5px;
+    text-shadow: 1px 2px #d1d1c9;
+}
+
+button img {
+    width: 11.5px;
+    padding-right: 1px;
+    position: relative;
+    top: 2.15px;
+}
+
+button:active {
+    scale: 0.95;
+}
+
+/* ==================== GAMEBOARD ==================== */
+#gameboard {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(25% - 8px); /* 12 cards in total ∴ 4 cards per row */
+    margin: 4px;
+    position: relative;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+
+.cardFront, .cardBack {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Stack cards on top of one another */
+    border-radius: 7px;
+}
+
+/* ==================== ANIMATIONS ==================== */
+#gameboard {
+    perspective: 1000px; /* Distance from user in z-plane - gives 3D effect */
+}
+
+.card {
+    transform-style: preserve-3d; /* Position cards in 3D space created by parent*/
+    transition: transform 0.5s;
+}
+
+.card.flip, .cardFront {
+    transform: rotateY(180deg);
+}
+
+.cardBack {
+    backface-visibility: hidden;
+    /* All elements have front and back faces, which are mirrors of one another. Back face visibility defaults to visible. If visibility is not removed, flipping the element will just give its mirror image. */
+}
