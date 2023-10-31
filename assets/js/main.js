@@ -10,6 +10,7 @@ let totalMoves = 0;
 let activeGame = true;
 
 function playGame() {
+  resetGame();
   fetch("./assets/cards.json")
     .then((response) => response.json())
     .then((data) => {
@@ -58,35 +59,57 @@ function selectedCard(e) {
     console.log(" else LINE 58");
     secondCard = e.currentTarget;
     secondCard.id = "flip";
-    if ( secondCard.querySelector(".card-img-front").id == firstCard.querySelector(".card-img-front").id) {
-      console.log(" first card = second card");
-      firstCard = undefined;
-      secondCard = undefined;
-      totalMoves--;
-
-      if(totalMoves == 0){
-        document.querySelector("#winner").innerText = "Looney Baby Wins, Thats all Folks!";
-        scoreTotal++;
-        document.querySelector(".score").innerText = scoreTotal;
-        console.log("moves left: " + totalMoves);
-      }
-    }
-    else{
-      activeGame = false;
-      console.log(" first card NOT EQUAL second card");
-      setTimeout(()=> {
-        firstCard.id = "";
-        secondCard.id = "";
-        firstCard = undefined;
-        secondCard = undefined;
-        activeGame = true;
-      }, 1000);
-
-    }
+    checkIfWon();
+    
   }
 
 
   console.log("event: ");
   console.log(e.currentTarget.querySelector(".card-img-front"));
   console.log(e);
+}
+
+function checkIfWon(){
+  if (
+    secondCard.querySelector(".card-img-front").id ==
+    firstCard.querySelector(".card-img-front").id
+  ) {
+    console.log(" first card = second card");
+    firstCard = undefined;
+    secondCard = undefined;
+    totalMoves--;
+
+    if (totalMoves == 0) {
+      document.querySelector("#winner").innerText =
+        "Looney Baby Wins, Thats all Folks!";
+      scoreTotal++;
+      document.querySelector(".score").innerText = scoreTotal;
+      console.log("moves left: " + totalMoves);
+
+    }
+  } else {
+    resetSelectedCard();
+  }
+}
+
+function resetSelectedCard(){
+  activeGame = false;
+  console.log(" first card NOT EQUAL second card");
+  setTimeout(() => {
+    firstCard.id = "";
+    secondCard.id = "";
+    firstCard = undefined;
+    secondCard = undefined;
+    activeGame = true;
+  }, 1000);
+}
+
+function resetGame(){
+  document.querySelector("#winner").innerText = "";
+
+  let resetCards = document.querySelectorAll(".cards") 
+  resetCards.forEach((card)=> 
+    card.id = ""
+  )
+
 }

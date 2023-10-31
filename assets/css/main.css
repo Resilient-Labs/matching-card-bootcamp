@@ -160,7 +160,7 @@ button {
   transform: rotateY(180deg);
 }
 
-h2{
+#winner{
   text-align: center;
   margin-bottom: 0rem;
   margin-top: 0.3rem;
