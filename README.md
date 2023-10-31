@@ -1,22 +1,20 @@
-# ↔️ Week08 Bootcamp2019a Project: Server Side Palindrome Checker
+# ♠️ Matching Card Game
 
-### Goal: Create a simple web application that uses the fs and http modules to validate if a string is a palindrome server side.
+# About this project
+This project is a memory card game. 
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made:
+Tech used: HTML, CSS, JavaScript, 
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+## Lessons Learned:
+This project was an exercise of my ability to think of game logic. It was challenging but also fun to create a game in the process.
+
+### Examples:
+Take a look at similar projects!
+
+Tic-Tac-Toe: https://github.com/JacinthaDev/Tic-Tac-Toe/tree/answer
+
+Avatar The Last Airbender Slot Machine: https://github.com/JacinthaDev/Slot-Machine/tree/answer
+
