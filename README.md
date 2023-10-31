@@ -1,22 +1,24 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# ♠️ Matching Card Game
+<img width="811" alt="memory" src="https://github.com/JacinthaDev/memory-game/assets/129231721/fc81148b-e682-4b8e-a5ae-152efe185dc7">
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+Checkout this project here!: https://jacinthadev.github.io/memory-game/
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+# About this project
+This project is a memory card game. 
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+## How It's Made:
+Tech used: HTML, CSS, JavaScript, 
+
+
+## Lessons Learned:
+This project was an exercise of my ability to think of game logic. It was challenging but also fun to create a game in the process.
+
+### Examples:
+Take a look at similar projects!
+
+Tic-Tac-Toe: https://github.com/JacinthaDev/Tic-Tac-Toe/tree/answer
+
+Avatar The Last Airbender Slot Machine: https://github.com/JacinthaDev/Slot-Machine/tree/answer
+
