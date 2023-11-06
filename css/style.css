@@ -8,57 +8,87 @@
   font-size: 12px;
 }
 
-#memory-game {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0e6d2; 
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   height: 100%;
+  margin-top: 200px;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  font-size: 36px;
+  color: #f76c6c;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+#memory-game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6ac00; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
 }
 
 .card {
   width: 100px;
   height: 150px;
   margin: 10px;
-  border: 1px solid black;
-  position: relative;
+  border: 5px solid #f76c6c; 
+  background-color: #ffd699; 
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f76c6c; 
+  text-transform: uppercase;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /*transition effect with a slow start and slow end*/
+}
+
+div.card-back {
+  margin-top: 60px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  display: none; /* Hide card back */
+}
+
+.card.flipped .card-back {
+  display: block; /* Show card back when flipped */
 }
 
 .card-inner {
   width: 100%;
   height: 100%;
-  transition: transform 0.5s; /* Flipping */
+  transition: transform 0.5s ease-in-out;
   transform-style: preserve-3d;
 }
 
-.card.flipped .card-inner {
-  transform: rotateY(180deg); /* Rotate card when flipped */
+.card.mismatched {
+  animation: shake 0.3s ease-in-out;
 }
 
-.card-front,
-.card-back {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  position: absolute;
-  backface-visibility: hidden; /* Hide back side during flip */
-}
-.card-front{
-  background-color: rgb(18, 82, 61);
-}
-.card-back {
-  background: #66ccff;
-}
-
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+/* codepen */
+/* @keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+} */
