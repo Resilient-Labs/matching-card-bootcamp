@@ -62,19 +62,11 @@ function selectedCard(e) {
     checkIfWon();
     
   }
-
-
-  console.log("event: ");
-  console.log(e.currentTarget.querySelector(".card-img-front"));
-  console.log(e);
 }
 
 function checkIfWon(){
-  if (
-    secondCard.querySelector(".card-img-front").id ==
-    firstCard.querySelector(".card-img-front").id
-  ) {
-    console.log(" first card = second card");
+  if (secondCard.querySelector(".card-img-front").id == firstCard.querySelector(".card-img-front").id) {
+
     firstCard = undefined;
     secondCard = undefined;
     totalMoves--;
@@ -84,17 +76,17 @@ function checkIfWon(){
         "Looney Baby Wins, Thats all Folks!";
       scoreTotal++;
       document.querySelector(".score").innerText = scoreTotal;
-      console.log("moves left: " + totalMoves);
-
     }
+
   } else {
     resetSelectedCard();
   }
 }
 
 function resetSelectedCard(){
+
   activeGame = false;
-  console.log(" first card NOT EQUAL second card");
+
   setTimeout(() => {
     firstCard.id = "";
     secondCard.id = "";
@@ -102,9 +94,11 @@ function resetSelectedCard(){
     secondCard = undefined;
     activeGame = true;
   }, 1000);
+
 }
 
 function resetGame(){
+  
   document.querySelector("#winner").innerText = "";
 
   let resetCards = document.querySelectorAll(".cards") 
