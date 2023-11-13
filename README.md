@@ -18,7 +18,7 @@ I designed the game board and card layout using HTML and styled it with CSS to c
 
 This project is a great example of my front-end development skills and my ability to create an interactive and enjoyable web-based game.
 
-## Optimizations (optional)
+## Optimizations
 
 Throughout the development of this project, I focused on delivering a smooth and efficient gaming experience. I continuously refined and improved the code to enhance performance and user interaction. I optimized code snippets, making the game responsive and ensuring it runs efficiently in various browsers and devices. These optimizations allowed for a more enjoyable user experience.
 
