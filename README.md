@@ -1,22 +1,17 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+ 🎤Project: Matching card game!
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+This is my Matching card game project, a cool web application built with HTML, CSS, and JavaScript. It's about matching cards 12 cards in total, i went with a dog & cat theme. Good luck
 
-### How to submit your code for review:
+![Image Alt Text](./) 
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+I used HTML, CSS, and JavaScript to create this project, I used HTML to layout the cards & CSS to style, Javascript to create the logic of the cards being flipped & unflipped & reset once they were not a match.
+
+## Lessons Learned
+I learned alot with this project such as exsactly how many steps needed to run a game like this, i was missing some of the logic in the beginning trying to recreate this project with pieces with a previous project called Tic tac toe. There were alot of changes such as making a memory system that remembers the cards unflipped & setting a time out to not break the games logic are some of the examples i found interesting.
+
+
+## Examples
+
+If you want to see more of my work, feel free to explore my portfolio! [GitHub](https://github.com/Michaelariasdls).
