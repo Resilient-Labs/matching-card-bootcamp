@@ -1,8 +1,6 @@
  🎤Project: Matching card game!
 
-This is my Matching card game project, a cool web application built with HTML, CSS, and JavaScript. It's about matching cards 12 cards in total, i went with a dog & cat theme. Good luck
-
-![Image Alt Text](./) 
+This is my Matching card game project, a cool web application built with HTML, CSS, and JavaScript. It's about matching cards 12 cards in total, i went with a dog & cat theme. Good luck 
 
 ## How It's Made
 
