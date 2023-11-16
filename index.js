@@ -53,6 +53,16 @@ function checkForMatch(){
         isMatch ? disableCards() : unFlipCards();          //ternary statement asking if the dataset.framework matches yes? then disable those cards, no then unflip them back if they are not 
 }
 
+function checkForWin(){
+    const allCardsMatch = Array.from(cards).every(card=> card.classList.contains('flip'))
+
+    if (allCardsMatch) {
+        alert("winner!")
+    }
+}
+
+
+
 function disableCards(){                         //Disable card method, removing the smurf's so the ability to click is not possible & the run function of flip card is ran to flip it back over
     card1.removeEventListener('click', flipCard);
     card2.removeEventListener('click', flipCard);
