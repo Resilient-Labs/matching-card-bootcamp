@@ -1,13 +1,14 @@
 # Pokémon Matching Card Game ϞϞ(๑⚈ ω ⚈๑)∩⚡
 ### Description
-Welcome to the Pokémon Matching Card Game! Test your memory and flip the cards to find matching pairs. The objective is simple: 🌟gotta match 'em all!🌟
+Welcome to the Pokémon Matching Card Game! Flip the cards to find matching pairs, test your memory, and wallow in nostalgia. The objective is simple: 🌟gotta match 'em all!🌟
 
 <img src="pokemon-matching-card-game.png">
 
 ### Game Features
 - <strong>Dynamic Card Shuffle</strong>: Pokémon cards are randomly shuffled for a unique experience each time you play.
 - <strong>Interactive Flipping Animation</strong>: Engaging card flip animation to enhance user experience.
-- <strong>Reset Button</strong>: Press the "Reset" button to start a new game at any time.
+- <strong>Pokéball Cursor</strong>: Adorable.
+- <strong>Reset Button</strong>: Inspired by the "Fight/Pokémon/Bag/Run" player options box from the classic Pokémon games of the 2000s.
 
 ### How to Play
 1. Click on any card to flip it over and reveal the Pokémon.
