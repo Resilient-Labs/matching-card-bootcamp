@@ -1,22 +1,43 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Super Mario Memory Card Game 🍄🎮
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+![Game Preview](img/project.png)
 
-### How to submit your code for review:
+## Project Description
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+### Goal
+The goal of the Super Mario Memory Card Game is to create an entertaining 10-card matching game. Users can select two cards at a time, attempting to find matching pairs. The game is completed when all cards are successfully matched and flipped over.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+### Main Purpose
+This project aims to provide users with a fun and interactive Super Mario-themed memory card game experience.
+
+### Example
+For reference, you can check out a similar game [here](http://www.fruit-burst.co.uk/fun-and-games/pairs-game).
+
+## How It's Made 🛠️
+
+- **Technologies Used:** HTML, CSS, JavaScript (OOP)
+- **Project Organization:**
+  - Organized project into folders: css (for styles), js (for JavaScript files), img (for image files), and the root folder containing README and index.html.
+
+## Lessons Learned 🧠
+
+During the development of the Super Mario Memory Card Game, several key lessons were learned:
+
+### Object-Oriented Programming (OOP)
+The project significantly enhanced understanding of OOP principles. Concepts such as encapsulation, abstraction, inheritance, and polymorphism were applied to create a well-organized and efficient code structure.
+
+### Accessing Object Properties and Methods
+Working with the Super Mario Memory Card Game involved extensive interaction with object properties and methods. Learning how to access and manipulate these components contributed to a deeper understanding of JavaScript objects.
+
+### Importance of the `this` Keyword in OOP
+The `this` keyword played a crucial role in OOP implementation. It was used to refer to the current instance of an object, allowing for the proper interaction and manipulation of object properties and methods.
+
+## Getting Started 🚀
+
+To play the matching card game, follow these steps:
+
+1. Clone the repository.
+2. Open the `index.html` file in your preferred web browser.
+3. Click any box to start playing
+
+Feel free to contribute, report issues, or provide feedback to enhance Super Mario Matching Card Game.
