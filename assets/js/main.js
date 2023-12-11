@@ -15,9 +15,8 @@ function playGame() {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      //original cards in cards.json file, is being duplicating in the array below using "...data, ...data"
-      //...data flattens the data array which means it takes a 2-d array and make it a 1-d array ex: instead of this [['h']] will become this ['h'] a 1-d array
-      // found the randomizer for cards .sort... on stack overflow: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+      // Credit -  stack overflow: https://stackoverflow.com/questions/2450954how-to-randomize-shuffle-a-javascript-array
       cards = [...data, ...data].sort(() => 0.5 - Math.random());
 
       totalMoves = data.length;
