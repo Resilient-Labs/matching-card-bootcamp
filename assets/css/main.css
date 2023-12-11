@@ -94,7 +94,7 @@ button {
 
 .flip-card {
   background-color: transparent;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; 
 }
 
 /* This container is needed to position the front and back side */
