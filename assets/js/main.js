@@ -1,12 +1,9 @@
 document.querySelector("#startGame").addEventListener("click", playGame);
 
 let cards = [];
-
 let firstCard, secondCard;
 let scoreTotal = 0;
-
 let totalMoves = 0;
-
 let activeGame = true;
 
 function playGame() {
@@ -59,7 +56,6 @@ function selectedCard(e) {
     secondCard = e.currentTarget;
     secondCard.id = "flip";
     checkIfWon();
-    
   }
 }
 
