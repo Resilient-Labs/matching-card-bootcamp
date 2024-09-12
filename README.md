@@ -1,22 +1,15 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Looney Tunes Memory Madness 🃏
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+## Welcome to the Looney Tunes Memory Madness!
+🎉 Experience the whimsy of a Looney Tunes-inspired matching card game! Crafted with HTML, CSS, and JavaScript, this delightful project not only challenges your memory with animated card flips but also brings the iconic characters of Looney Tunes to life in a captivating and entertaining gaming experience.
 
-### How to submit your code for review:
+## How to Play
+1. **Start the Game:** Click on the 'Play' button to begin the madness!
+2. **Flip Over Cards:** Click on any card to reveal the animated character hidden underneath.
+3. **Match the Pairs:** Remember the position of each character and try to find matching pairs by clicking on two cards at a time.
+4. **Win the Game:** Match all the pairs to prove your memory skills and become the ultimate Looney Tunes champion!
+5. **Play Again:** Once the game is over, click on the 'Play Again' button to start a new round of fun!
+6. **Track Your Points:** Keep an eye on your score as you play! Each successful match earns you points, so aim for the highest score possible and show off your memory mastery!
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
-
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Get Ready to Dive Into the Whimsical World of Looney Tunes!
+🌟 Are you ready to embark on a journey filled with laughter, surprises, and unforgettable moments? Join Silvester, Bugs Bunny, Tweety, Taz, and more iconic characters in the Looney Tunes Memory Madness!

@@ -1,0 +1,26 @@
+[
+  {
+    "image": "./assets/imgs/giphy-img-6.gif", 
+    "name": "selvester"
+  },
+  {
+    "image": "./assets/imgs/img-one.jpg",
+    "name": "baby-looney"
+  },
+  {
+    "image": "./assets/imgs/img-2.jpg",
+    "name": "baby-bugs-bunny"
+  },
+  {
+    "image": "./assets/imgs/img-3.jpg",
+    "name": "angry-babies"
+  },
+  {
+    "image": "./assets/imgs/img-4.jpg",
+    "name": "needy-selvester"
+  },
+  {
+    "image": "./assets/imgs/img-5.jpg",
+    "name": "eating-babies"
+  }
+]
