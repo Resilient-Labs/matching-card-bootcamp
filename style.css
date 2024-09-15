@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 4rem;
+    margin-top: 18px;
+    margin-bottom: 54px;
+    color:color;
+}
+  .back{
+      background-image: url("./img/mpcx.jpg");
+  }
+
+  .front-pairOne{
+    background-image: url("./img/spotify.png");
+  }
+  .front-pairTwo{
+    background-image: url("./img/tidal1.jpg");
+  }
+  .front-pairThree{
+    background-image: url("./img/ableton.png");
+  }
+  .front-pairFour{
+    background-image: url("./img/SoundCloud-Logo.jpg");
+  }
+  .front-pairFive{
+    background-image: url("./img/Apple-Music-Logo.jpg");
+  }
+  .front-pairSix{
+    background-image: url("./img/Songtrust_Logo.png");
+  }
+
+  .card{
+    float: left;
+    width: 234px;
+    height: 234px;
+    margin-right: 18px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 18px;
+  }
+
+  .clear{
+    clear:both;
+}
+
+.container{
+    margin-left: 10%;
+}
+
+body{
+    background-image: url("https://media.giphy.com/media/dAWZiSMbMvObDWP3aA/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
