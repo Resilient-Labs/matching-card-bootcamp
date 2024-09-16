@@ -1,0 +1,55 @@
+body{
+  background: linear-gradient(to right, #cb2d3e, #ef473a );
+  color: white;
+}
+
+
+.grid { 
+  width: 80%; 
+  height: 350px; 
+  margin: 40px auto;
+} 
+  
+.grid img {  
+  width: 17%; 
+  height: 160px; 
+  margin: 10px;
+  background: lightblue;
+
+} 
+
+p{
+  font-style: italic;
+  text-align: center;
+}
+
+span{
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+}
+#clear, #start { 
+  background: white;
+  border: 3px solid rgb(0, 143, 173);
+  text-align: center; 
+  width: 12%; 
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  width: 50%;
+}
