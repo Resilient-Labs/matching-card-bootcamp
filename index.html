@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Card Game</title>
+</head>
+<body>
+
+    <h1>Luxury Matching Game</h1>
+    
+        <!-- Game board -->
+        <div id="container">
+            <table class="table">
+              <tr>
+                    <td><img src= "back.png" class="Card A" data-value = "" id="0"></td>
+                    <td><img src= "back.png" class="Card B" id="1"></td>
+                    <td><img src="back.png" class="Card C" id="2"></td>
+                    <td><img src="back.png" class="Card D" id="3"></td>
+                    <td><img src="back.png" class="Card E" id="4"></td>
+                    <td><img src="back.png" class="Card E" id="5"></td>
+                </tr>
+                <tr>
+                    <td><img src="back.png"class="Card A" id="6"></td>
+                    <td><img src= "back.png" class="Card B" id="7"></td>
+                    <td><img src= "back.png" class="Card C" id="8"></td>
+                    <td><img src="back.png" class="Card D" id="9"></td>
+                    <td><img src= "back.png" class="Card E" id="10"></td>
+                    <td><img src= "back.png" class="Card E" id="11"></td>
+                </tr>
+            </table>
+            <div class="button">
+                <button id="reset">Replay Game</button>
+            </div>
+        </div>
+        <!-- After Game options -->
+    <h2 id='message'><span id="finished"></span></h2>
+    <script src="main.js"></script>
+</body>
+</html>
