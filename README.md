@@ -2,6 +2,9 @@
 
 ### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
 
+![GG matching](https://user-images.githubusercontent.com/126501848/235485274-e3b07e77-b664-42c5-a63f-8b807f9a2d52.jpg)
+
+
 ### How to submit your code for review:
 
 - Fork and clone this repo

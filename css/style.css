@@ -1,0 +1,69 @@
+html{
+  font-family: 'Oswald', sans-serif;
+
+}
+header{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+section{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+button{
+  border-radius: 25px;
+  color:red;
+  background-color: white;
+  width:50px;
+}
+button:hover{
+  background-color: black;
+}
+
+h1{
+  color: red;
+}
+
+tr{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border:1px solid red;
+  width:100%;
+}
+
+table{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+td{
+  border: 1px solid red;
+
+}
+img{
+  width:100%;
+}
+
+/* .back{
+background-image: url('../image/card\ back.png');
+background-size:cover;
+} */
+
+
+.hide{
+  display:none;
+}
+tbody{
+  background-image: url('../image/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html{
+  background-color: black;
+}
