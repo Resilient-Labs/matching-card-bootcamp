@@ -1,0 +1,65 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Press Start 2P', monospace;
+  background: url(../img/background.jpg);
+}
+
+h1{
+  color: red;
+  font-size: 6rem;
+}
+
+header {
+  margin: 2% 1%;
+  padding: 1%;
+}
+
+td {
+  border: 0.5rem solid black;
+  height: 25rem;
+  width: 25rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+td img {
+  height: 22.5rem;
+  width: 22.5rem;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.18);
+}
+
+#matches {
+  text-align: center;
+  margin: 2%;
+  font-size: 3.4rem;
+}
