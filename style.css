@@ -1,0 +1,306 @@
+/* .row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ .cards1 {
+    border: 1px solid black;
+    background-color: red;
+    height: 150px;
+    width: 150px;
+}
+
+.cards2 {
+    border: 1px solid black;
+    background-color: red;
+    height: 150px;
+    width: 150px;
+}
+
+.cards3 {
+    border: 1px solid black;
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+}
+
+.cards4 {
+    border: 1px solid black;
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+} 
+
+.basic1 {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+}
+.basic2 {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+}
+.basic3 {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+}
+.basic4 {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+}
+.hidden .cards4 {
+    visibility: hidden;
+} */
+body {
+    background-image: url(adventuretimebackground.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    
+}
+
+.reset {
+	background-color:#ce2929;
+	border-radius:20px;
+	border:1px solid #ce2929;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Fuzzy Bubbles', cursive;
+	font-size:17px;
+	padding:11px 38px;
+	text-decoration:none;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    background-image: url(adventuretimememorygame_300x300.png);
+}
+
+.imageMemory {
+    background-repeat: no-repeat;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.unflipped {
+    border: 1px solid black;
+    height: 300px;
+    width: 200px;
+}
+
+.flippedRed {
+    height: 300px;
+    width: 200px;
+    background-image: url(backofcard.png);
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+ 
+.flippedRed:hover {
+    transform: rotateY(170deg);
+}
+
+
+
+
+.flippedBlue{ 
+    background-image: url(backofcard.png);
+    height: 300px;
+    width: 200px;
+    transition: all 1s ease;
+}
+.flippedBlue:hover {
+    transform: rotateY(170deg);
+}
+
+
+.flippedGreen{ 
+    background-image: url(backofcard.png);
+    height: 300px;
+    width: 200px;
+    transition: all 1s ease;
+}
+.flippedGreen:hover {
+    transform: rotateY(170deg);
+}
+
+.flippedOrange{ 
+    background-image: url(backofcard.png);
+    height: 300px;
+    width: 200px;
+    transition: all 1s ease;
+
+}
+
+.flippedOrange:hover {
+    transform: rotateY(170deg);
+}
+
+.flippedYellow{ 
+    background-image: url(backofcard.png);
+    height: 300px;
+    width: 200px;
+    transition: all 1s ease;
+}
+
+.flippedYellow:hover {
+    transform: rotateY(170deg);
+}
+
+.flippedPurple{
+    background-image: url(backofcard.png);
+    height: 300px;
+    width: 200px;
+    transition: all 1s ease;
+}
+
+.reset:hover {
+    animation: fade 3s;
+}
+
+
+@keyframes fade {
+    70% {
+        opacity: 60%;
+    }
+    100% {
+        opacity: 90%;
+    }
+}
+
+.flippedPurple:hover {
+    transform: rotateY(170deg);
+}
+.flippedOrange:hover {
+    animation: blink 5s infinite;
+}
+
+.flippedPurple:hover {
+    animation: blink 5s infinite;
+}
+
+.flippedBlue:hover {
+    animation: blink 5s infinite;
+}
+
+.flippedYellow:hover {
+    animation: blink 5s infinite;
+}
+
+.flippedGreen:hover {
+    animation: blink 5s infinite;
+}
+
+.flippedRed:hover {
+    animation: blink 5s infinite;
+}
+
+/* animations */
+@keyframes flipCard {
+    
+}
+
+@keyframes blink {
+    
+    0% {
+        border: 7px solid red;
+        border-radius: 4px;
+    }
+
+    20% {
+        border: 7px solid pink;
+        border-radius: 4px;
+    }
+
+    40% {
+        border: 7px solid yellow;
+        border-radius: 4px;
+    }
+
+    60% {
+        border: 7px solid steelblue;
+        border-radius: 4px;
+    }
+
+    80% {
+        border: 7px solid greenyellow;
+        border-radius: 4px;
+    }
+
+    100% {
+        border: 7px solid red;
+        border-radius: 4px;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        border: 7px solid red;
+        border-radius: 4px;
+    }
+
+    20% {
+        border: 7px solid pink;
+        border-radius: 4px;
+    }
+
+    40% {
+        border: 7px solid yellow;
+        border-radius: 4px;
+    }
+
+    60% {
+        border: 7px solid steelblue;
+        border-radius: 4px;
+    }
+
+    80% {
+        border: 7px solid greenyellow;
+        border-radius: 4px;
+    }
+
+    100% {
+        border: 7px solid red;
+        border-radius: 4px;
+    }
+}
