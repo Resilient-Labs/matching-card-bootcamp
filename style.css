@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(./codioful-formerly-gradienta-LeG68PrXA6Y-unsplash.jpg);
+    display: flex;
+}
+
+img{
+    width: 100px;
+}
+
+.memory-game{
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid blue;
+    perspective: 1000px;
+}
+
+.memory-card{
+    width: calc(25% - 10px);
+    height: calc(33.3333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.memory-card:active {
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip{
+    transform:rotateY(180deg);
+}
+
+.front-face, .back-face{
+    border: 2px solid purple;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.front-face{
+    transform: rotateY(180deg);
+}
