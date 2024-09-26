@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Cinzel', Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100vh;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url("/matchingCardGame/img/five.jpg");
+    
+    background-position:left;
+    background-repeat: no-repeat;
+
+}
+
+.outer-area {
+    height: 100vh;
+    background: rgb(0, 0, 0,0.3);
+    background-size:cover;
+    
+}
+
+.top-area {
+  width: 100%;
+  height: 5%;
+  text-align: center;
+  background: rgb(0, 0, 0, 0.3);
+  flex-direction: row;
+  color: white;
+  /* border: 1px solid white; */
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(189, 82, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* border: 4px solid rgb(255, 0, 0); */
+    /* text-decoration: underline; */
+}
+
+.game {
+    width: 900px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    /* border: 1px solid white; */
+    margin-top: 2.5%;
+    border-radius: 15px;
+    
+}
+
+.form-area {
+  display: 0 auto;
+  padding-top: 10%;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  background: rgb(0, 0, 0, 0);
+  padding: 0.8% 2%;
+  width: 52.2%;
+  margin: 0.5%;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  margin: 0 auto; 
+}
+
+
+
+form {
+  padding-left: 45%;
+  
+}
+
+input {
+  display: 0 auto;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  background: rgb(0, 0, 0, 0.75);
+  margin: 0.5%;
+  border: 2px solid;
+  margin: 0 auto;   
+  font-size: 2rem;
+  border-radius: 30px;
+  padding: 1% 2%;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+input:hover {
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255);
+}
+.front-face, .back-face {
+    
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    position: absolute;
+    border-radius: 5px;
+    background: rgb(0, 0, 0, 0.5);
+    backface-visibility: hidden;
+  }
+  .front-face, .back-face:hover {
+    background: rgba(255, 255, 255);
+    padding: 4.5px;
+  }
+
+  .card-area {
+    width: calc(20% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+    transform: scale(1);
+  }
+  
+   .card-area:active {
+     transform: scale(0.85);
+     transition: transform .2s;
+   }
+
+   .card-area.flip {
+    transform: rotateY(180deg);
+  }
+
+  .card-area.flip:onclick {
+    transform: rotateX(180deg);
+  }
+  .front-face {
+    transform: rotateY(180deg);
+  }
+  /* #box1 {
+    
+  }
+  #box2 {
+    
+  }
+  #box3 {
+    
+  }
+  #box4 {
+    
+  }
+  #box5 {
+    
+  }
+  #box6 {
+    
+  }
+  #box7 {
+    
+  }
+  #box8 {
+    
+  }
+  #box9 {
+    
+  }
+  #box10 {
+    
+  }
+ */
