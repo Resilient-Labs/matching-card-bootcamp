@@ -1,0 +1,123 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+.full{
+  /* background-image:	url("../back.gif"); */
+}
+.start{
+  width: 500px;
+  height:200px;
+  color: black;
+  border-radius: 25px;
+  font-size: 60px;
+  background-color: lightpink;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    shadow: 0 0 20px orange, 0 0 30px orange, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+table{
+  width: 50%;
+  margin: auto;
+  margin-top: -200px;
+  border: none;
+}
+td{
+  border-radius: 25px;
+  height: 300px;
+  width: 350px;
+  border: 8px solid pink;
+  background-image:url(../romancei.jpg);
+  }
+h1{
+  text-shadow: 2px 2px #ff0000;
+  font-size: 100px;
+  text-align: center;
+}
+p{
+  text-shadow: 2px 2px #ff0000;
+  font-size: 50px;
+  text-align: center;
+  margin-top: -70px;
+}
+.intro{
+  width: 1150px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+h2{
+  margin-top: -700px;
+  font-size: 200px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  visibility: hidden;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+#overlay {
+  display: block;
+    width: 20%;
+    margin-top: -970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
