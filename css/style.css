@@ -1,0 +1,115 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack - stops containers from collapsing*/
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     /* default styling */
+     color: #000;
+     font-size: 16px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+
+     /* taken from https://codepen.io/foxeisen/pen/KgwYJy */
+     background: 
+     radial-gradient(rgb(230, 13, 165) 3px, transparent 4px),
+     radial-gradient(rgb(167, 8, 230) 3px, transparent 4px),
+     linear-gradient(rgb(255, 255, 255) 4px, transparent 0),
+     linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+     linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+   #fff;
+   background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+section{
+     display: grid;
+     grid-template-columns: repeat(4, 9rem);  /*128px*/
+     grid-template-rows: repeat(3, 9rem); /*128px*/
+     grid-gap: 1rem;
+     background-color: white;
+     perspective: 800px;  /* allows 3d to work*/
+}
+
+.card{
+     position: relative; /*allows you to stack*/
+     transform-style: preserve-3d; /* */
+     transition: all 1s ease;
+     
+}
+
+.face{
+     width:100%;
+     height:100%;
+     position: absolute; /*allows you to stack*/
+     pointer-events: none; /* makes face unclickable */
+}
+
+.back{
+     width:100%;
+     height:100%;
+     background-color: purple;
+     /* background-image: url(../images/questionMark.jpg); */
+     position: absolute; /*allows you to stack*/
+     backface-visibility: hidden; /* image should be on one side and background on other*/
+     pointer-events: none; /* makes back unclickable */
+}
+
+h1{
+     color: purple;
+     text-decoration: underline;
+     background-color: white;
+     
+}
+
+.toggleCard{
+     transform: rotateY(180deg) /*rotates card 180 degrees along the y axis */
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
