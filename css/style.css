@@ -1,0 +1,71 @@
+/* Help of chatGPT for layout and to flip the cards  */
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  min-height: 100vh;       
+  background-color: #f5f5f5; 
+}
+
+img{
+  height: 115px;
+  width: 115px;
+}
+
+.board {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1rem;  
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column; /* To stack children vertically */
+  align-items: center;    /* Center children horizontally */
+  gap: 20px;              /* Add a gap between board and score div */
+}
+
+.score {
+  width: 100%; 
+  text-align: center;
+}
+
+p{
+  margin-bottom: 1rem ;
+  font-size: 2rem;
+}
+
+
+.card {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.card.flipped {
+  pointer-events: none;  /* This will disable click events on flipped cards */
+  transform: rotateY(180deg);
+}
+
+.card::before {
+  content: '';  /* Empty content for the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
