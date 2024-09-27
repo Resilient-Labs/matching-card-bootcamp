@@ -1,0 +1,59 @@
+body{
+background-image: url('https://www.xmple.com/wallpaper/yellow-gradient-linear-pink-1920x1080-c2-f2dd19-e278b6-a-255-f-14.svg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+td{
+  /* border: 5px solid black; */
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border-spacing: 0 15px;
+}
+
+h1{
+  text-align: center;
+  margin-top: 173px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
+
+
+}
+tr{
+    border-spacing: 0 15px;
+
+}
+
+img{
+  width: 80%;
+}
+table{
+  margin: auto;
+    /* border-spacing: 0 15px; */
+      border-spacing: 0.5rem;
+      margin-top: 61px;
+      width: 900px;
+      height: 300px;
+}
+
+.card-memory.flipped{
+/* background-color: green; */
+animation-delay: 3s;
+}
+ form{
+   text-align: center;
+   appearance: none;
+
+ }
+.newGame{
+  appearance: none;
+	background-color: pink;
+	border: none;
+	color: $white;
+  font-family: 'Roboto Mono', monospace;
+	font-size: 24px;
+	padding: 15px 20px;
+	transition: opacity 0.3s ease-in-out;
+}
