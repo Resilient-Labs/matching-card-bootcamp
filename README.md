@@ -1,22 +1,14 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Hades Matching Card Game
+A 12 card memory game - users are able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over.
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+Link to project: https://menahassan-hades-matching-card-games.netlify.app/
 
-### How to submit your code for review:
+# How It's Made
+Tech used: HTML, CSS, JavaScript
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+# Lessons Learned:
+ It's important to break your code down into small, manageable functions. By doing this, you can write more efficient and reusable code, which can save you time and effort in the long run. This project reminded me that it's crucial to test your code thoroughly throughout the creation process to ensure that it works as intended.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+ This was the first time I used the CSS properties transform, transition, and perspective. These all played a part in creating the card flip functionality. Another first was the Immediately Invoked Function Expression used to shuffle the cards.
+
+<img src="hades-matching-card-game-browser-screenshot.JPG">
