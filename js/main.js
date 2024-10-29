@@ -1,21 +1,3 @@
-// TODO: Problem
-// User clicks two cards and checks if they're a match
-// If cards are a match keep them flipped (true)
-// If cards are not a match flipped them over (false)
-// Game is over when all cards are matched and flipped over
-// TODO: Steps:
-// User should be able to click on cards so need to add a click eventListener to the cards
-// Once two cards are selected, have the check if the value on the cards match
-// Cards should be shuffled on reload or restart
-// Restart button should reset the game board, and moves the player has made
-// Maybe display how manty moves the user has made
-// Display that the player has won on screen
-// Need a function that shuffles the cards when the page is reloaded or restart button is clicked
-// Need a function that will generate the cards
-// Need a function that will flip the cards
-// Need a function that will check if the cards matched
-
-const cards = document.querySelectorAll(".game-card");
 let cardHasFlipped = false;
 let lockBoard = false;
 let firstCard, secondCard;
