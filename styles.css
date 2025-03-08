@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Board layout */
+.board {
+    display: grid;
+    grid-template-rows: repeat(4, 100px); /* 4 rows */
+    grid-template-columns: repeat(4, 100px); /* 4 columns */
+    gap: 10px;
+    margin-top: 5%;
+}
+
+/* Individual cell styling */
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #e74c3c; /* Red border */
+    background-color: #f4e1c1; /* Soft amber color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for cells */
+.cell:hover {
+    background-color: #e3c0a2; /* Slightly darker amber */
+    transform: scale(1.05); /* Slight scale-up effect */
+}
+
+/* Hide card value */
+.hidden {
+    visibility: hidden;
+}
+
+/* Button styling */
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #1abc9c; /* Teal color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085; /* Darker teal when hovered */
+    transform: scale(1.1); /* Slight scale-up effect on hover */
+}
+
+/* Scoreboard styling */
+.score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
