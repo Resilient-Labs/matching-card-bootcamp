@@ -1,0 +1,89 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  background: radial-gradient( #6a11cb 0%, #2575fc 100%);
+}
+
+.topCards,
+.bottomCards {
+  display: flex;
+}
+
+main,
+.gameSection,
+.cards,
+.buttonsSection {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+main,
+.cards {
+  flex-direction: column;
+}
+
+#gameSection,
+.buttonsSection {
+  width: 50%;
+}
+
+#gameSection {
+  height: 600px;
+}
+
+li {
+  width: 180px;
+  height: 250px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.unflipped,
+.flipped {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.unflipped {
+  background-image: url('assets/pokemonCard.png');
+}
+
+.flipped {
+  /* put anything in here, just to see if a card is flipped */
+  color: black;
+}
+
+
+span {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  margin-top: 80px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

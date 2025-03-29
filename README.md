@@ -1,22 +1,19 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Pokemon Card Memory Match
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+![Thumbnail](css/assets/thumbnail.png)
 
-### How to submit your code for review:
+Link to project: (https://pokemonmemorymatch.netlify.app/)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## How It's Made:
+Tech used: HTML, CSS, JS
+
+A Pokemon-themed memory matching game, that allows users to click on a card and see its image to try and match it with another card that holds the same image. Every time two new cards are flipped, they are evalutated against each other to see if they match. If they do, they stay flipped - otherwise, they flip back over.
+
+## Optimizations
+
+This application has been optimized to ensure that correct pairs stay flipped when they have been matched. The also utilizes the setTimeout method that the browser API provides, to show the pictures on mismatched cards for a brief second before flipping them back over. This allows the users a chance to remember the location of cards later on.
+
+## Lessons Learned
+
+From this project, I learned that it can be useful to spread NodeLists into arrays to access the array methods. By doing this, I was able to use the filter method to only keep cards flipped if the most recently flipped pair matched each other.
