@@ -1,0 +1,110 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.card {
+  margin: 10px;
+  width: 100px;
+  height: 175px;
+  border: 1px solid goldenrod;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.disabledCard {
+  margin: 10px;
+  width: 100px;
+  height: 175px;
+  border: 1px solid goldenrod;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation: spin 1s linear;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: transform 0.6s ease-in-out;
+}
+
+.selected {
+  transform: translateY(-20px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100px;
+  height: 175px;
+}
+
+
+@keyframes spin { 
+  0% { 
+    transform: rotateY(0deg); 
+    content: url('../img/card.png'); 
+  } 
+  10% { 
+    transform: rotateY(108deg); 
+    content: url('../img/joke.png'); 
+  } 
+  20% { 
+    transform: rotateY(216deg); 
+    content: url('../img/card.png'); 
+  } 
+  30% { 
+    transform: rotateY(324deg); 
+    content: url('../img/joke.png'); 
+  } 
+  40% { 
+    transform: rotateY(432deg); 
+    content: url('../img/card.png'); 
+  } 
+  50% { 
+    transform: rotateY(540deg); 
+    content: url('../img/joke.png'); 
+  } 
+  60% { 
+    transform: rotateY(648deg); 
+    content: url('../img/card.png'); 
+  } 
+  70% { 
+    transform: rotateY(756deg); 
+    content: url('../img/joke.png'); 
+  } 
+  80% { 
+    transform: rotateY(864deg); 
+    content: url('../img/card.png'); 
+  } 
+  90% { 
+    transform: rotateY(972deg); 
+    content: url('../img/joke.png'); 
+  } 
+  100% { 
+    transform: rotateY(1080deg); 
+  } 
+}

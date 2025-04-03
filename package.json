@@ -1,0 +1,16 @@
+{
+  "name": "matching-card-bootcamp",
+  "version": "1.0.0",
+  "description": "### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jesulayomi <jesulayomi081@gmail.com> (https://www.jesulayomi.tech/)",
+  "license": "MIT",
+  "dependencies": {
+    "figlet": "^1.8.0",
+    "nodemon": "^3.1.9"
+  }
+}
