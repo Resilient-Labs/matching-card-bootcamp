@@ -1,0 +1,28 @@
+/* style.css */
+.card {
+    width: 100px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 5px;
+    display: inline-block;
+    font-size: 2em;
+    text-align: center;
+    line-height: 150px;
+    cursor: pointer;
+    background-color: lightgray;
+    user-select: none;
+  }
+  
+  .flipped {
+    background-color: white;
+  }
+  
+  .matched {
+    background-color: lightgreen;
+    cursor: default;
+  }
+  
+  #game-board {
+    width: 520px;
+    margin: 20px auto;
+  }
