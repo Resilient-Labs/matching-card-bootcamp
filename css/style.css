@@ -1,0 +1,17 @@
+a {
+    width: 150px;
+    height: 300px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+div {
+    width: 100%;
+    background: 'red';
+    display: flex;
+    gap: 5;
+}
