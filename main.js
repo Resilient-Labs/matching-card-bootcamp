@@ -21,55 +21,55 @@ function game(){
     matched = 0
     document.getElementById('text').textContent = ''
     let firstPick = null
-    firstPick = null;
-    secondPick = null;
-    lockBoard = false;
+    firstPick = null
+    secondPick = null
+    lockBoard = false
 }
 
 function handleClick() {
-    if (lockBoard || this.classList.contains('flipped')) return;
+    if (lockBoard || this.classList.contains('flipped')) return
 
-    this.classList.add('flipped');
-    this.textContent = this.dataset.doll;
+    this.classList.add('flipped')
+    this.textContent = this.dataset.doll
 
     if (!firstPick) {
-        firstPick = this;
-        return;
+        firstPick = this
+        return
     }
 
-    secondPick = this;
-    lockBoard = true;
+    secondPick = this
+    lockBoard = true
 
     if (firstPick.dataset.doll === secondPick.dataset.doll) {
-        firstPick.classList.add('matched');
-        secondPick.classList.add('matched');
-        matched += 2;
+        firstPick.classList.add('matched')
+        secondPick.classList.add('matched')
+        matched += 2
         if (matched === 8) {
-            document.getElementById('text').textContent = "You matched all the Bratz dolls! 💅";
+            document.getElementById('text').textContent = "You matched the Bratz dolls!"
         }
-        resetPicks();
+        resetPicks()
     } else {
         setTimeout(function () {
-            firstPick.classList.remove('flipped');
-            secondPick.classList.remove('flipped');
-            firstPick.textContent = '';
-            secondPick.textContent = '';
-            resetPicks();
-        }, 1000);
+            firstPick.classList.remove('flipped')
+            secondPick.classList.remove('flipped')
+            firstPick.textContent = ''
+            secondPick.textContent = ''
+            resetPicks()
+        }, 1000)
     }
 }
 
 function resetPicks() {
-    firstPick = null;
-    secondPick = null;
-    lockBoard = false;
+    firstPick = null
+    secondPick = null
+    lockBoard = false
 }
 
 for (var i = 0; i < tiles.length; i++) {
-    tiles[i].addEventListener('click', handleClick);
+    tiles[i].addEventListener('click', handleClick)
 }
 
-document.getElementById('reset').addEventListener('click', setupBoard);
+document.getElementById('reset').addEventListener('click', setupBoard)
 
-setupBoard();
+setupBoard()
 }
