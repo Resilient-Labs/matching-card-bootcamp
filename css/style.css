@@ -1,0 +1,78 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 8px;
+}
+
+.front {
+  background-color: #3498db; /* Front side color, can be blank or any design */
+}
+
+.back {
+  transform: rotateY(180deg); /* Flipped side */
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.card:not(.flipped) .back {
+  visibility: hidden; /* Hide the back until the card is flipped */
+}
+
+.card.flipped .back {
+  visibility: visible; /* Show the back when the card is flipped */
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
