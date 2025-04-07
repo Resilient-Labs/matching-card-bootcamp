@@ -1,0 +1,24 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center ;
+    min-height: 50em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: rgb(126, 206, 118);
+}
+.board{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 10em);
+    grid-template-rows: repeat(2, 10em);
+    border: .5px solid black;
+}
+.board button{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background-color: beige;
+}
