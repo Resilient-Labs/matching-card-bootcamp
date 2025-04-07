@@ -1,0 +1,72 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.gameBoard {
+     width: 80%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 20px;
+
+     
+}
+.card {
+     border: 1px solid black;
+     width: 17%;
+     height: 20vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 2rem;
+     background-color: white;
+     
+
+}
+
+.faceDown {
+
+     color: transparent;
+}
+
+button {
+     display: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
