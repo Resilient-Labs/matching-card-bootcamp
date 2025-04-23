@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+    background-color: #f0f0f5;
+    /* Light Gray */
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensure full height */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    /* Dark Gray Text */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    /* Adjust as needed */
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    /* Dark Blue */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    /* Fixed card size */
+    gap: 15px;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Card shadow */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-front {
+    background-color: #ecf0f1;
+    /* Light Gray Card Front */
+    transform: rotateY(180deg);
+    color: #2c3e50;
+    /* Dark Blue */
+    border: 2px solid #bdc3c7;
+    /* Light Gray Border */
+}
+
+.card-back {
+    background-color: #3498db;
+    /* Blue Card Back */
+    color: #fff;
+    /* White Text */
+    border: 2px solid #2980b9;
+    /* Darker Blue Border */
+}
+
+.game-over-modal {
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker modal background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.game-over-modal.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.game-over-message {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.reset-button {
+    background-color: #27ae60;
+    /* Green Button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+    background-color: #219150;
+    /* Darker Green on Hover */
+}

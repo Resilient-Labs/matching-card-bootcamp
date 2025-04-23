@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Matching Card Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Game Title -->
+      <h1 class="text-center mt-5 mb-4">Matching Card Game</h1>
+
+      <!-- Timer Display -->
+      <h3 class="text-center mb-4" id="timer">Time left: 1:00</h3>
+
+      <!-- Game Instructions -->
+      <p class="text-center mt-4">
+        Click on the cards to uncover the hidden numbers. Your goal is to find
+        all the matching pairs. Successfully matched pairs will remain visible.
+        If the cards do not match, they will flip back over. The game ends in
+        victory when you've found all the pairs! Be sure to watch the timer to
+        track your progress.
+      </p>
+
+      <!-- Game Board -->
+      <div class="wrapper" id="wrapper">
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="card">
+          <div class="card-front"></div>
+          <div class="card-back"></div>
+        </div>
+      </div>
+
+      <!-- Game Over Modal -->
+      <div
+        class="game-over-modal d-flex flex-column justify-content-center align-items-center position-absolute w-100 h-100"
+        id="gameOverContainer">
+        <h2 class="game-over-message"></h2>
+        <button class="reset-button btn btn-primary mt-4" id="restart">
+          Play Again
+        </button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
