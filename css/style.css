@@ -1,0 +1,38 @@
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 30px;
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#gameBoard {
+  display:grid;
+  grid-template-columns: repeat(5, 80px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 30px;
+  border: 1px solid black;
+}
+
+.card {
+  width: 70px;
+  height:70px;
+  font-size:50px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  border: 1px solid red;
+}
