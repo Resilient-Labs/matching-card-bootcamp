@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+   background-size: cover; 
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin-top: 130px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #00078a;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
