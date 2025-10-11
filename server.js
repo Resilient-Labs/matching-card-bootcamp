@@ -34,11 +34,6 @@ const server = http.createServer((req, res) => {
             res.writeHead(200, { 'Content-Type': 'text/javascript' })
             res.end(data);
         })
-    } else if (myUrl === '/memoCard') {
-            res.writeHead(200, { 'Content-Type': 'text/text' })
-             const result = "";
-             console.log(result);
-            res.end(result);
     }else {
         figlet('404!!', function (error, data) {
             if(error) {

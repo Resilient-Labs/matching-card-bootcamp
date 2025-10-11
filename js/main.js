@@ -31,12 +31,10 @@ const cards = document.querySelectorAll('.card');
 cards.forEach(card => card.addEventListener('click', () => game(card)));
 
 
-
-
 function game(card) {
     const img = card.querySelector('img');
     img.style.visibility = 'visible';
-    //click 2 cards disable rest
+    //click 2 cards disable the rest
     console.log(card.className.split(" ")[1]);
     round.selected.push(card.className.split(" ")[1]);
     round.turned += 1;
@@ -46,11 +44,6 @@ function game(card) {
         cards.forEach(c => c.style.pointerEvents = 'none')
         compareCards(round.selected);
     }
-
-    // if same stay flipped
-    // if not flip back
-    // game ends when all flipped
-    // track number of tries?
 }
 
 function compareCards(arr) {
@@ -62,19 +55,19 @@ function compareCards(arr) {
                 img.style.visibility = 'hidden';
             })
             round.tries += 1;
-            document.querySelector('h2').innerText = `Tries = ${round.tries}`;
+            document.querySelector('h2').innerText = `Tries: ${round.tries}`;
             cards.forEach(c => c.style.pointerEvents = 'all')
         }, 1000)
     } else if (arr[0].split('-')[0] === arr[1].split('-')[0]) {
         cards.forEach(c => c.style.pointerEvents = 'all');
         round.combos += 1;
         arr.forEach(a => {
-            const img = document.querySelector(`div.${a} img`);
-            img.style.border = '5px solid tomato';
+            const img = document.querySelector(`div.${a}`);
+            img.style.border = '20px solid rgba(255, 6, 6, 0.27)';
         })
         //mark it with css
         if (round.combos === 5)
-            document.querySelector('h2').innerText = `Game over, it took you ${round.tries}`;
+            document.querySelector('h2').innerText = `Game over! It took you ${round.tries} tries`;
     }
 
     round.selected = [];
