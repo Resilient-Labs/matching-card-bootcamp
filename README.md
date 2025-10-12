@@ -1,10 +1,10 @@
 ## Description
 This is a JOJO bizarre adventures themed matching card game that keeps track of your tries.
 
-[Try the Live project!](jojo-memo.onrender.com/)
+[Try the Live project!](https://jojo-memo.onrender.com/)
 
 
-<a href="jojo-memo.onrender.com/" target="_blank" ><img width="1000" alt="JOJO Memory Game" src="https://github.com/user-attachments/assets/fa7db78c-8d30-4354-b845-063e994f763f" />
+<a href="https://jojo-memo.onrender.com/" target="_blank" ><img width="1000" alt="JOJO Memory Game" src="https://github.com/user-attachments/assets/fa7db78c-8d30-4354-b845-063e994f763f" />
 
 </a>
 
