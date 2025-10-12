@@ -1,22 +1,21 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+## Description
+This is a JOJO bizarre adventures themed matching card game that keeps track of your tries.
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+[Try the Live project!](jojo-memo.onrender.com/)
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<a href="jojo-memo.onrender.com/" target="_blank" ><img width="1000" alt="JOJO Memory Game" src="https://github.com/user-attachments/assets/fa7db78c-8d30-4354-b845-063e994f763f" />
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+</a>
+
+### Tech used 
+
+ - `HTML`
+ - `CSS`
+ - `JavaScript`
+ - `Node.js`
+
+### Lessons learned
+
+- Using modules to create a server and route my files.
+- figlet package to display errors.
