@@ -15,11 +15,11 @@
   - Anything specific on which you want feedback!
 
 Example:
-```
+
 I completed the challenge: 5
 I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+I feel good about my code because it works, but it definitely could use some cleaning up if I wanted to add any extra functionality.
+
 
 Matching card game!
 
