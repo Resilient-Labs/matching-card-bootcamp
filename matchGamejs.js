@@ -58,7 +58,6 @@ function addRandomEmojis() {
         let randomIndex = Math.floor(Math.random() * emojis.length)
         card.innerText = emojis[randomIndex]
         emojis.splice(randomIndex, 1)
-        console.log(emojis)
     });
 }
 addRandomEmojis(cards)
