@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Poppins, Arial, sans-serif;
+    color: #fff;
+    background: #000 url('../img/marvel-bg.webp') center/cover no-repeat fixed;
+    min-height: 100vh;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+    z-index: 0;
+}
+
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    position: relative;
+    z-index: 1;
+    padding: 16px;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Bebas Neue", Poppins, Arial, sans-serif;
+    font-size: 42px;
+    letter-spacing: 1.5px;
+    color: #f5f7ff;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, .5);
+}
+
+
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 14px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    perspective: 1000px;
+    transition: transform .2s ease;
+    border-radius: 12px;
+}
+
+.card:not(.flip):hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    transition: transform .6s ease;
+}
+
+.cardBack {
+    transform: rotateY(0);
+}
+
+.cardFront {
+    transform: rotateY(180deg);
+}
+
+.card.flip .cardBack {
+    transform: rotateY(180deg);
+}
+
+.card.flip .cardFront {
+    transform: rotateY(0);
+    box-shadow: 0 0 15px rgba(255, 0, 0, .4);
+}
+
+#resetBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 999px;
+    background: #e11d48;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .3px;
+    box-shadow: 0 6px 18px rgba(225, 29, 72, .35);
+    cursor: pointer;
+    transition: transform .1s ease, filter .2s ease;
+}
+
+#resetBtn:hover {
+    filter: brightness(1.1);
+}
+
+#resetBtn:active {
+    transform: translateY(1px);
+}
+
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    #gameboard {
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+
+@media (max-width: 640px) {
+    #gameboard {
+        grid-template-columns: repeat(2, 160px);
+        gap: 12px;
+    }
+
+    .card {
+        width: 160px;
+        height: 240px;
+    }
+}
+
