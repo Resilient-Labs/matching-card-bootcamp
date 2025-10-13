@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+h1 { color: #333; }
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background: #3498db;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.flippedCard {
+    background: white;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.matchedCard {
+    background: #2ecc71;
+    color: white;
+    cursor: default;
+}
+
+#message {
+    font-size: 20px;
+    color: #2ecc71;
+    margin: 10px;
+    height: 24px;
+}
+
+button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover { background: #c0392b; }
