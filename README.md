@@ -1,22 +1,42 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Assemble the Icons — Women of Marvel
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+A cinematic memory matching game featuring the powerful women of the Marvel universe.  
+Flip, match, and reveal each hero to complete the set.
 
-### How to submit your code for review:
+[Link to project] (replace with your live demo link)  
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![screenshot](img/marvel.png "Assemble the Icons — Women of Marvel")
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+---
+
+## How It’s Made:
+**Tech used:** HTML, CSS, JavaScript  
+
+Each card flips using a simple transform animation and stays revealed when matched.  
+The grid holds ten cards (five pairs) randomized on load, and the game ends when all matches are found.  
+A minimal, cinematic interface centers everything with a battle-scene background and Marvel-style title font for added intensity.
+
+---
+
+## Optimizations
+- Adjusted card dimensions for full-image visibility without distortion  
+- Centered the full layout vertically and horizontally for a cleaner game stage  
+- Added dark overlay for background clarity and better card contrast  
+- Simplified flip logic and board reset for smoother play  
+- Designed responsive breakpoints for consistent spacing on smaller screens
+
+---
+
+## Lessons Learned
+- How to implement randomized grid logic using simple DOM order changes  
+- Managing front/back card states and rotate transitions  
+- Keeping visual balance between background and gameplay using overlays  
+- Centering flex + grid elements together without breaking responsiveness  
+
+---
+
+## Next Steps
+- Add hero fact reveals for each match  
+- Optional background motion or music  
+- Score tracking and completion animation  
+- Sound effect integration for flip, match, and victory moments
