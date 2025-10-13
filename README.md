@@ -3,7 +3,7 @@
 A cinematic memory matching game featuring the powerful women of the Marvel universe.  
 Flip, match, and reveal each hero to complete the set.
 
-[Link to project] (replace with your live demo link)  
+[Link to project](https://matching-card-gamma.vercel.app/)  
 
 ![screenshot](img/marvel.png "Assemble the Icons — Women of Marvel")
 
