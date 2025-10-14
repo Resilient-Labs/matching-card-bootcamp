@@ -1,0 +1,28 @@
+body {
+    margin:0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.juego{
+    background-color: rgb(121, 13, 13);
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.sqr{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 240, 251);
+    border: 2px solid black;
+    box-sizing: border-box ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
