@@ -3,9 +3,31 @@
   padding: 0;
 }
 
-h1{
-  padding-top: 20px;
+/* styling done with help of chatgpt */
+body {
+  background-image:
+  url('images/retro-background2.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 
+    3px 3px #000,
+    0 0 20px #ff0000,
+    0 0 30px #fff200;
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  padding-top: 80px;
   text-align: center;
+  animation: bounceTitle 1.8s infinite;
+}
+
+@keyframes bounceTitle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 .tiles{
@@ -14,11 +36,41 @@ h1{
   display:grid;
   grid-template-columns: repeat(5, 100px);
   gap: 16px;
+  padding: 20px;
+  border: 8px solid #000;
+  background: linear-gradient(135deg, #222 0%, #444 100%);
+  border-radius: 20px;
+  box-shadow:
+    0 0 20px #ff0000,
+    inset 0 0 10px #fff200,
+    0 0 40px #ff0080;
 }
+
 
 .tile{
   height:100px;
   background-color: green;
   border: 5px solid black;
   cursor: pointer;
+  box-shadow:
+    3px 3px 0 #000,
+    inset 0 0 15px #fff;
 }
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 10px #fff200,
+    0 0 20px #ff007c;
+}
+
+.tile[data-revealed="true"] {
+  border-color: #cc00ff;
+  animation: sparkle 0.8s ease-in-out;
+}
+
+@keyframes sparkle {
+  0% { box-shadow: 0 0 5px #fff200; }
+  50% { box-shadow: 0 0 30px #ff00ff; }
+}
+
