@@ -1,22 +1,60 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# 🍄👑 Super Retro Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+Flip and match in this colorful 80s-inspired memory game!
 
-### How to submit your code for review:
+---
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## ✨ Features
+- 🧩 Classic 10-card memory matching gameplay
+- 🕹️ Tiles flash and glow when you score a match
+- 📱 Fully responsive design
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+---
+
+## 🛠️ Built With
+- **HTML5** – structure  
+- **CSS3** – styling and responsive design  
+- **JavaScript** – interactive logic
+
+---
+
+## 🎯 How to Play
+1. 👀 Click a tile to reveal its color.
+2. 🧠 Try to remember where its match is hiding.
+3. 💥 If both tiles match, they stay flipped — if not, they’ll flip back.
+4. 🏆 Match all pairs to win the game and trigger a celebration alert!
+5. 🔁 Refresh the page to play again.
+   
+---
+
+## 📦 Installation & Setup
+1. Clone this repository:
+     
+  ```bash
+  git clone https://github.com/your-username/matching-card.git
+  ```
+2. Navigate into the project folder:
+
+  ```bash
+  cd matching-card
+  ```
+3. Open index.html in your browser.
+---
+
+## 📸 Screenshot
+
+<img width="1792" height="857" alt="matching-game-screenshot" src="https://github.com/user-attachments/assets/b4165d8c-fb1e-4395-85b8-06663a21741b" />
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+Want to add new tiles, characters (like Toad, Luigi, or Yoshi), or bonus effects? Fork the repo and make your magic happen 💫
+
+---
+
+## 🙌🏽 Acknowledgments
+- Inspired by 80s-style arcade games 🎮
+- Dedicated to all gamers
