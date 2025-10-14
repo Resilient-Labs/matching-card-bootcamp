@@ -1,0 +1,20 @@
+body{
+    background-color: gray;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tiles{
+    margin: 48px auto;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 16px;
+}
+.tile{
+    height: 100px;
+    background-color: darkolivegreen;
+    border: 5px solid black;
+    cursor: pointer;
+}
