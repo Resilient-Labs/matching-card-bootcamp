@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.tiles{
+  margin: 48px auto;
+  width: max-content;
+  display:grid;
+  grid-template-columns: repeat(5, 100px);
+  gap: 16px;
+}
+
+.tile{
+  height:100px;
+  background-color: green;
+  border: 5px solid black;
+  cursor: pointer;
+}
