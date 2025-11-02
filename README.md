@@ -1,22 +1,11 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+Project: Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+The matching card game is a single-player game designed to improve memory by challenging players to remember the positions of previously revealed cards. The game ends when all cards have been flipped and successfully matched.
 
-### How to submit your code for review:
+How It's Made: Tech used: HTML, CSS, and JavaScript
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+Lessons Learned: I learned how to use the Math.random() method which helped to shuffle the cards
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+<img width="1056" height="860" alt="Screenshot 2025-10-15 at 3 10 04 PM" src="https://github.com/user-attachments/assets/9301668a-963f-4e03-90d3-27e33847817a" />
+ 
+Find the live project here https://innocent-r.github.io/matching-card-bootcamp/
