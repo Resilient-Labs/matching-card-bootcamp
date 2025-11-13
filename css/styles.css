@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+.cellindex1{
+    background-image: url('../img/apple.jpg');
+    
+}
+.cellindex2{
+    background-image: url('../img/banana.png');
+    
+}
+.cellindex3{
+    background-image: url('../img/grape.jpg');
+    
+}
+.cellindex4{
+    background-image: url('../img/orange.jpg');
+    
+}
+.cellindex5{
+    background-image: url('../img/watermelon.jpg');
+}
+#container div{
+    width: 150px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid black;    
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
+#container div.facedown{   
+    background-image: none;
+    background-color: darkorange;
+}
+/* facedown overrides the background img rule so that there is no image */
+
