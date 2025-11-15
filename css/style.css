@@ -1,0 +1,81 @@
+/*help with calvin*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url('https://t4.ftcdn.net/jpg/14/43/99/97/360_F_1443999784_8ssG35Ke3aZ6tmasUxeztruDzIFBV095.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cards {
+    width: 100px;
+    height: 180px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.cards:hover {
+    scale: 1.2;
+}
+
+.cards.flip {
+    transform: rotateY(180deg);
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards .front {
+    transform: rotateY(180deg);
+
+}
+
+.cards .back {
+    transform: rotateY(0deg);
+}
+
+h1 {
+    background-color: hsl(210, 35%, 71%);
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+
+button {
+    background-color: hsl(210, 35%, 71%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}

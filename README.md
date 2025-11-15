@@ -1,22 +1,33 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+**Project Overview**
 
-### How to submit your code for review:
+This is a classic memory matching card game featuring 10 cards (5 pairs). Players flip two cards at a time to find matching pairs. When cards match, they remain face-up; when they don't match, they flip back over. The game is complete when all pairs have been successfully matched, challenging players' memory and concentration skills.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<img width="977" height="748" alt="image" src="https://github.com/user-attachments/assets/ef3c34de-5f6b-49be-9326-7c76e021d233" />
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Core Features**
+
+* Interactive card flipping mechanism
+* Match validation logic for paired cards
+* Cards flip back over when no match is found
+* Matched cards remain face-up
+* Game completion detection when all pairs are found
+* Randomized card placement for replayability
+* Visual feedback for matches and mismatches
+
+**Technologies**
+
+* **HTML:** Structure and card grid layout
+* **CSS:** Styling, card flip animations, and visual presentation
+* **JavaScript:** Game logic, match detection, and DOM manipulation
+
+**Key Takeaways**
+
+* Building **interactive games** with vanilla JavaScript
+* Implementing **game state management** for tracking flipped cards
+* Working with **CSS animations** for card flip effects
+* Creating **comparison logic** for match detection
+* Using **arrays** to manage card data and shuffling
+* Handling **asynchronous timing** for card flip delays
+* Developing **win condition detection** algorithms
