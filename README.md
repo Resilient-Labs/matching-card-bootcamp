@@ -1,22 +1,56 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# 5 Pillars of Hip-Hop Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+A matching card game with a theme based on the 5 Pillars of Hip-Hop:
+- MCing
+- Graffiti Art
+- Breakdancing
+- Knowledge
+- DJing
 
-### How to submit your code for review:
+## [Live Demo](https://jj-javascript.github.io/Matching-Card-Game/)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
 
-Example:
+## Project Overview
+
+The 5 Pillars of Hip-Hop Matching Card Game is an interactive game where users try to find all of the pairs of matching cards.
+<img width="930" height="654" alt="Matching Card Game" src="https://github.com/user-attachments/assets/d50d459e-66d6-4ccf-b5f7-c3de5c6954fe" />
+
+## Features
+
+- Interactive interface for users to find matching card pairs.
+- Responsive application that tells the user when they win or lose.
+  
+## Technologies Used
+
+<a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" alt="VS Code" title="VS Code" width="36" height="36" /></a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" alt="JavaScript" title="JavaScript" width="36" height="36" /></a>  <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" alt="HTML5" title="HTML5" width="36" height="36" /></a>  <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" alt="CSS3" title="CSS3" width="36" height="36"/></a>  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" alt="Git" title="Git" width="36" height="36" /></a>
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/Matching-Card-Game.git
+````
+
+2. Navigate to the project directory:
+
+```bash
+cd Matching-Card-Game
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+3. Open Project File
+
+4. Use in browser
+   
+## Usage
+
+1. Click on a card.
+2. Choose next card to see if they make a match.
+3. If you lose, restart game.
+4. Continue making matches until you win or lose.

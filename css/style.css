@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    background-color: khaki;
+}
+
+body{
+    padding-top: 10%;
+}
+
+h1, h2 {
+text-align: center;
+}
+
+#gamerun{
+text-align: center;
+}
+
+.topContent {
+    text-align: center;
+}
+
+.outercard{
+  
+    flex-direction: row;
+}
+
+/* .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+.cards div{
+    /* border: 1px solid black; */
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: none;
+    padding: 0;
+    width: 195px;
+    height: 200px;
+}
+img{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    width: 100%;
+    object-fit:contain;
+    /* height: 120%; */
+}
