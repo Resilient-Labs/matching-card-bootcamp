@@ -1,22 +1,46 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# game ー Card Captor Sakura
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+> A magical card matching game themed inspired by the world of *Cardcaptor Sakura*, where the player captures mystical cards, and embarks on magical adventures.
 
-### How to submit your code for review:
+---
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## 🌟 Overview
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Card Captor Sakura** is a card matching game built with Javascript, offering players the chance to step into the shoes of a Cardcaptor and collect magical cards while engaging in interactive gameplay.  
+
+---
+
+## 🧩 Features
+
+- ✨ Card-collection system: capture cards
+- 🎮 Gameplay scenes: mini card matchinggame
+- 🎨 Stylish visuals & animations — reminiscent of the magical girl aesthetic  
+
+---
+
+## 🛠 Tech Stack
+
+| Layer              | Technology             |
+|---------------------|--------------------------|
+| Programming Language| Javascript              |
+| Design              | CCS                     |
+
+
+---
+
+![sakuracard](https://github.com/user-attachments/assets/f3899b16-7835-4418-a71e-024403729115)
+![sakuracards](https://github.com/user-attachments/assets/75028c60-7149-435b-a4ff-a243635954cb)
+
+---
+
+## Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/AngelBelRoth/game-CardCaptorSakura.git
+
+# Navigate into project folder
+cd game-CardCaptorSakura
+
+# Open the folder in Unity Editor
+# (Open Unity → “Open Project” → select this repository folder)
