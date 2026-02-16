@@ -1,0 +1,112 @@
+:root {
+  --black: rgba(51, 51, 51, 1);
+  --white: rgba(246, 246, 246, 1);
+  --primary: rgba(46, 78, 128, 1);
+  --accent: rgba(42, 104, 204, 1);
+  --3d-effect: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: unset;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 0.4px;
+  color: var(--black);
+  text-align: center;
+}
+
+body {
+  max-width: 90vw;
+  margin: auto;
+  padding: 3em 0;
+  background-color: var(--white);
+}
+
+main {
+  background-color: white;
+  box-shadow: 0 0 16px var(--primary);
+  border-radius: 2em;
+  padding: 2em;
+}
+
+p {
+  margin-top: 1em;
+}
+
+section {
+  display: grid;
+  justify-content: center;
+  /* https://css-tricks.com/almanac/properties/g/grid/grid-template-columns/ */
+  grid-template-columns: repeat(6, minmax(100px, 150px));
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.row {
+  display: flex;
+}
+
+.card {
+  height: 140px;
+  cursor: pointer;
+  background-color: var(--primary);
+  flex: 1 1 120px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px var(--accent);
+  background-image: var(--3d-effect);
+  /* card flip animation: https://3dtransforms.desandro.com/card-flip */
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.05),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+.card:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+
+.card.active {
+  background-color: var(--accent);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.2s;
+  cursor: default;
+  /* card flip animation: https://3dtransforms.desandro.com/card-flip */
+  transform: rotateY(180deg);
+}
+
+.active:hover {
+  opacity: unset;
+}
+
+@media screen and (max-width: 850px) {
+  section {
+    /* https://css-tricks.com/almanac/properties/g/grid/grid-template-columns/ */
+    grid-template-columns: repeat(4, minmax(100px, 150px));
+  }
+}
+
+@media screen and (max-width: 560px) {
+  main {
+    padding: 1em;
+  }
+
+  .card {
+    height: 120px;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
