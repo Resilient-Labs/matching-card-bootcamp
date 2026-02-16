@@ -1,22 +1,28 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Bread Matching Game 🍞
+![alt text](image.png)
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+# Description
+Matching game with different types of bread! Match the bagel to the bagel.
 
-### How to submit your code for review:
+## How It's Made:
+Tech used: 
+- HTML
+- CSS
+- JavaScript
+- Local server
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How to Use:
+To use this matching game, follow these steps:
+- Clone the repository: git clone https://github.com/WinnieYuDev/bread-matching-game
+- Navigate to the app directory in terminal: cd app 
+- Install module dependencies in terminal: npm install
+- Run the server by pasting this into the terminal: node server.js
+- Open your browser and launch link http://localhost:6000/
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+## Lessons Learned:
+- Styling and Image Framing
+- Using Grid in CSS
+- Random logic for matching game
+- Hosting app on local server
+
