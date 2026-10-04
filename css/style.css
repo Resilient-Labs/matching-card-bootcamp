@@ -1,0 +1,32 @@
+.container{
+    border:2px solid rgb(226, 217, 153);
+    border-radius:10px;
+    min-height:auto;
+    max-width:300px;
+    background: rgb(119, 173, 219);
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+}
+
+.container div{
+    background:pink;
+    width:40px;
+    height:60px;
+    border:4px solid black;
+    border-radius:10px;
+    font-size:30px;
+    display:flex;
+    justify-content:center; /* center left and right */
+    align-items:center; /* center up and down */
+}
+
+button{
+    margin-top:20px;
+    margin-left:120px;
+    color:rgb(229, 233, 215);
+    background:rgb(198, 122, 171);
+    border-radius:8px;
+}
+
