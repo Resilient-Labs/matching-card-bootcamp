@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matching Card Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <h1>Matching Card Game</h1>
+    <p class="instructions">Flip two cards at a time. Find all 5 pairs to win!</p>
+
+    <div class="stats">
+      <span>Moves: <strong id="moves">0</strong></span>
+      <span>Pairs found: <strong id="pairs">0</strong> / 5</span>
+    </div>
+
+    <!-- cards get built by script.js so the order can be shuffled every game -->
+    <section id="board" class="board" aria-label="Game board"></section>
+
+    <p id="message" class="message" aria-live="polite"></p>
+
+    <button id="restart" class="restart" type="button">New Game</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
