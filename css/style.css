@@ -1,0 +1,69 @@
+
+body{
+    background-color: #2b256b;
+    font-family: "Isometra", serif;
+   
+}
+main{
+    margin: 50px 100px;
+    max-width: 1100px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 100%;
+    padding: 20px;
+}
+section{
+    text-align: center;
+    color: white;
+}
+span{
+    color: green;
+    font: bold;
+}
+/* Container of the Cards */
+.container{
+   display: grid;
+   grid-template-columns: repeat(5,200px);
+    gap: 10px;
+   place-items: center;
+ 
+}
+
+
+/* Individual cards */
+.card{
+    width: 80px;
+    padding: 10px;
+    height: 100px;
+   background: linear-gradient(135deg, rgba(58, 110, 165, 0.8) 0%, rgba(74, 126, 181, 0.8) 50%, rgba(197, 222, 255, 0.8) 100%), 
+              url('../image/cardbakground.png');
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 8px 36px rgba(174, 73, 73, 0.37);
+    border: 1px solid black;
+
+    border-radius: 25px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.matched{
+    background: green;
+    border: 1px solid blue;
+    opacity: 0.5;
+}
+
+.card-back{
+    /* to make the txt invisible  */
+   font-size: 0;
+}
+
+/*  add to javascript */
+.flipped{
+    font-size:48px ;
+}
+
+
