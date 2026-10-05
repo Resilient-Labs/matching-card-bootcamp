@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    background: yellow;
+    color: blue;
+}
+
+header,
+footer {
+    flex-shrink: 0;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    background: red;
+    color: cyan;
+}
+
+main {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    background: lime;
+    border: 4px solid lightcoral;
+    border-radius: 8px;
+}
+
+.card {
+    border-radius: 8px;
+    border: 4px solid orange;
+}
+
+.card:hover {
+    border-color: magenta;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.counters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0.20rem auto;
+    gap: 1rem 2rem;
+    padding: 1rem;
+    background: cyan;
+    border: 4px solid lightcoral;
+    border-radius: 8px;
+
+    div:last-child {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+footer {
+    background: blue;
+    color: yellow;
+}
+
+@media (min-width: 700px) {
+    .cards {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
