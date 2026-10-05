@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1f3b4d;
+  color: #fff;
+}
+
+.game {
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 8px;
+}
+
+.instructions {
+  margin: 0 0 16px;
+  color: #cfe3ef;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* 5 columns x 2 rows = all 10 cards on screen at once */
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.card {
+  aspect-ratio: 3 / 4;
+  border: none;
+  border-radius: 10px;
+  font-size: 2.4rem;
+  cursor: pointer;
+  background: #f4a259;
+  color: transparent; /* hides the symbol while face-down */
+  box-shadow: 0 4px 0 #b86f2c;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.card:hover:not(:disabled) {
+  transform: translateY(-3px);
+}
+
+.card.flipped {
+  background: #fff;
+  color: #222;
+  cursor: default;
+}
+
+.card.matched {
+  background: #8bd17c;
+  box-shadow: 0 4px 0 #4f9a40;
+}
+
+/* matched cards are disabled, but they should still look "on" not greyed out */
+.card:disabled {
+  cursor: default;
+}
+
+.message {
+  min-height: 1.5em;
+  margin: 20px 0 12px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.message.win {
+  color: #8bd17c;
+}
+
+.restart {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #fff;
+  color: #1f3b4d;
+  cursor: pointer;
+}
+
+.restart:hover {
+  background: #cfe3ef;
+}
+
+/* phones: shrink to 3 columns so cards aren't tiny */
+@media (max-width: 420px) {
+  .board {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
