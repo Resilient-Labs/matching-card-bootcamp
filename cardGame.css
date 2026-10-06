@@ -1,0 +1,44 @@
+body {
+  background: black;
+  color: orangered;
+  text-align: center;
+}
+
+h1 {
+  color: orangered;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.specificCards{
+  width: 130px;
+  height: 130px;
+  background: orangered;
+  border: 3px solid orange;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.picked {
+  border: 3px solid yellow;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: orangered;
+  color: black;
+  border: none;
+}
