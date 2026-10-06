@@ -1,0 +1,61 @@
+body{
+    font-size: 62.5%;
+    background-image: url(/img/celticsStadium.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 15%;
+    color: #fff;
+    font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
+}
+.parent{
+    backdrop-filter: blur(10px);
+    min-height: 40rem;
+    background: #ffffff3b;
+    border-radius: 15px;
+    padding: 5rem;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+div{
+    height: 200px;
+    margin: 2px 3px;
+    width: 17%;
+    background: #ffffff;
+    border: 7.5px solid #007a33;
+    text-align: center;
+    font-size: 8rem;
+}
+div:hover{
+    background: #007a33;
+    border: 7.5px solid #fff;
+}
+h1{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow:
+    -3px -3px 0 #007a33,
+    3px -3px 0 #007a33,
+    -3px 3px 0 #007a33,
+    3px 3px 0 #007a33;
+}
+#sp-widget-host{
+    display: none;
+}
+button{
+    font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
+    font-size: 1.4rem;
+    color: #007a33;
+    background: #fff;
+    border: 5px solid #007a33;
+    padding: .5rem 1rem;
+    margin-top: 5px;
+}
+button:hover{
+    background: #007a33;
+    color: #fff;
+    border: 5px solid #fff;
+}
