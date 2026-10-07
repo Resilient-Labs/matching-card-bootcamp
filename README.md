@@ -1,22 +1,16 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+## Sailor Scout Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+Crystal Tokyo is in trouble! Queen Nehelenia has captured the Sailor Scouts and trapped them in her twisted card game. The Scouts need your help to escape! Help free the Scouts by matching their cards. There are two cards for each Scout and 10 cards total. 
 
-### How to submit your code for review:
+Please help free the Sailor Scouts! In the name of the Moon, we beg you!
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<img width="2532" height="1408" alt="Screenshot 2026-10-07 at 12 49 34 AM" src="https://github.com/user-attachments/assets/3635656c-0fb4-4842-a79a-16d6c07ac834" /><img width="2335" height="1401" alt="Screenshot 2026-10-07 at 12 48 24 AM" src="https://github.com/user-attachments/assets/34da63a6-2a6b-4970-a051-3ad0930100c5" />
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+
+How To Play the Game: 
+
+Please fork and clone the github repo. 
+
+After the repo has been cloned on your machine, please right click on the index.html and click open in browser. 
+

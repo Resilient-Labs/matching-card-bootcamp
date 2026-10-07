@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: url('../assets/wp4913580-full-moon-aesthetic-anime-wallpapers.jpg');
+    background-size: cover; 
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.card{
+    width: 140px; 
+    height: 200px; 
+    border: 2px solid black;
+    display: flex; 
+    margin: 10px;
+    background-image: url('../assets/back-cover.jpeg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.cssCardGameContainer {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; 
+    max-width: 500px; 
+    margin: 0;
+}
+
+.cardGameLayout {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 90px;
+    margin-top: 90px;
+}
+
+#messageToPlayer {
+    width: 400px; 
+    color: rgb(222	249	248); 
+    font-family: "Sail"; 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 32px; 
+    text-align: center; 
+}
