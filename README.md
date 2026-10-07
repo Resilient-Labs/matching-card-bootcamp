@@ -1,22 +1,15 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+A memory game: ten face-down cards, five pairs (fish, bird, dino, watch, cat). Flip two at a time. Match them and they stay up, miss and they flip back. Hit reset to reshuffle.
 
-### How to submit your code for review:
+![Matching Cards screenshot](screenshot.jpg)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How the code works
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+`randomize()` sets up the board. It starts with an array of ten names, each pair appearing twice, then loops: pick a random index, create a card div showing "?", stamp that array entry on as the div's CSS class, and splice the entry out so every name lands exactly twice. What I like about this is the economy of it. The card's identity IS its CSS class, so the class is the hidden value, the reveal text, and the match key all at once. Matching two cards is a single string comparison, no lookup table, no data attributes, no parallel arrays to keep in sync. And the shuffle needs no Fisher-Yates: splice-removing a random index guarantees each pair appears exactly twice by construction.
+
+Clicks go through `cardMatch()`, one delegated handler on the whole board instead of ten separate listeners. It reveals a card by swapping the "?" for the class name, stores the first pick in `clickedOn` and the second in `clickedOnTwo`, then compares. Same class, they stay. Different, they flip back to "?". The reset button just calls `randomize()` again.
+
+The hardest part was the shuffle. Getting a provably fair deal out of a ten-element array with three lines of code felt like the right kind of clever, random enough to be fun, deterministic enough to never deal a broken board.
+
+Built with HTML, CSS, and vanilla JavaScript. My code is on the `answer` branch.
