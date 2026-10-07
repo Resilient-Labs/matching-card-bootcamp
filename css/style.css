@@ -1,0 +1,86 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+h1{
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  margin: 1rem 0 0;
+}
+
+.container{
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.controls{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.table{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(2,1fr);
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  background-color: orange;
+  margin: 1rem auto;
+
+}
+
+.flipper{
+ background-color: #fff8e7;
+ border: 1px solid black;
+ min-width: 0;
+ min-height: 0;
+ position: relative;
+ overflow: hidden;
+}
+
+.card{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  border: 1px solid rgb(67, 14, 67);
+  margin: 0 auto;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  object-fit: contain;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.flipper{
+  cursor: pointer;
+
+}
+
+
