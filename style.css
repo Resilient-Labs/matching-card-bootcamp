@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 32px 16px;
+  /* A green background like a card table. */
+  background: radial-gradient(circle at top, #287a4b, #103d29);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+main { max-width: 680px; margin: 0 auto; }
+h1 { margin-bottom: 8px; }
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+#restart {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #fef3c7;
+  color: #103d29;
+}
+
+#gameCard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.card {
+  min-height: 120px;
+  padding: 8px;
+  border: 2px solid #bbf7d0;
+  border-radius: 12px;
+  background: #166534;
+  box-shadow: 0 4px 8px #00000030;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card.flipped { background: white; color: #103d29; }
+.card.matched { background: #dcfce7; color: #14532d; border-color: #15803d; cursor: default; }
+button:focus-visible { outline: 3px solid #d97706; outline-offset: 4px; }
+
+/* Tablets: four cards per row. */
+@media (max-width: 1024px) {
+  main { max-width: 600px; }
+  #gameCard { grid-template-columns: repeat(4, 1fr); }
+  .card { min-height: 110px; }
+}
+
+/* Phones: two cards per row. */
+@media (max-width: 600px) {
+  #gameCard { grid-template-columns: repeat(2, 1fr); }
+  .card { min-height: 90px; }
+}
