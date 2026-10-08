@@ -1,0 +1,31 @@
+section {
+    border: 1px solid black;
+    /* //background-color: aquamarine; */
+    height: 500%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    
+}
+
+div {
+    border: 1px solid black;
+    background-color: burlywood;
+    font-size: 100px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-bottom: 10px;
+}
