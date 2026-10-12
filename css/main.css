@@ -1,0 +1,48 @@
+:root {
+    /* CSS HSL */
+    --dusty-taupe: hsla(30, 13%, 44%, 1);
+    --dark-khaki: hsla(38, 29%, 20%, 1);
+    --apricot-cream: hsla(39, 71%, 73%, 1);
+    --icy-blue: hsla(206, 65%, 80%, 1);
+    --blue-slate: hsla(204, 16%, 43%, 1);
+}
+
+html {
+    font-size: 62.50%;
+}
+body{
+    background: var(--blue-slate);
+}
+h1, h2{
+    font-family: 'Rubik Puddles', Impact, 'Times New Roman';
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    font-size: 4rem;
+    padding: 1rem; 
+    div {
+        min-height: 10rem;
+        min-width: 5rem;
+        background: var(--icy-blue);
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+    }
+}
+.match-count{
+    min-height: 3rem;
+    min-width: 5rem;
+    max-width: 10rem;
+    padding: 1rem;
+    background: var(--apricot-cream);
+    display: flex;
+    justify-content: space-around;
+    color: var(--dark-khaki);
+    font-family: 'Rum Raisin', Helvetica, sans-serif;
+    font-size: 2rem;
+}
