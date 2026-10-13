@@ -1,0 +1,47 @@
+/* Universal */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    background-image: url('../images/slugterra.jpg');
+    background-size: cover;
+}
+#cards{
+    text-align: center;
+    h1{
+        color:blue;
+        background-color: black;
+    }
+}
+
+.gameBoard{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.square {
+    border-radius: 10px;
+    height:30vh;
+    width:18%;
+    background: url('../images/uk.gif');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.square img {
+    border-radius: 10px;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: none;
+}
+.square.flipped img{
+    display: block;
+    
+}

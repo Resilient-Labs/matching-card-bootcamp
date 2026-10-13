@@ -1,0 +1,54 @@
+/* Universal */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    background-image: url('../images/slugterra.jpg');
+    background-size: cover;
+    h1{
+        text-align:right;
+    }
+}
+main{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+.unfliped{
+    border-radius: 10px;
+    height:30vh;
+    width:18%;
+    background: url('../images/uk.gif');
+    background-size: cover;
+    background-position: center;
+}
+  .flipped{
+    /* border:1px solid red; */
+    border-radius: 10px;
+    height:30vh;
+    width:18%;
+    }
+    .flipped:nth-child(1),.flip:nth-child(6){
+    background-image:url('../images/armor.jpg');
+    background-size: cover;
+    /* display: none; */
+    }
+    .flip:nth-child(2),.flip:nth-child(7){
+    background-image:url('../images/rammy.jpg');
+    background-size: cover;
+    }
+    .flip:nth-child(3),.flip:nth-child(8){
+    background-image:url('../images/doc.jpg');
+    background-size: cover;
+    }
+    .flip:nth-child(4),.flip:nth-child(9){
+    background-image:url('../images/infurnus.jpg');
+    background-size: cover;
+    }
+    .flip:nth-child(5),.flip:nth-child(10){
+    background-image:url('../images/enigmo.jpg');
+    background-size: cover;
+    }
+}
