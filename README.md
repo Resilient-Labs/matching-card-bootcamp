@@ -1,5 +1,7 @@
 # ♠️  Matching Card Game
 
+🌐 [Live](https://kinzarehman.github.io/matching-card/)
+
 ## Goal
 
 Make a 10-card memory game where users select two cards at a time to check if they are a match.
