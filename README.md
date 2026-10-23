@@ -1,22 +1,30 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+### 📄 Description
 
-### How to submit your code for review:
+# Project: Matching Card Game
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+###
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+A 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over.
+
+### ✨ Key Features
+
+Feature A: Interactive Memory Matching — Players flip two cards at a time to find matching coffee, matcha, strawberry, and café-themed pairs.
+Feature B: Game State & Score Tracking — Tracks moves and completed matches while keeping correctly matched cards flipped and automatically resetting incorrect pairs.
+Feature C: Responsive Café-Themed Design — Features a custom coffee and strawberry-matcha visual theme with a responsive card grid that works across desktop and mobile devices.
+
+### 🛠️ Tech Used
+
+- HTML
+- CSS
+- JS
+- [Node JS]
+
+
+
+<img width="1458" height="937" alt="image" src="https://github.com/user-attachments/assets/4290f974-feca-4325-be26-865a3cd07460" />
+
+
+
+
+

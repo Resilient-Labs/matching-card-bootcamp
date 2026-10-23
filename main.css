@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  background-image: url(matcha\ background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f8efe6;
+}
+
+.card-game {
+  width: 90%;
+  max-width: 800px;
+  padding: 50px 20px;
+
+  text-align: center;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.small-text {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  color: #f8efe6;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.7rem;
+}
+/* find better colors for acessibility 
+brown color #765c52 
+green color #8a9a5b
+*/
+.instructions {
+  color: #f8efe6;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 25px 0;
+  font-weight: bold;
+  color: #741213;
+}
+
+.board-game {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 15px;
+  max-width: 700px;
+  max-width: 0 auto;
+}
+
+.card {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  border: none;
+  border-radius: 18px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  background: #6f4e37;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.3s ease,
+    backgroound 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-back,
+.card-front {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+}
+
+.card-back {
+  color: #f8efe6;
+  background: #6f4e37;
+}
+
+.card-front {
+  opacity: 0;
+  background: #fffaf5;
+}
+
+.card.flipped .card-back {
+  opacity: 0;
+}
+
+.card.flipped .card-front {
+  opacity: 1;
+}
+
+.card.matched .card-front {
+  background: #dce8c6;
+  border: 3px solid #8a9a5b;
+}
+
+.win-message {
+  margin-top: 35px;
+  padding: 30px;
+
+  background: #f6d6d8;
+  border-radius: 18px;
+}
+
+.win-message h2 {
+  margin-top: 0;
+}
+
+#restart-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #6f4e37;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#restart-button:hover {
+  opacity: 0.85;
+}
+
+.hidden {
+  display: none;
+}

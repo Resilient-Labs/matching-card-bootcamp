@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Coffee & Matcha Memory</title>
+  </head>
+  <body>
+    <main class="card-game">
+      <header>
+        <p class="small-text">Cafe Memory Game</p>
+        <h1>Coffee & Strawberry Matcha Match</h1>
+
+        <p class="instructions">
+          Flip two cards and find all five matching pairs.
+        </p>
+      </header>
+
+      <section class="game-info">
+        <p>
+          Moves:
+          <span id="moves">0</span>
+        </p>
+        <p>
+          Matches:
+          <span id="matches">0</span>
+          / 5
+        </p>
+      </section>
+
+      <section id="board-game" class="board-game"></section>
+
+      <section id="win-message" class="win-message hidden">
+        <h2>You matched the whole cafe!🍓</h2>
+        <p id="final-message"></p>
+        <button id="restart-button">Play Again</button>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
