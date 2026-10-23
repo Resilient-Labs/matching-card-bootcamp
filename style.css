@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  min-height: 100%;
+}
+
+body{
+  background-image: url(shenron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+}
+
+h1{
+  color: orange;
+  display: flex;
+  justify-content: center;
+}
+.message{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+span{
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+
+.table{
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(2,1fr);
+  row-gap:20px;
+  width: 60%;
+  height: 400px;
+  border:1px solid black;
+  border-radius: 8px;
+  margin: 1rem auto;
+  margin-top: 20rem;
+}
+
+/* .table::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height:2px;
+
+} */
+
+.card{
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left:8px;
+  right:8px;
+  border: 1px solid black;
+  margin:0 auto;
+  object-fit:contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+
+}
+.table > section{
+background-color: orange;
+border: 1px solid black;
+min-width: 0;
+min-height: 0;
+position: relative;
+overflow: hidden;
+}
+.hidden{
+  visibility: hidden;
+}
+
+/* Additional Styles */
+.flipper{
+  cursor: crosshair;
+}
+
+button{
+  margin-left: 49%;
+}
+/* Tablet */
+@media(max-width:1024px){
+  .table{
+    width:80%;
+    height:350px;
+    margin-top:12rem;
+  }
+  body{
+      background-size: cover;
+
+  }
+}
+/* Large Phones */
+@media(max-width:768px){
+  h1{
+    font-size:1.6rem;
+    text-align: center;
+  }
+  .table{
+    width:95%;
+    height:auto;
+    margin-top:6rem;
+    grid-template-rows: none;
+    row-gap: 12px;
+  }
+  button{
+    margin-left:0;
+    display:block;
+    margin:1rem auto;
+  }
+  body{
+      background-size: cover;
+
+  }
+}
+
+/* small phone */
+@media(max-width:480px){
+  .table{
+    grid-template-columns:repeat(2,1fr);
+    width:80%;
+    margin-top:3rem;
+  }
+  body{
+      background-size: cover;
+
+  }
+}
+
+
