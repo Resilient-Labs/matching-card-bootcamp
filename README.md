@@ -1,22 +1,52 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# ⚾ Fenway Match
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+Fenway Match is a baseball-themed card matching game inspired by Fenway Park and the Boston Red Sox. Players flip cards to find matching emoji pairs and try to clear the board by finding every match.
 
-### How to submit your code for review:
+I built this project to practice JavaScript game logic, DOM manipulation, and event handling while creating a more complete visual experience around a classic matching game.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+[Play Fenway Card Match](https://fenway-park-card-match.netlify.app)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## 📸 Project Preview
+
+![Fenway Match project preview](assets/mockup.png)
+
+## ✨ Features
+
+- Flip cards to reveal hidden symbols
+- Match identical emoji pairs
+- Keep successfully matched cards revealed
+- Continue playing until all pairs are found
+- Fenway Park-inspired visual theme
+- Responsive layout for different screen sizes
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 🧠 What I Learned
+
+This project helped me strengthen my understanding of:
+
+- Working with arrays in JavaScript
+- Using event listeners for user interactions
+- Manipulating elements in the DOM
+- Tracking game state
+- Comparing selected values
+- Using conditional logic
+- Adding and removing CSS classes dynamically
+- Connecting JavaScript game logic to a visual interface
+- Building responsive layouts
+
+## 🎮 How It Works
+
+The game begins with a set of cards placed face down. Each card contains an emoji that has one matching pair somewhere else on the board.
+
+Select two cards to reveal their symbols. If the symbols match, the pair remains revealed. If they do not match, the cards are flipped back over so you can try again.
+
+Keep matching pairs until you've cleared the board.
+
+## 🎨 Design
+
+The original matching game was redesigned around a Fenway Park theme, using a red color palette, green card accents inspired by the ballpark, and Fenway Park imagery to give the game its own visual identity.
