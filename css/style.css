@@ -1,0 +1,117 @@
+/* BOX MODEL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* COLORS */
+:root {
+    --background: #f5f5f5;
+    --green: #315b38;
+    --red: #b30000;
+    --black: var(--black)
+
+}
+
+
+/* yt guy */
+body {
+    min-height: 100vh;
+    padding: 40px 20px;
+    /*background: var(--background); */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Deep green radial felt effect this is from reddit not mine the background and stuff*/
+  background: radial-gradient(circle at center, #0a5c36 0%, #05301b 100%);
+  /* Optional: Adds a very subtle textile texture */
+  background-image: 
+    radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 80%),
+    repeating-linear-gradient(45deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 2px, transparent 2px, transparent 4px);
+}
+
+h1, p{
+    margin: 10px;
+}
+
+
+
+/* button */
+#start {
+    padding: 12px 22px;
+    margin-bottom: 30px;
+    background: var(--red);
+    color: var(--background);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#start.playing {
+  background-color: var(--green);
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(5, 120px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+
+/* the card css was from some guys git hub*/
+.card {
+    width: 120px;
+    height: 160px;
+
+    background: transparent;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 160px;
+    line-height: 1;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.card.reveal.suitCard.matched {
+    border: 1px solid var(--green);
+    border-radius: 5px;
+}
+
+/* revealed but not matched */
+.card.reveal {
+    color: var(--red);
+}
+
+/* correct match card */
+.card.reveal.matched {
+    color: var(--green);
+
+}
+
+#score,#winMessage {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* PHONE */
+@media screen and (max-width: 600px) {
+
+    #cards {
+        grid-template-columns: repeat(2, 120px);
+    }
+
+}

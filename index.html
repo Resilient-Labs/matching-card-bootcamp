@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<meta charset="utf-8">
+  		<meta name="description" content="Your description goes here">
+  		<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Memory Card Game</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1> Card Game </h1>
+		<p> Click the "Start Game" button to get started.</p>
+		<button id="start"> Start Game </button>
+
+		<div id="cards">
+			<!-- cards have to be more than 10, match case 2 at a time -->
+			<div class="card">🂭</div>
+			<div class="card">🂥</div>
+			<div class="card">🂠</div>
+			<div class="card">🂥</div>
+			<div class="card">🂠</div>
+
+			<div class="card">🂠</div>
+			<div class="card">🂠</div>
+			<div class="card">🂪</div>
+			<div class="card">🂠</div>
+			<div class="card">🂭</div>
+		</div>
+
+		<div id="score">Score: <span id="initialScore">0</span></div>
+		<div id="winMessage"></div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
