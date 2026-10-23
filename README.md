@@ -1,22 +1,28 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# Memory Card Game
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+A card-matching game built with HTML, CSS, and JavaScript. Flip two cards at a time and find all the matching pairs.
 
-### How to submit your code for review:
+<img width="973" height="610" alt="Screenshot 2026-10-09 at 1 24 22 AM" src="https://github.com/user-attachments/assets/85c1b1b2-9853-4201-8d89-718fdec99fc3" />
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How to Play
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+1. Click a card to flip it.
+2. Click a second card.
+3. If they match, they stay flipped. If not, they flip back.
+4. Click **reset** to shuffle and start over.
+
+## Running the Project
+
+Open `index.html` in your browser. No install needed.
+
+## Files
+
+- `index.html` - the page
+- `css/style.css` - the styling
+- `js/main.js` - the game logic
+
+## Future Ideas
+
+- Win message when all pairs are found
+- Move counter
+- Flip animation
