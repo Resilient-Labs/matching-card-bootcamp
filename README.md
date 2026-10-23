@@ -1,22 +1,27 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+# ☀️ Matching Card App
+Use this program if you want to play a matching card game! 
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+# 📋 How to use
+1. Open the app in your browser
+2. Choose cards, try to find pairs  
+3. If you win, use Restart to play again   
 
-### How to submit your code for review:
+# 📷 Images
+<img width="1091" height="922" alt="Screenshot 2026-10-05 at 1 04 23 AM" src="https://github.com/user-attachments/assets/2ca7ce81-0275-4476-880a-c56c92c89e3a" />
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+# ✨ Features
+* Responsive design for desktop and mobile         
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+# 🔨 Built With
+* HTML5 – structure    
+* CSS3 – responsive design and background   
+* JavaScript - fetch image of the day from NASA API 
+
+# 🧠 What I Learned
+* How to work with Node    
+* How to work with APIs  
+* How to use fetch()   
+* How to work with JSON data  
+* How to manipulate the DOM  
+* How to handle errors  
+
