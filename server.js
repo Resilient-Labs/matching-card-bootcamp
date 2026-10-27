@@ -3,6 +3,7 @@ const fs = require('fs')
 const url = require('url');
 const querystring = require('querystring');
 const figlet = require('figlet')
+const PORT = process.env.PORT || 8000;
 
 const server = http.createServer(function(req, res) {
   const page = url.parse(req.url).pathname;
@@ -75,5 +76,7 @@ const server = http.createServer(function(req, res) {
   }
 });
 
-server.listen(8000);
+server.listen(PORT, () => {
+    console.log(`Server is BURNING OIL on PORT ${PORT}`)
+})
 // does not have to be 8000 but must be between 1-65535
