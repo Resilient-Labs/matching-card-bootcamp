@@ -14,3 +14,5 @@ Please fork and clone the github repo.
 
 After the repo has been cloned on your machine, please right click on the index.html and click open in browser. 
 
+Tech Stack: HTML CSS JS
+
