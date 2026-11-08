@@ -1,22 +1,34 @@
-# ♠️ Week08 Bootcamp2019a Project: Matching Card Game
+Halloween Matching Card Game
+The Halloween Matching Card Game is a 10-card memory game where players flip over two cards at a time to find matching pairs. If the two cards match, they remain flipped over. If they don't match, the cards flip back over, allowing the player to try again.
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+The goal of the game is to find all five matching pairs and flip over all 10 cards to complete the game. The game features a Halloween theme with themed cards.
 
-### How to submit your code for review:
-
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
-
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+Features
+10-Card Game: Play with 10 cards containing five matching pairs.
+Card Selection: Select two cards at a time to check for a match.
+Match Detection: Matching cards stay flipped over.
+Non-Matching Cards: Cards that don't match flip back over.
+Game Completion: Complete the game by finding all five matching pairs.
+Halloween Theme: Halloween-inspired card designs and visuals.
+Tech Stack
+Frontend: HTML, CSS, JavaScript
+What I Learned
+Creating an interactive memory card game using JavaScript.
+Working with arrays to organize and manage card pairs.
+Using randomization to shuffle cards.
+Implementing click events to handle card selection.
+Using conditional statements to check for matching cards.
+Managing game state and tracking matched cards.
+Updating the webpage dynamically based on user interactions.
+Using CSS to style cards and create a Halloween-inspired design.
+Installation
+Fork and clone the repository.
+Navigate to the project directory.
+Usage
+Open the index.html file in your browser.
+Select two cards to reveal their images.
+Check whether the two cards match.
+Matching cards will remain flipped over.
+Non-matching cards will flip back over.
+Continue matching pairs until all 10 cards are revealed.
+Complete the game by finding all five matching pairs!
