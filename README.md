@@ -4,6 +4,11 @@ The Halloween Matching Card Game is a 10-card memory game where players flip ove
 
 The goal of the game is to find all five matching pairs and flip over all 10 cards to complete the game. The game features a Halloween theme with themed cards.
 
+
+<img width="1600" height="906" alt="CardGameScreenshot" src="https://github.com/user-attachments/assets/49e2854d-cb3b-4d43-b786-ca7aa24cd207" />
+
+
+
 ## Features
 10-Card Game: Play with 10 cards containing five matching pairs.
 Card Selection: Select two cards at a time to check for a match.
