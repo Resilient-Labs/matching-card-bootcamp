@@ -58,8 +58,10 @@ function selectCard(e){
         console.log('Try Again')
         cardOne.textContent = ' '    // if the cards are not a match then we
         cardTwo.textContent = ' '     // want to flip the card (reset innertext)
+        
     }
 
     cardOne = undefined
     cardTwo = undefined
+
 }

@@ -1,9 +1,11 @@
-# Memory Game
+# Card Matching Memory Game
 
 A 10-card memory matching game built with vanilla JavaScript.
 Flip two cards at a time and try to find all the matching pairs.
 
 ![screenshot](./img/cardMatchimg.png)
+
+[Try it here](https://exbrto.github.io/Matching-Card-Game/)
 
 ## Features
 - 10 cards (5 matching pairs) laid out face down
