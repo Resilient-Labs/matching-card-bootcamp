@@ -47,4 +47,3 @@ package.json         - dependencies (figlet)
 - Set timeout to wait a second before flipping mismatches back over
 - Learned how to save multiple clicks (selections) at one time to use as params
 - Executing functions on the server side and just returning a json can help organize information
-  > > > > > > > ea9026c39815ca2abf6484c773c476d332a13fbc
