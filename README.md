@@ -15,8 +15,6 @@ Live demo: https://match-the-knicks.onrender.com
 
 ## Tech stack
 
-<<<<<<< HEAD
-
 - Node.js — plain `http` and `fs` modules, no framework
 - HTML, CSS, vanilla JavaScript
 - figlet (for the 404 page)
@@ -42,8 +40,4 @@ package.json         - dependencies (figlet)
 
 ---
 
-# Thay Brown — thaybrown22@gmail.com · https://thaythecoder.netlify.app · https://github.com/tbrown320 · https://www.linkedin.com/in/thaybrown
-
-- Set timeout to wait a second before flipping mismatches back over
-- Learned how to save multiple clicks (selections) at one time to use as params
-- Executing functions on the server side and just returning a json can help organize information
+Thay Brown — thaybrown22@gmail.com · https://thaythecoder.netlify.app · https://github.com/tbrown320 · https://www.linkedin.com/in/thaybrown
