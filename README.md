@@ -9,7 +9,7 @@ An interactive **10-card memory game** where you flip cards and try to find all 
 
 Users select two cards at a time to see if they match. Matches stay flipped, and cards that don't match flip back over.
 
-**Live Demo:** [[Live Site/](https://smayanja3.github.io/matching-card/)]
+**Live Demo:** [[Live Site](https://smayanja3.github.io/matching-card/)]
 
 ## ✨ Features
 
