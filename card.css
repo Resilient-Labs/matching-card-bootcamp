@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background: #355746;
+    color:white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+#container div {
+    background: #2f7d5b;
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+h2 {
+    margin: 15px 0;
+    font-size: 2rem;
+}
+
+button {
+    background: #2f7d5b;
+    color: white;
+    padding: 10px 12px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #1f3d2e
+}
